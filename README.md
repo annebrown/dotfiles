@@ -4,7 +4,7 @@
 
 # Description
 
-Configures my dev env on a new host (Android, Chromebook, Win11, RasPi).  Inludes host-specific, OS-specific, desktop-specific overrides. Pulls in scripts for starting required services and apps.   This repo contains my public config data.  Private config data is located in a separate repo. 
+Configures my dev env on a new host (Android, Chromebook, Win11, RasPi).  Inludes host-specific, OS-specific, desktop-specific overrides. Pulls in scripts for starting required services and apps.   This repo contains my public config data.  Private config data is pulled from a repo. 
 
 # Usage
 
