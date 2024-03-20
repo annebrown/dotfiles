@@ -4,9 +4,7 @@
 
 # Description
 
-This section is for configuration of my apps on a fresh OSs.     
-
-My private app config data is located in a separate repo.
+This section is for app config on a new host.  Private config data is sourced from private repos.
 
 [LXDE](#lxde)
 
