@@ -1,10 +1,10 @@
-# Configure My Dev Environments
+# Configure Dev Env
 
   [My Repos](https://github.com/annebrown/?tab=repositories) > dotfiles >  README.md    
 
 # Description
 
-Configures my dev env on a new host (Android, Chromebook, Win11, RasPi).  Includes scripts for starting required services and apps.   This repo contains my public config data.  Private config data is located in a separate repo. 
+Configures my dev env on a new host (Android, Chromebook, Win11, RasPi).  Inludes host-specific, OS-specific, desktop-specific overrides. Pulls in scripts for starting required services and apps.   This repo contains my public config data.  Private config data is located in a separate repo. 
 
 # Usage
 
@@ -12,7 +12,7 @@ Clone Repo
 
 ```bash
 
-$ git clone https://github.com/annebrown/dotfiles.git ~/.dotfiles
+$ git clone https://github.com/annebrown/dotfiles.git $My_Repos[\|/].dotfiles
 
 ```
 
