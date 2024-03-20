@@ -13,6 +13,7 @@ Clone Repo
 ```bash
 
 $ git clone https://github.com/annebrown/dotfiles.git $My_Repos[\|/].dotfiles
+$ git clone https://github.com/annebrown/dotfiles-priv.git $My_Repos[\|/].dotfiles
 
 ```
 
