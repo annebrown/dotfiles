@@ -4,7 +4,7 @@
 
 # Description
 
-This project configures my dev env on fresh OSs.  It also contains scripts for starting required services and apps.   This repo contains my public config data.  Private config data is located in a separate repo. 
+Configures my dev env on a new host (Android, Chromebook, Win11, RasPi).  Includes scripts for starting required services and apps.   This repo contains my public config data.  Private config data is located in a separate repo. 
 
 # Usage
 
@@ -12,7 +12,7 @@ Clone Repo
 
 ```bash
 
-$ git clone https://github.com/annebrown/dotfiles.git ~/dotfiles
+$ git clone https://github.com/annebrown/dotfiles.git ~/.dotfiles
 
 ```
 
@@ -22,11 +22,11 @@ General Config
 $ cd ~/.dotfiles
 $ stow bash
 $ stow vim
-$ stow lxde # | xfce
-$ stow 
+$ stow git
+$ stow vscode
+$ stow xfce
 ```
-
-Host-Specific Overrides
+OS-Specific Overrides
 
 ```bash
 $ stow -t ~ --override=. --dotfiles $HOSTNAME
@@ -35,23 +35,18 @@ $ stow -t ~ --override=. --dotfiles $HOSTNAME
 OS-Specific Overrides
 
 ```bash
-$ stow -t ~ --override=. --dotfiles Ubuntu20.04 # | Ubuntu18.3
+$ stow -t ~ --override=. --dotfiles Android # | ChromeOS | Ubuntu20.04 | Ubuntu18.3 | Win11 | RasPi
 ```
-
-Flavors
-
-
+Host-Specific Overrides
 
 ```bash
 $ stow -t ~ --override=. --dotfiles $HOSTNAME
 ```
-
-Flavors
+# Desktop
 
 ```bash
 $ stow lxde # | xfce 
 ```
-
 
 
 ## [bash](bash/README.md)
