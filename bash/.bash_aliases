@@ -1,10 +1,10 @@
 #---------------------------------------
 #
-# Filename:	$MY_REPOS/hostconfig/bash/.bash_aliases
+# Filename:	$MY_REPOS/dotfiles/bash/.bash_aliases
 # Purpose:	Bash config on new hosts
-# Repos: 	git@github.com:annebrown/nixhostconfig.git
-# 			git@github.com:annebrown/hostdata-priv.git
-# Doc:		./README.md
+# Repos: 	git@github.com:annebrown/dotfiles.git
+# 		git@github.com:annebrown/dotfiles-priv.git
+# Doc:		Inline
 # Author:	Anne Brown
 #
 #---------------------------------------
@@ -20,34 +20,33 @@
 #			bash_aliases_<date>_<time>_backup
 # 2. Push changes after edits
 #
-# Nix host config:
+# Host config:
 #
 # 	Use with GNUStow:
-#		1. Clone repo (git@github.com:annebrown/nixhostconfig.git) to ~/.nixhostconfig	
-#		2. anne@host:~/nixhostconfig $ stow bash # Symlink bash config to user dir
+#		1. Clone repo (git@github.com:annebrown/dotfiles.git) to ~/.dotfiles
+#		2. Clone private repo (git@github.com:annebrown/dotfiles-priv.git) to ~/.dotfiles-priv
+#		2. anne@host:~/dotfiles $ stow bash # Symlink .bash_aliases to ~
 #---------------------------------------
 
 #---------------------------------------
 #  Env Vars
 #---------------------------------------
 # 
-# Hosts
-# myWinHosts=("aserver","adesktop","alaptop")
 #  Repos  
-		export MY_REPOS="~/repos"  
-    	export MY_WIN_REPOS="C:/Users/anne/repos"  
+	export MY_REPOS="~/my-repos"   
+	export MY_REPOS-PRIV="~/my-repos-priv"   
 
 #   - Editors
 	    export EDITOR='vim' # make vim the default editor
 # MySql
     export VIMRUNTIME=/usr/share/vim/vim74
-    PATH=$PATH:$MY_REPOS/my-conf/bash/sh # Add my sys admin scripts to PATH
+    PATH=$PATH:$MY_REPOS/dotfiles/bash/sh:$MY_REPOS-PRIV/dotfiles-priv/bash/sh # Add sys admin scripts to PATH
     export PATH
 
 #--------------------------------------------------
 # Aliases
 #--------------------------------------------------
-# XPlatform
+# Cross-Platform
 #	General
 	alias vimhelp="vim note:help"
 	alias ping3='ping -c 3'
