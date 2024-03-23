@@ -1,18 +1,12 @@
 "---------------------------------------
 "
-" Filename:  $MY_REPOS/my-conf/vim/vimrc
-" Doc: ./README.md
-" Repo: 	git@github.com:annebrown/my-conf.git
-" Author:	Anne Brown
+" Repo: git@github.com:annebrown/dotfiles.git
+" Filename:	/vim/.vimrc
+" Doc: /README.md
 "
 "---------------------------------------
 "
 " My fav vim shortcuts
-"
-" Instructions: 
-" 1. Clone git@github.com:annebrown/my-conf.git to $MY_REPOS/my-conf
-"	2. Link this file to ~/.vimrc:
-"     [~] $ ln -s $MY_REPOS/my-conf/vim/vimrc ~/.vimrc
 "
 " Highlights:
 " esc - mapped to jj
@@ -21,7 +15,7 @@
 
 " Windows 11 WSL2
 "   Append to C:\Program Files (x86)\Vim\_vimrc
-"		source $MY_REPOS\my-conf\vim\.vimrc
+"		source $MY_REPOS\dotfiles\vim\.vimrc
 
 " Load plugins
 
