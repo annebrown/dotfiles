@@ -45,6 +45,7 @@ $ stow -t ~ --override=. --dotfiles [Android | ChromeOS | Ubuntu20.04 | Ubuntu18
 ```bash
 $ stow [lxde | xfce]
 ```
+# Public Stow Pkgs
 
 ## [bash](../blob/master/bash/README.md)
 
@@ -54,4 +55,4 @@ $ stow [lxde | xfce]
 
 [GNU Stow](https://www.gnu.org/software/stow/)
 
- [XDG Base Directory Specs](https://specifications.freedesktop.org/basedir-spec/basedir-spec-0.8.html)
+[XDG Base Directory Specs](https://specifications.freedesktop.org/basedir-spec/basedir-spec-0.8.html)
