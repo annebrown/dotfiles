@@ -13,7 +13,7 @@ Clone Repo
 ```bash
 
 $ git clone https://github.com/annebrown/dotfiles.git $My_Repos[\|/].dotfiles
-$ # git clone https://github.com/annebrown/dotfiles-priv.git $My_Repos[\|/].dotfiles
+$ git clone https://github.com/annebrown/dotfiles-priv.git $My_Repos[\|/].dotfiles-priv
 
 ```
 # General Config
@@ -22,10 +22,15 @@ $ # git clone https://github.com/annebrown/dotfiles-priv.git $My_Repos[\|/].dotf
 $ cd ~/.dotfiles
 $ stow bash
 $ stow vim
-$ # cd ~/.dotfiles-priv
-$ # stow [pkgs from dotfiles-priv]
 ```
-# Host-Specific Overrides
+
+# Config From Priv Data
+
+```bash
+$ cd ~/.dotfiles-priv
+$ stow [pkgs from .dotfiles-priv]
+```
+## Host-Specific Overrides
 ```bash
 $ stow -t ~ --override=. --dotfiles $HOSTNAME
 ```
@@ -45,11 +50,7 @@ $ stow [lxde | xfce]
 
 ## [vim](vim/README.md)
 
-## [Apps](apps/README.md)
-
 # Related Links
-
-
 
 [GNU Stow](https://www.gnu.org/software/stow/)
 
