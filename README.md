@@ -4,7 +4,7 @@
 
 # Description
 
-Configures my dev env on a new host (Android, Chromebook, Win11, RasPi).  Inludes stack, host, OS, app and desktop flavor overrides. Pulls in scripts for starting required services and apps.   This repo contains public config data.  Private config data is pulled from a separate repo. 
+Configures my dev env on a new host (Android, Chromebook, Win11, RasPi).   Inludes stack, host, OS, app and desktop flavor overrides. Pulls in scripts for starting required services and apps.   This repo contains public config data.  Private config data is pulled from a separate repo. 
 
 # Usage
 
@@ -17,6 +17,9 @@ $ git clone https://github.com/annebrown/dotfiles-priv.git ~/.dotfiles-priv
 
 ```
 # General Config
+
+In `dotfiles`:
+  
 
 ```bash
 $ cd ~/.dotfiles
