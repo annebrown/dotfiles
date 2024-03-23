@@ -1,9 +1,10 @@
 #---------------------------------------
 #
 # Filename:	$MY_REPOS/dotfiles/bash/.bash_aliases
+# See also: $MY_REPOS-PRIV/dotfiles-priv/bash/.bash_aliases
 # Purpose:	Bash config on new hosts
-# Repos: 	git@github.com:annebrown/dotfiles.git
-# 		git@github.com:annebrown/dotfiles-priv.git
+# Repos: git@github.com:annebrown/dotfiles.git
+# 		 git@github.com:annebrown/dotfiles-priv.git
 # Doc:		Inline
 # Author:	Anne Brown
 #
@@ -23,21 +24,23 @@
 # Host config:
 #
 # 	Use with GNUStow:
-#		1. Clone repo (git@github.com:annebrown/dotfiles.git) to ~/.dotfiles
-#		2. Clone private repo (git@github.com:annebrown/dotfiles-priv.git) to ~/.dotfiles-priv
-#		2. anne@host:~/dotfiles $ stow bash # Symlink .bash_aliases to ~
+#		1. Clone repos to ~/.dotfiles and ~/.dotfiles-priv
+#		2. anne@host:~/.dotfiles $ stow bash
+#		3. anne@host:~/.dotfiles-priv $ stow bash
+#  
 #---------------------------------------
 
 #---------------------------------------
 #  Env Vars
 #---------------------------------------
 # 
-#  Repos  
+# Repos  
 	export MY_REPOS="~/my-repos"   
 	export MY_REPOS-PRIV="~/my-repos-priv"   
 
-#   - Editors
-	    export EDITOR='vim' # make vim the default editor
+# Default Editor
+	export EDITOR='vim' # make vim the default editor
+	
 # MySql
     export VIMRUNTIME=/usr/share/vim/vim74
     PATH=$PATH:$MY_REPOS/dotfiles/bash/sh:$MY_REPOS-PRIV/dotfiles-priv/bash/sh # Add sys admin scripts to PATH
