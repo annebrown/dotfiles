@@ -4,7 +4,7 @@
 
 # Description
 
-Configures my dev env on a new host 
+New host configuration.  
 
 # Usage
 
