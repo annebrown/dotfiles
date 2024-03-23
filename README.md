@@ -46,9 +46,9 @@ $ stow -t ~ --override=. --dotfiles [Android | ChromeOS | Ubuntu20.04 | Ubuntu18
 $ stow [lxde | xfce]
 ```
 
-## [bash](bash/README.md)
+## [bash](../blob/master/bash/README.md)
 
-## [vim](/../blob/master/vim/README.md)
+## [vim](../blob/master/vim/README.md)
 
 # Related Links
 
