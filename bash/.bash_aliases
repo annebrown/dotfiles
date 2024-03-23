@@ -2,7 +2,7 @@
 #
 # Repo: git@github.com:annebrown/dotfiles.git
 # Filename:	/bash/.bash_aliases
-# Purpose:	Bash config on new hosts
+# Purpose:	New host config
 #
 #---------------------------------------
 
@@ -26,25 +26,34 @@
 #---------------------------------------
 
 #---------------------------------------
-#  Env Vars
+#  Repos
 #---------------------------------------
 # 
-# Repos  
 	export MY_REPOS="~/my-repos"   
 	export MY_REPOS-PRIV="~/my-repos-priv"   
 
-# Default Editor
-	export EDITOR='vim' # make vim the default editor
-	
-# MySql
-    export VIMRUNTIME=/usr/share/vim/vim74
-    PATH=$PATH:$MY_REPOS/dotfiles/bash/sh:$MY_REPOS-PRIV/dotfiles-priv/bash/sh # Add sys admin scripts to PATH
-    export PATH
+#---------------------------------------
+# Editors
+#---------------------------------------
+
+	export EDITOR='vim' # defaut editor
+
+##---------------------------------------
+##LAMP stack
+##-------------------------------------
+
+## MySql
+    # export VIMRUNTIME=/usr/share/vim/vim74
+    # PATH=$PATH:$MY_REPOS/dotfiles/bash/sh:$MY_REPOS-PRIV/dotfiles-priv/bash/sh # Add sys admin scripts to PATH
+    # export PATH
+	#   alias mysqlstart="sudo /usr/local/mysql/support-files/mysql.server start"
+	#   alias mysql="/usr/local/mysql/bin/mysql"
+	#   alias mysqladmin="/usr/local/mysql/bin/mysqladmin"
 
 #--------------------------------------------------
-# Aliases
+# Cross-Platform Aliases
 #--------------------------------------------------
-# Cross-Platform
+# 
 #	General
 	alias vimhelp="vim note:help"
 	alias ping3='ping -c 3'
@@ -53,10 +62,6 @@
 	alias myxterm='xfce4-terminal&'
 	alias envd='env|grep DISPLAY'
 
-#	MySql 
-	alias mysqlstart="sudo /usr/local/mysql/support-files/mysql.server start"
-	alias mysql="/usr/local/mysql/bin/mysql"
-	alias mysqladmin="/usr/local/mysql/bin/mysqladmin"
 # browndomain.com 
 	alias b.com-mount="sshfs bh ~/mnt" 
 	alias b.com-log="ssh bh tail -f /var/log/httpd/error_log.1 | grep 204.237.125.197"
@@ -96,22 +101,26 @@
 	alias sshaws="ssh -i ~/.ssh/essi bitnami@aws-essi-prod-instance-0000"
 
 #--------------------------------------------------
-# Overrides
-#--------------------------------------------------
 # Mobile App Development
+#--------------------------------------------------
+# 
 #	WSL2
-	if [ `hostname` = "alap" ] || [ `hostname` = "alap-wsl" ] || [ `hostname` = "aserver" ] || [ `hostname` = "anchor-wsl" ]; then
-		export JAVA_HOME=/usr/lib/jvm/java-8-openjdk-amd64
-		export PATH=$PATH:$JAVA_HOME/bin
-		export ANDROID_HOME=~/Android
-		export PATH=$ANDROID_HOME/tools:$PATH
-		export PATH=$ANDROID_HOME/tools/bin:$PATH
-		export PATH=$ANDROID_HOME/platform-tools:$PATH	
-		export PATH="$PATH:`pwd`/dev/flutter/bin"
-		alias connectaphone="adb connect 912.168.2.12:5555"	
-		cd # WSL2 opens in wrong dir.  Bad json
-	fi
-# Win11 WSL2
+	# if [ `hostname` = "alap" ] || [ `hostname` = "alap-wsl" ] || [ `hostname` = "aserver" ] || [ `hostname` = "anchor-wsl" ]; then
+	# 	export JAVA_HOME=/usr/lib/jvm/java-8-openjdk-amd64
+	# 	export PATH=$PATH:$JAVA_HOME/bin
+	# 	export ANDROID_HOME=~/Android
+	# 	export PATH=$ANDROID_HOME/tools:$PATH
+	# 	export PATH=$ANDROID_HOME/tools/bin:$PATH
+	# 	export PATH=$ANDROID_HOME/platform-tools:$PATH	
+	# 	export PATH="$PATH:`pwd`/dev/flutter/bin"
+	# 	alias connectaphone="adb connect 912.168.2.12:5555"	
+	# 	cd # WSL2 opens in wrong dir.  Bad json
+	# fi
+
+#--------------------------------------------------	
+# Operating Systems
+#--------------------------------------------------
+
 	if [ `hostname`="alap-wsl" ] || [ `hostname` = "alap" ] || [ `hostname`="aserver" ] || [ `hostname`="anchor-wsl" ]; then
 		
 		alias desktop="~/repos/my-conf/win11/wsl2/desktop.sh" # Prepare xfce4 desktop for RDP Remote Access
