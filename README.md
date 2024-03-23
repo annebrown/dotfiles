@@ -45,11 +45,6 @@ $ stow -t ~ --override=. --dotfiles [Android | ChromeOS | Ubuntu20.04 | Ubuntu18
 ```bash
 $ stow [lxde | xfce]
 ```
-# Public Stow Pkgs
-
-## [bash](bash/.bash_aliases)
-
-## [vim](github.com/annebrown/dotfiles/tree/main/vim/README.md)
 
 # Related Links
 
