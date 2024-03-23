@@ -49,7 +49,7 @@ $ stow [lxde | xfce]
 
 ## [bash](bash/.bash_aliases)
 
-## [vim](../blob/master/vim/README.md)
+## [vim](vim/README.md)
 
 # Related Links
 
