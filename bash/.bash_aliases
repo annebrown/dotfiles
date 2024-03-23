@@ -28,9 +28,9 @@
 #---------------------------------------
 #  Repos
 #---------------------------------------
-# 
+
 	export MY_REPOS="~/my-repos"   
-	export MY_REPOS-PRIV="~/my-repos-priv"   
+	export MY_REPOS_PRIV="~/my-repos-priv"   
 
 #---------------------------------------
 # Editors
