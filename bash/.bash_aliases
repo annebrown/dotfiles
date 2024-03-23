@@ -1,12 +1,8 @@
 #---------------------------------------
 #
-# Filename:	$MY_REPOS/dotfiles/bash/.bash_aliases
-# See also: $MY_REPOS-PRIV/dotfiles-priv/bash/.bash_aliases
+# Repo: git@github.com:annebrown/dotfiles.git
+# Filename:	/bash/.bash_aliases
 # Purpose:	Bash config on new hosts
-# Repos: git@github.com:annebrown/dotfiles.git
-# 		 git@github.com:annebrown/dotfiles-priv.git
-# Doc:		Inline
-# Author:	Anne Brown
 #
 #---------------------------------------
 
@@ -24,9 +20,8 @@
 # Host config:
 #
 # 	Use with GNUStow:
-#		1. Clone repos to ~/.dotfiles and ~/.dotfiles-priv
-#		2. anne@host:~/.dotfiles $ stow bash
-#		3. anne@host:~/.dotfiles-priv $ stow bash
+#		1. Clone repos to ~/.dotfiles
+#		2. $ stow -d ~/.dotfiles bash
 #  
 #---------------------------------------
 
@@ -57,6 +52,7 @@
 	alias lal='ls -al'
 	alias myxterm='xfce4-terminal&'
 	alias envd='env|grep DISPLAY'
+
 #	MySql 
 	alias mysqlstart="sudo /usr/local/mysql/support-files/mysql.server start"
 	alias mysql="/usr/local/mysql/bin/mysql"
