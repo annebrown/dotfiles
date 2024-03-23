@@ -47,7 +47,7 @@ $ stow [lxde | xfce]
 ```
 # Public Stow Pkgs
 
-## [bash](https://github.com/annebrown/dotfiles/bash/README.md)
+## [bash](https://[github.com/annebrown/](https://github.com/annebrown/dotfiles/blob/main/dotfiles/bash/README.md)
 
 ## [vim](../blob/master/vim/README.md)
 
