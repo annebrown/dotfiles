@@ -1,8 +1,9 @@
 "---------------------------------------
 "
-" Filename:  $MY_REPOS/my-conf/vim/vrapperrc
-" Doc: ./README.md
-" Repo: 	git@github.com:annebrown/my-conf.git
+" Repo: 	git@github.com:annebrown/dotfiles.git
+" Filename:  /vim/.vrapperrc
+" Doc: /README.md
+
 " Author:	Anne Brown
 "
 "---------------------------------------
