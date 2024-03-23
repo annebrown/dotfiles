@@ -1,1 +1,0 @@
-export MOSH_TITLE_NOPREFIX=1
