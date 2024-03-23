@@ -16,14 +16,14 @@ $ git clone https://github.com/annebrown/dotfiles.git ~/.dotfiles
 $ git clone https://github.com/annebrown/dotfiles-priv.git ~/.dotfiles-priv
 
 ```
-# General Config
+Config
 
 ```bash
 $ stow -d .dotfiles bash
 $ stow -d .dotfiles vim
 ```
 
-# Config From Priv Repo
+Config From Priv Repo
 
 ```bash
 $ stow -d .dotfiles-priv pkg1 pkg2 pkg3 ...
