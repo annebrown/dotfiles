@@ -38,9 +38,9 @@
 
 	export EDITOR='vim' # defaut editor
 
-##---------------------------------------
-##LAMP stack
-##-------------------------------------
+# #---------------------------------------
+# # LAMP stack
+# #-------------------------------------
 
 ## MySql
     # export VIMRUNTIME=/usr/share/vim/vim74
@@ -62,43 +62,83 @@
 	alias myxterm='xfce4-terminal&'
 	alias envd='env|grep DISPLAY'
 
-# browndomain.com 
-	alias b.com-mount="sshfs bh ~/mnt" 
-	alias b.com-log="ssh bh tail -f /var/log/httpd/error_log.1 | grep 204.237.125.197"
-	alias b.com-gitadd="ssh bh  'cd ~/cloud/www/WebApp; git add .;'"
-	alias b.com-gitcommit="ssh bh 'cd ~/cloud/www/WebApp; git commit -m \"batch commit\";'"
-	alias b.com-gitpull="ssh bh 'cd www/WebApp; git pull;'"
-	alias b.com-gitall="b.comgitadd; b.comgitcommit; b.comgitpull;"
-	alias b.com-start-svr="ssh bh 'cd www/WebApp; perl script/webapp_fastcgi.pl;'"
-	alias b.com-scp-bashrc="scp ~/.bashrc bh:~/."
-	alias sshbh="ssh bh"
-	# PHP
-	if [ `hostname` = "box567.bluehost.com" ]; then
-		alias php.ini-edit="cp public_html/php.ini \"public_html/php.ini-`date +%y-%m-%d`-00\" && vim public_html/php.ini"	
-	fi
-# annebrown.net
-	alias ab.net-log="ssh admin@annebrown.net tail -f /var/log/httpd/error_log.1"
+# #--------------------------------------------------
+# # browndomain.com 
+# #--------------------------------------------------
+# 	alias b.com-mount="sshfs bh ~/mnt" 
+# 	alias b.com-log="ssh bh tail -f /var/log/httpd/error_log.1 | grep 204.237.125.197"
+# 	alias b.com-gitadd="ssh bh  'cd ~/cloud/www/WebApp; git add .;'"
+# 	alias b.com-gitcommit="ssh bh 'cd ~/cloud/www/WebApp; git commit -m \"batch commit\";'"
+# 	alias b.com-gitpull="ssh bh 'cd www/WebApp; git pull;'"
+# 	alias b.com-gitall="b.comgitadd; b.comgitcommit; b.comgitpull;"
+# 	alias b.com-start-svr="ssh bh 'cd www/WebApp; perl script/webapp_fastcgi.pl;'"
+# 	alias b.com-scp-bashrc="scp ~/.bashrc bh:~/."
+# 	alias sshbh="ssh bh"
+# 	# PHP
+# 	if [ `hostname` = "box567.bluehost.com" ]; then
+# 		alias php.ini-edit="cp public_html/php.ini \"public_html/php.ini-`date +%y-%m-%d`-00\" && vim public_html/php.ini"	
+# 	fi
+
+# #--------------------------------------------------
+# # annebrown.net
+# #--------------------------------------------------
+# 	alias ab.net-log="ssh admin@annebrown.net tail -f /var/log/httpd/error_log.1"
+
+#--------------------------------------------------
 # perl.org
+#--------------------------------------------------
 	alias p.org-bash="ssh -X -l anneq -p perl.org"  
+
+#--------------------------------------------------	
 # perl 
+#--------------------------------------------------
 	alias perldocsvr="sudo ls; sudo perldoc-server --public &"
+
+# #--------------------------------------------------
 # Catalyst Server 
-	alias svrwebappt="gowebappt; perl script/webapptest_server.pl -r -p 1234"
-	alias svrwebapp="gowebapp; perl script/webapp_server.pl -r -p 5678"
-# aphone 
+# #--------------------------------------------------
+	# alias svrwebappt="gowebappt; perl script/webapptest_server.pl -r -p 1234"
+	# alias svrwebapp="gowebapp; perl script/webapp_server.pl -r -p 5678"
+
+#--------------------------------------------------
+# aphone
+#-------------------------------------------------- 
 	alias ssh-aphone-root="ssh -p 2222 root@aphone"
+
+#--------------------------------------------------
 # atab
+#--------------------------------------------------
 	alias ssh-atab-root="ssh -p 2222 root@atab"
+
+#--------------------------------------------------
 # aserver
+#--------------------------------------------------
 	alias ssh-aserver="ssh -p 22 anne@aserver"
-# achromebook
-	alias ssh-achromebook=" ssh -p 22 anne@achromebook"
+
+#--------------------------------------------------
+# achromebook00
+#--------------------------------------------------
+	alias ssh-achromebook00" ssh -p 22 anne@achromebook00"
+
+#--------------------------------------------------
+# achromebook01
+#--------------------------------------------------
+	alias ssh-achromebook01" ssh -p 22 anne@achromebook01"
+
+#--------------------------------------------------
 # alap
+#--------------------------------------------------
 	alias ssh-alap="ssh -p 22 anne@alap"
-# anchor
-	alias ssh-anchor="ssh -p 2222 anne@anchor"
-# ESSi host
-	alias sshaws="ssh -i ~/.ssh/essi bitnami@aws-essi-prod-instance-0000"
+
+# #--------------------------------------------------
+# # anchor
+# #--------------------------------------------------
+# 	alias ssh-anchor="ssh -p 2222 anne@anchor"
+
+# #--------------------------------------------------	
+# # ESSi host
+# #--------------------------------------------------
+# 	alias sshaws="ssh -i ~/.ssh/essi bitnami@aws-essi-prod-instance-0000"
 
 #--------------------------------------------------
 # Mobile App Development
@@ -171,6 +211,7 @@
 
 		source /opt/intel/oneapi/setvars.sh
 	fi
+
 
 #--------------------------------------------------
 # My prompts
