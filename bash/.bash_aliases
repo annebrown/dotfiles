@@ -128,7 +128,7 @@
 		alias godev="cd ~/repos/my-conf"
 	fi
 # Ubuntu 
-	if [ `hostname` = "alap" ] || [ `hostname` = "aserver-wsl" ] || [ `hostname` = "anchor-wsl "] || [ `hostname` = "achromebook" ]; then
+	if [ `hostname` = "alap" ] || [ `hostname` = "aserver-wsl" ] || [ `hostname` = "anchor-wsl " ] || [ `hostname` = "achromebook" ]; then
 		alias cdcronjobs='cd /f/etc/crontab'
 		# xhost local:anne > /dev/null # Allow crontab to access X display
 		alias king-wol="powerwake 04:54:53:01:AC:B1"
