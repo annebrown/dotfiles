@@ -59,7 +59,8 @@
 	alias ping3='ping -c 3'
 	alias ping3g='ping -c 3 google.com'
 	alias lal='ls -al'
-	alias myxterm='xfce4-terminal&'
+	alias myterm='xfce4-terminal&'
+	alias mymobileterm='xterm -bg black -fg white &'
 	alias envd='env|grep DISPLAY'
 
 # #--------------------------------------------------
@@ -118,12 +119,12 @@
 #--------------------------------------------------
 # achromebook00
 #--------------------------------------------------
-	alias ssh-achromebook00" ssh -p 22 anne@achromebook00"
+	alias ssh-achromebook00=" ssh -p 22 anne@achromebook00"
 
 #--------------------------------------------------
 # achromebook01
 #--------------------------------------------------
-	alias ssh-achromebook01" ssh -p 22 anne@achromebook01"
+	alias ssh-achromebook01=" ssh -p 22 anne@achromebook01"
 
 #--------------------------------------------------
 # alap
