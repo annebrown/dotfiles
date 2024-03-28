@@ -29,8 +29,8 @@
 #  Repos
 #---------------------------------------
 
-	export MY_REPOS="~/my-repos"   
-	export MY_REPOS_PRIV="~/my-repos-priv"   
+	export REPOS="~/repos"   
+	export REPOS_PRIV="~/repos-priv"   
 
 #---------------------------------------
 # Editors
@@ -60,8 +60,7 @@
 	alias ping3='ping -c 3'
 	alias ping3g='ping -c 3 google.com'
 	alias lal='ls -al'
-	alias myterm='xfce4-terminal&'
-	alias mymobileterm='xterm -bg black -fg white &'
+	alias myterm='xfce4gnome-terminal&'
 	alias envd='env|grep DISPLAY'
 
 # #--------------------------------------------------
