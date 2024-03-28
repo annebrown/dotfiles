@@ -60,7 +60,7 @@
 	alias ping3='ping -c 3'
 	alias ping3g='ping -c 3 google.com'
 	alias lal='ls -al'
-	alias myterm='gnome-terminal&'
+	alias myterm='xfce4-terminal&'
 	alias envd='env|grep DISPLAY'
 
 # #--------------------------------------------------
