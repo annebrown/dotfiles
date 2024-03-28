@@ -131,7 +131,7 @@
 # adev
 #--------------------------------------------------
 	alias ssh-adev="ssh -p 22 anne@dev"
-	alias startdesktop="~/bin/shartgnomedesktop.sh
+	alias startdesktop="~/.dotfiles/bin/startgnomedesktop.sh"
 
 # #--------------------------------------------------
 # # anchor
