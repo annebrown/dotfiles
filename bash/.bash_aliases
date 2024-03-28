@@ -38,6 +38,7 @@
 
 	export EDITOR='vim' # defaut editor
 
+
 # #---------------------------------------
 # # LAMP stack
 # #-------------------------------------
@@ -127,9 +128,10 @@
 	alias ssh-achromebook01=" ssh -p 22 anne@achromebook01"
 
 #--------------------------------------------------
-# alap
+# adev
 #--------------------------------------------------
-	alias ssh-alap="ssh -p 22 anne@alap"
+	alias ssh-adev="ssh -p 22 anne@dev"
+	alias startdesktop="~/bin/shartgnomedesktop.sh
 
 # #--------------------------------------------------
 # # anchor
