@@ -4,7 +4,15 @@
 
 # Description
 
-New host configuration.  Configures my dev env on a new host (Android, Chromebook, Win11, RasPi,xOS,iOS).   Inludes stack, host, OS, app and desktop flavor overrides. Pulls in scripts for starting required services and apps.   This repo contains public config data.  Private config data is pulled from a separate repo.
+New host configuration.  
+
+Configures my dev env on a new host (Android, Chromebook, Win11, RasPi,xOS,iOS).   
+
+Inludes stack, host, OS, app and desktop flavor overrides. 
+
+Pulls in scripts for starting required services and apps.   
+
+This repo contains public config stuff.  Private config stuff is pulled from a separate repo.
 
 # Usage
 
@@ -21,12 +29,7 @@ Config
 ```bash
 $ stow -d .dotfiles bash
 $ stow -d .dotfiles vim
-```
-
-Config From Priv Repo
-
-```bash
-$ stow -d .dotfiles-priv pkg1 pkg2 pkg3 ...
+$ stow -d dotfiles-priv pkg1 pkg2 pkg3 ...
 ```
 
 # Related Links
