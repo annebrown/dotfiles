@@ -38,7 +38,6 @@
 
 	export EDITOR='vim' # defaut editor
 
-
 # #---------------------------------------
 # # LAMP stack
 # #-------------------------------------
@@ -163,11 +162,12 @@
 # Operating Systems
 #--------------------------------------------------
 
-	if [ `hostname`="alap-wsl" ] || [ `hostname` = "alap" ] || [ `hostname`="aserver" ] || [ `hostname`="anchor-wsl" ]; then
+	if [ `hostname`="adev" ] ||[ `hostname`="alap-wsl" ] || [ `hostname` = "alap" ] || [ `hostname`="aserver" ] || [ `hostname`="anchor-wsl" ]; then
 		
 		alias desktop="~/repos/my-conf/win11/wsl2/desktop.sh" # Prepare xfce4 desktop for RDP Remote Access
 		alias desktopkde="~/repos/my-conf/win11/wsl2/desktopkde.sh" # Prepare xfce4 desktop for RDP Remote Access
 		alias godev="cd ~/repos/my-conf"
+		ln -s "/mnt/c/Users/anne/My Drive" ~/gdrive
 	fi
 # Ubuntu 
 	if [ `hostname` = "alap" ] || [ `hostname` = "aserver-wsl" ] || [ `hostname` = "anchor-wsl " ] || [ `hostname` = "achromebook" ]; then
