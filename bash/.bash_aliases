@@ -55,12 +55,13 @@
 #--------------------------------------------------
 # 
 #	General
+	alias gterm="gnome-terminal --title="$USER@$HOSTNAME: $PWD \$"
+	alias xfterm="xfce4-terminal --title="$USER@$HOSTNAME: $PWD \$"
 	alias vimhelp="vim note:help"
 	alias ping3='ping -c 3'
 	alias ping3g='ping -c 3 google.com'
 	alias lal='ls -al'
 	alias la='ls -a'
-	alias myterm='xfce4-terminal&'
 	alias envd='env|grep DISPLAY'
 
 # #--------------------------------------------------
