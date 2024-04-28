@@ -55,8 +55,8 @@
 #--------------------------------------------------
 # 
 #	General
-	alias gterm="gnome-terminal --title="$USER@$HOSTNAME: $PWD \$"
-	alias xfterm="xfce4-terminal --title="$USER@$HOSTNAME: $PWD \$"
+	alias gterm="gnome-terminal --title="$USER@$HOSTNAME: $PWD \$ &"
+	alias xfterm="xfce4-terminal --title="$USER@$HOSTNAME: $PWD \$ &"
 	alias vimhelp="vim note:help"
 	alias ping3='ping -c 3'
 	alias ping3g='ping -c 3 google.com'
