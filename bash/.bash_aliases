@@ -172,6 +172,7 @@ export  PATH=$PATH:~/.dotfiles/bash/sh
 		alias rdpdesktop="~/repos/my-conf/win11/wsl2/desktop.sh" # Prepare xfce4 desktop for RDP Remote Access
 		alias kdedesktop="~/repos/my-conf/win11/wsl2/desktopkde.sh" # Prepare xfce4 desktop for RDP Remote Access
 		alias mydesktop="~/.dotfiles/sh/xfce4-desktop.sh"
+		export WAYLAND_DISPLAY=':1.0'
 	fi
 # Ubuntu 
 	if [ `hostname` = "alap" ] || [ `hostname` = "aserver-wsl" ] || [ `hostname` = "anchor-wsl " ] || [ `hostname` = "achromebook" ]; then
