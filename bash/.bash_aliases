@@ -21,7 +21,7 @@
 #
 # 	Use with GNUStow:
 #		1. Clone repos to ~/.dotfiles
-#		2. $ stow -d ~/.dotfiles bash
+#		2. $ stow -d ~/.dotfiles bash vim 
 #  
 #---------------------------------------
 
@@ -29,14 +29,19 @@
 #  Repos
 #---------------------------------------
 
-	export REPOS="~/repos"   
-	export REPOS_PRIV="~/repos-priv"   
+	export PROJS="~/projects"   
 
 #---------------------------------------
 # Editors
 #---------------------------------------
 
-	export EDITOR='vim' # defaut editor
+	export EDITOR='vim' # defaut editorA
+
+#---------------------------------------
+#  Script Path
+#---------------------------------------
+
+export  PATH=$PATH:~/.dotfiles/bash/sh
 
 # #---------------------------------------
 # # LAMP stack
@@ -55,8 +60,8 @@
 #--------------------------------------------------
 # 
 #	General
-	alias gterm='gnome-terminal --title="$USER@$HOSTNAME: $PWD \$" &'
-	alias xfterm='xfce4-terminal --title="$USER@$HOSTNAME: $PWD \$" &'
+	alias gterm='gnome-terminal --title="$USER@$HOSTNAME" &'
+	alias xfterm='xfce4-terminal --title="$USER@$HOSTNAME" &'
 	alias vimhelp="vim note:help"
 	alias ping3='ping -c 3'
 	alias ping3g='ping -c 3 google.com'
@@ -74,8 +79,7 @@
 # 	alias b.com-gitpull="ssh bh 'cd www/WebApp; git pull;'"
 # 	alias b.com-gitall="b.comgitadd; b.comgitcommit; b.comgitpull;"
 # 	alias b.com-start-svr="ssh bh 'cd www/WebApp; perl script/webapp_fastcgi.pl;'"
-# 	alias b.com-scp-bashrc="scp ~/.bashrc bh:~/."
-# 	alias sshbh="ssh bh"
+
 # 	# PHP
 # 	if [ `hostname` = "box567.bluehost.com" ]; then
 # 		alias php.ini-edit="cp public_html/php.ini \"public_html/php.ini-`date +%y-%m-%d`-00\" && vim public_html/php.ini"	
@@ -131,7 +135,6 @@
 # adev
 #--------------------------------------------------
 	alias ssh-adev="ssh -p 22 anne@dev"
-	alias startdesktop="~/.dotfiles/bin/startgnomedesktop.sh"
 
 # #--------------------------------------------------
 # # anchor
@@ -166,9 +169,9 @@
 
 	if [ `hostname`="adev" ] ||[ `hostname`="alap-wsl" ] || [ `hostname` = "alap" ] || [ `hostname`="aserver" ] || [ `hostname`="anchor-wsl" ]; then
 		
-		alias desktop="~/repos/my-conf/win11/wsl2/desktop.sh" # Prepare xfce4 desktop for RDP Remote Access
-		alias desktopkde="~/repos/my-conf/win11/wsl2/desktopkde.sh" # Prepare xfce4 desktop for RDP Remote Access
-		alias godev="cd ~/repos/my-conf"
+		alias rdpdesktop="~/repos/my-conf/win11/wsl2/desktop.sh" # Prepare xfce4 desktop for RDP Remote Access
+		alias kdedesktop="~/repos/my-conf/win11/wsl2/desktopkde.sh" # Prepare xfce4 desktop for RDP Remote Access
+		alias mydesktop="~/.dotfiles/sh/xfdesktop.sh"
 	fi
 # Ubuntu 
 	if [ `hostname` = "alap" ] || [ `hostname` = "aserver-wsl" ] || [ `hostname` = "anchor-wsl " ] || [ `hostname` = "achromebook" ]; then
