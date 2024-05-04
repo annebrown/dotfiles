@@ -61,7 +61,7 @@ export  PATH=$PATH:~/.dotfiles/bash/sh
 # 
 #	General
 	alias gterm='gnome-terminal --title="$USER@$HOSTNAME" &'
-	alias xfterm='xfce4-terminal --title="$USER@$HOSTNAME" &'
+	alias myterm='xfce4-terminal --title="$USER@$HOSTNAME" &'
 	alias vimhelp="vim note:help"
 	alias ping3='ping -c 3'
 	alias ping3g='ping -c 3 google.com'
@@ -171,7 +171,7 @@ export  PATH=$PATH:~/.dotfiles/bash/sh
 		
 		alias rdpdesktop="~/repos/my-conf/win11/wsl2/desktop.sh" # Prepare xfce4 desktop for RDP Remote Access
 		alias kdedesktop="~/repos/my-conf/win11/wsl2/desktopkde.sh" # Prepare xfce4 desktop for RDP Remote Access
-		alias mydesktop="~/.dotfiles/sh/xfdesktop.sh"
+		alias mydesktop="~/.dotfiles/sh/xfce4-desktop.sh"
 	fi
 # Ubuntu 
 	if [ `hostname` = "alap" ] || [ `hostname` = "aserver-wsl" ] || [ `hostname` = "anchor-wsl " ] || [ `hostname` = "achromebook" ]; then
