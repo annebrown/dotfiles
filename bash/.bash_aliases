@@ -167,14 +167,13 @@ export  PATH=$PATH:~/.dotfiles/bash/sh
 # Operating Systems
 #--------------------------------------------------
 
-	if [ `hostname`="adev" ] ||[ `hostname`="alap-wsl" ] || [ `hostname` = "alap" ] || [ `hostname`="aserver" ] || [ `hostname`="anchor-wsl" ]; then
+	# if [ `hostname`="adev" ] ||[ `hostname`="alap-wsl" ] || [ `hostname` = "alap" ] || [ `hostname`="aserver" ] || [ `hostname`="anchor-wsl" ]; then
 		
-		alias rdpdesktop="~/repos/my-conf/win11/wsl2/desktop.sh" # Prepare xfce4 desktop for RDP Remote Access
-		alias kdedesktop="~/repos/my-conf/win11/wsl2/desktopkde.sh" # Prepare xfce4 desktop for RDP Remote Access
-		alias mydesktop="~/.dotfiles/sh/xfce4-desktop.sh"
-		export WAYLAND_DISPLAY=':1.0'
-		export DISPLAY=':1.0'
-	fi
+		# alias rdpdesktop="~/repos/my-conf/win11/wsl2/desktop.sh" # Prepare xfce4 desktop for RDP Remote Access
+		# alias kdedesktop="~/repos/my-conf/win11/wsl2/desktopkde.sh" # Start KDE Desktop
+		# export WAYLAND_DISPLAY=':1.0'
+		# export DISPLAY=':2.0'
+	# fi
 # Ubuntu 
 	if [ `hostname` = "alap" ] || [ `hostname` = "aserver-wsl" ] || [ `hostname` = "anchor-wsl " ] || [ `hostname` = "achromebook" ]; then
 		alias cdcronjobs='cd /f/etc/crontab'
