@@ -1,6 +1,8 @@
 <!-- Basic Github README.MD Header -->
- <div style="text-align: right;"> 
- <a href="https://annebrown.ca"><img src="img/logo.svg" width="20"/></a> annebrown.ca</div><div style="text-align: right;"><small><a href="https://github.com/annebrown/?tab=repositories" >MyRepos</a>/dotfiles/README.md</small></div>
+<p width="100%"><span style="text-align: left;"> 
+ <a href="https://annebrown.ca" style="font-size: 5;"><img src="img/logo.svg" width="20"/></a> annebrown.ca</span>        <span style="text-align: right; "><small><a href="https://github.com/annebrown/?tab=repositories" >MyRepos</a>/dotfiles/README.md</small></span>
+
+</p>
 <!-- End of Header -->
 
 # Configure Dev Env
