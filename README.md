@@ -1,9 +1,23 @@
 <!-- Basic Github README.MD Header -->
-<p width="100%"><span style="text-align: left;"> 
- <a href="https://annebrown.ca" style="font-size: 5;"><img src="img/logo.svg" width="20"/></a> annebrown.ca</span>        <span style="text-align: right; "><small><a href="https://github.com/annebrown/?tab=repositories" >MyRepos</a>/dotfiles/README.md</small></span>
-
+---
+<p width="100%">
+  <div width="25%">
+    <a href="https://annebrown.ca" aligh="left">
+      <img src="img/logo.svg" width="20"/> 
+      annebrown.ca
+    </a>
+  </div>
+  <div width="75%">
+    <small>
+      <a href="https://github.com/annebrown/?tab=repositories">MyRepos</a>
+      /dotfiles/README.md
+    </small>
+  </div>
 </p>
 <!-- End of Header -->
+
+
+
 
 # Configure Dev Env
 
