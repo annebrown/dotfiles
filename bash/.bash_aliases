@@ -67,7 +67,7 @@ export  PATH=$PATH:~/.dotfiles/bash/sh
 	alias ping3g='ping -c 3 google.com'
 	alias lal='ls -al'
 	alias la='ls -a'
-	alias envd='env|grep DISPLAY'
+	alias envd='env|grep DISPLAY && env|grep DESKTOP'
 
 # #--------------------------------------------------
 # # browndomain.com 
