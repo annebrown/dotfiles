@@ -31,7 +31,7 @@ Inludes stack, host, OS, app and desktop flavor overrides.
 
 Pulls in scripts for starting required services and apps.   
 
-This repo contains public config stuff.  Private config stuff is pulled from a separate repo.
+This repo contains public config stuff.  Private config stuff is sourced from a separate repo.
 
 # Usage
 
@@ -46,8 +46,7 @@ $ git clone https://github.com/annebrown/dotfiles-priv.git ~/.dotfiles-priv
 Config
 
 ```bash
-$ stow -d .dotfiles bash
-$ stow -d .dotfiles vim
+$ stow -d .dotfiles bash vim
 $ stow -d dotfiles-priv pkg1 pkg2 pkg3 ...
 ```
 
