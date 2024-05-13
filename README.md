@@ -14,7 +14,7 @@
 
 ## Description
 
-New host config (Android, Chromebook, Win11, RasPi, xOS, iOS).  
+New linux host config (Android, Chromebook, Win11, RasPi, xOS, iOS).  
 
 Inludes stack, host, OS, app and desktop flavor overrides. 
 
