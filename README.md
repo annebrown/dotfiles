@@ -1,22 +1,16 @@
-<!-- Basic Github README.MD Header -->
-<p width="100%">
-  <div width="25%">
-    <a href="https://annebrown.ca" aligh="left">
-      <img src="img/logo.svg" width="20"/> 
-      annebrown.ca
-    </a>
-  </div>
-  <div width="75%">
-    <small>
-      <a href="https://github.com/annebrown/?tab=repositories">MyRepos</a>
-      /dotfiles/README.md
-    </small>
-  </div>
-</p>
+
+
+
+<!-- Basic Github Header: annebrown.ca -->
+<a href="https://annebrown.ca"><img src="static/img/logo-ab.png" width="20" style="text-decoration: none;"/></a>annebrown.ca  
+<sub><sub><a href="https://github.com/annebrown/?tab=repositories">
+    My Repos:</a> <a href="https://github.com/annebrown/dotfiles/">dotfiles</a>README.md
+</sub></sub>
+
+---
 <!-- End of Header -->
 
-
-
+# Linux Host Config
 
 # Configure Dev Env
 
