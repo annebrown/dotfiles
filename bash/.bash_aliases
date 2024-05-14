@@ -20,8 +20,10 @@
 # Host config:
 #
 # 	Use with GNUStow:
-#		1. Clone repos to ~/.dotfiles
-#		2. $ stow -d ~/.dotfiles bash vim 
+#		1. Clone repos to ~/.dotfiles and ~/.dotfiles-priv
+#		2. $ sudo apt install -y stow
+#		2. $ stow -d ~/.dotfiles bash vim sh
+#		3. $ stow -d ~/.dotfiles-priv pkg1 pkg2 ...
 #  
 #---------------------------------------
 

@@ -1,13 +1,4 @@
-<!-- Basic Github Header: annebrown.ca -->
-<a href="https://www.annebrown.ca"><img src="static/img/logo-ab.png" width="20" style="text-decoration: none;"/></a>annebrown.ca  
-<sub><sub><a href="https://github.com/annebrown/?tab=repositories">
-    My Repos:</a> <a href="https://github.com/annebrown/dotfiles/">dotfiles/</a>README.md
-</sub></sub>
-
----
-<!-- End of Header -->
-
-# Configure Dev Env
+r Configure Dev Env
 
 ## Description
 
