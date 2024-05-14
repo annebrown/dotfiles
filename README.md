@@ -1,6 +1,3 @@
-
-
-
 <!-- Basic Github Header: annebrown.ca -->
 <a href="https://www.annebrown.ca"><img src="static/img/logo-ab.png" width="20" style="text-decoration: none;"/></a>annebrown.ca  
 <sub><sub><a href="https://github.com/annebrown/?tab=repositories">
@@ -20,7 +17,8 @@ Inludes stack, host, OS, app and desktop flavor overrides.
 
 Pulls in scripts for starting required services and apps.   
 
-This repo contains public config stuff.  Private config stuff is sourced from separate repos.
+> [!NOTE]
+> This repo contains public config stuff.  Private config stuff is sourced from separate repos.
 
 ## Usage
 
