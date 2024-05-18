@@ -1,24 +1,22 @@
 <!-- Basic Github Header: annebrown.ca -->
 <div style="text-align: right">
 <a href="https://www.annebrown.ca">
-	<img src="static/img/logo-ab.png"  width="20" style="text-decoration: none;">
-	</a>annebrown.ca </div>
-<div style="text-align: right"><sub><sub><a href="https://github.com/annebrown/?tab=repositories">
+	<img src="static/img/logo-ab.png"  width="30" style="text-decoration: none;"></a>annebrown.ca </div>
+<div style="text-align: right"><sub><sub>
+    <a href="https://github.com/annebrown/?tab=repositories">
     My Repos:</a> <a href="https://github.com/annebrown/dotfiles/">/dotfiles/</a>README.md
 </sub></sub></div>
 
 ---
 <!-- End of Header -->
 
-# Configure Dev Env
+# Config Dev Env
 
 ## Description
 
-New linux host config on Android, Chromebook, Win11, RasPi, xOS, and iOS.  
+New linux host config on Android, Chromebook, Win11, RasPi, xOS, and iOS.  See [Create New Dev Env](https://github.com/annebrown/docs-priv/workflows/new-host-config/README.md).
 
-Inludes project, stack, host, OS, app and desktop-flavor overrides. 
-
-Pulls in scripts for starting required services and apps.   
+Inludes project, stack, host, OS, app and desktop-flavor overrides.  Pulls in scripts for starting required services and apps.  
 
 > [!NOTE]
 > This repo contains public config stuff.  Private config stuff is sourced from separate repos.
@@ -40,11 +38,6 @@ $ stow -d .dotfiles bash vim
 $ stow -d dotfiles-priv pkg1-priv pkg2-oriv pkg3-priv ...
 ```
 
-## Next Steps
-
-- [git config](https://github.com/annebrown/docs-priv/oses/linux/new-host-config/README.md)
-
-- [ssh config](https://github.com/annebrown/docs-priv/oses/linux/ssh/ConfigureSSH.md)
 # Related Links
 
 [GNU Stow](https://www.gnu.org/software/stow/)
