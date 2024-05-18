@@ -14,7 +14,7 @@
 
 ## Description
 
-New linux host config on Android, Chromebook, Win11, RasPi, xOS, and iOS.  See [Create New Dev Env](https://annebrown.github.com/annebrown/docs-priv/workflows/new-dev-envs/README.md).
+New linux host config on Android, Chromebook, Win11, RasPi, xOS, and iOS.  See [Create New Dev Env](https://annebrown.github.com/annebrown/docs-priv/blob/master/workflows/new-dev-envs/README.md).
 
 Inludes project, stack, host, OS, app and desktop-flavor overrides.  Pulls in scripts for starting required services and apps.  
 
