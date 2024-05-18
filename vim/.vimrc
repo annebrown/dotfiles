@@ -1,32 +1,21 @@
 "---------------------------------------
 "
-" Repo: git@github.com:annebrown/dotfiles.git
+" Repo: https:/github.com/annebrown/dotfiles.git
 " Filename:	/vim/.vimrc
-" Doc: /README.md
 "
 "---------------------------------------
 "
-" My fav vim shortcuts
+" Vim Config
 "
 " Highlights:
 " esc - mapped to jj
 " ;s - backup filename_date_time_backup
 "
-
-" Windows 11 WSL2
-"   Append to C:\Program Files (x86)\Vim\_vimrc
-"		source $MY_REPOS\dotfiles\vim\.vimrc
-
-" Load plugins
-
-"execute pathogen#infect() 
-
-set dictionary += "~\Google/ Drive\.config\rcfiles\dict\words"
 set nocompatible  " use vim defaults
 set ls=2          " allways show status line
-set tabstop=4       " numbers of spaces of tab character
-set shiftwidth=4   " numbers of spaces to (auto)indent
-set scrolloff=3      " keep 3 lines when scrolling
+set tabstop=4     " numbers of spaces of tab character
+set shiftwidth=4  " numbers of spaces to (auto)indent
+set scrolloff=3     " keep 3 lines when scrolling
 set showcmd         " display incomplete commands
 set hlsearch        " highlight searches
 set incsearch       " do incremental searching

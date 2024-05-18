@@ -4,7 +4,7 @@
 	<img src="static/img/logo-ab.png"  width="30" style="text-decoration: none;"></a>annebrown.ca </div>
 <div style="text-align: right"><sub><sub>
     <a href="https://github.com/annebrown/?tab=repositories">
-    My Repos:</a> <a href="https://github.com/annebrown/dotfiles/">/dotfiles/</a>README.md
+    My Repos:</a> <a href="https://github.com/annebrown/dotfiles/">/dotfiles/</a><a href="README.md">README.md</a>
 </sub></sub></div>
 
 ---
@@ -18,8 +18,9 @@ New linux host config on Android, Chromebook, Win11, RasPi, xOS, and iOS.  See [
 
 Inludes project, stack, host, OS, app and desktop-flavor overrides.  Pulls in scripts for starting required services and apps.  
 
-> [!NOTE]
+
 > This repo contains public config stuff.  Private config stuff is sourced from separate repos.
+
 
 ## Usage
 
