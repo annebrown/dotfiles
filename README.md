@@ -1,7 +1,7 @@
 <!-- Basic Github Header: annebrown.ca -->
 <div style="text-align: right">
 <a href="https://www.annebrown.ca">
-	<img src="static/img/logo-ab.png"  width="30" style="text-decoration: none;"></a>annebrown.ca </div>
+	<img src="static/img/logo-ab.png"  width="25" style="text-decoration: none;"></a>annebrown.ca </div>
 <div style="text-align: right"><sub><sub>
     <a href="https://github.com/annebrown/?tab=repositories">
     Repo:</a> <a href="https://github.com/annebrown/dotfiles/">/dotfiles/</a><a href="README.md">README.md</a>
@@ -10,7 +10,7 @@
 ---
 <!-- End of Header -->
 
-# Config Dev Env
+# Dev Env Config
 
 ## Description
 
