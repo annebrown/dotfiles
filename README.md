@@ -28,7 +28,7 @@ Inludes project, stack, host, OS, app and desktop-flavor overrides.  Pulls in sc
 Clone Repos:
 
 ```bash
-
+$ sudo apt install -y stow
 $ git clone https://github.com/annebrown/dotfiles.git ~/.dotfiles
 $ git clone https://github.com/annebrown/dotfiles-priv.git ~/.dotfiles-priv
 
