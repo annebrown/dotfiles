@@ -19,7 +19,7 @@ New linux host config on Android, Chromebook, Win11, RasPi, xOS, and iOS.  See [
 Inludes project, stack, host, OS, app and desktop-flavor overrides.  Pulls in scripts for starting required services and apps.  
 
 
-> This repo contains public config stuff.  Private config stuff is sourced from separate repos.
+> This repo contains public config stuff.  Private config data is sourced from separate repos.
 
 
 ## Usage
