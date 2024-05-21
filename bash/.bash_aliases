@@ -176,12 +176,12 @@ export  PATH=$PATH:~/.dotfiles/bash/sh
 		# export WAYLAND_DISPLAY=':1.0'
 		# export DISPLAY=':2.0'
 	# fi
-# Ubuntu 
-	if [ `hostname` = "alap" ] || [ `hostname` = "aserver-wsl" ] || [ `hostname` = "anchor-wsl " ] || [ `hostname` = "achromebook" ]; then
-		alias cdcronjobs='cd /f/etc/crontab'
-		# xhost local:anne > /dev/null # Allow crontab to access X display
-		alias king-wol="powerwake 04:54:53:01:AC:B1"
-	fi
+# # Ubuntu 
+# 	if [ `hostname` = "alap" ] || [ `hostname` = "aserver-wsl" ] || [ `hostname` = "anchor-wsl " ] || [ `hostname` = "achromebook" ]; then
+# 		alias cdcronjobs='cd /f/etc/crontab'
+# 		# xhost local:anne > /dev/null # Allow crontab to access X display
+# 		alias king-wol="powerwake 04:54:53:01:AC:B1"
+# 	fi
 # iOS
 	if [ `hostname` = "aiPad" ] || [ `hostname` = "aiphone" ]; then
 		alias gocloud="cd ~/Documents/cloud"
