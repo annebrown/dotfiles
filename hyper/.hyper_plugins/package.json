@@ -6,8 +6,5 @@
   "repository": "vercel/hyper",
   "license": "MIT",
   "homepage": "https://hyper.is",
-  "dependencies": {
-    "hyperborder": "latest",
-    "hyper-rename-tab": "latest"
-  }
+  "dependencies": {}
 }

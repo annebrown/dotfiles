@@ -129,6 +129,13 @@ module.exports = {
         screenReaderMode: false,
         // set to true to preserve working directory when creating splits or tabs
         preserveCWD: true,
+        // Plugin Config: hyperTranslucent 
+        hyperTransparent: {
+            backgroundColor: '#4b4',
+            opacity: 0.2,
+            // vibrancy: '' // ['', 'dark', 'medium-light', 'ultra-dark']
+        } 
+    },
         // for advanced config flags please refer to https://hyper.is/#cfg
     },
     // a list of plugins to fetch and install from npm
@@ -137,7 +144,7 @@ module.exports = {
     //   `hyperpower`
     //   `@company/project`
     //   `project#1.0.1`
-    plugins: ["hyperborder", "hyper-rename-tab"],
+    plugins: ["hyperborder", "hyper-rename-tab", "hyper-transparent"],
     // in development, you can create a directory under
     // `~/.hyper_plugins/local/` and include it here
     // to load it and avoid it being `npm install`ed
@@ -145,6 +152,6 @@ module.exports = {
     keymaps: {
     // Example
     // 'window:devtools': 'cmd+alt+o',
-    },
-};
+    };
+}
 //# sourceMappingURL=config-default.js.map
