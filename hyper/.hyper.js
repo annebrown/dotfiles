@@ -130,11 +130,11 @@ module.exports = {
         // set to true to preserve working directory when creating splits or tabs
         preserveCWD: true,
         // Plugin Config: hyperTranslucent 
-        hyperTransparent: {
-            backgroundColor: '#4b4',
-            opacity: 0.2,
-            // vibrancy: '' // ['', 'dark', 'medium-light', 'ultra-dark']
-        } 
+        // hyperTransparent: {
+        //     backgroundColor: '#4b4',
+        //     opacity: 0.8,
+        //     // vibrancy: '' // ['', 'dark', 'medium-light', 'ultra-dark']
+        // } 
     },
         // for advanced config flags please refer to https://hyper.is/#cfg
     },
