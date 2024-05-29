@@ -63,7 +63,7 @@ export  PATH=$PATH:~/.dotfiles/bash/sh
 # 
 #	General
 	alias gterm='gnome-terminal --title="$USER@$HOSTNAME" &'
-	alias myterm='xfce4-terminal --title="$USER@$HOSTNAME" &'
+	alias myterm='export DISPLAY=:0.0 && hyper'
 	alias vimhelp="vim note:help"
 	alias ping3='ping -c 3'
 	alias ping3g='ping -c 3 google.com'
