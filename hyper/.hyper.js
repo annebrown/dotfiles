@@ -4,6 +4,14 @@
 // See https://hyper.is#cfg for all currently supported options.
 module.exports = {
     config: {
+        // Ny Config--------------------------
+        hyperBorder: {
+            borderColors: ['#fc1da7', '#fba506'],
+            // borderColors: ['random', 'random'],
+            borderWidth: '4px',
+        },
+        opacity: '0.4',
+        // -------------------------------------
         // choose either `'stable'` for receiving highly polished,
         // or `'canary'` for less polished but more frequent updates
         updateChannel: 'stable',
@@ -26,7 +34,7 @@ module.exports = {
         // `'BEAM'` for |, `'UNDERLINE'` for _, `'BLOCK'` for █
         cursorShape: 'BLOCK',
         // set to `true` (without backticks and without quotes) for blinking cursor
-        cursorBlink: false,
+        cursorBlink: 'tue',
         // color of the text
         foregroundColor: '#fff',
         // terminal background color
@@ -92,7 +100,7 @@ module.exports = {
         //
         // Cygwin
         // - Example: `C:\\cygwin64\\bin\\bash.exe`
-        shell: '',
+        shell: '/bin/bash',
         // for setting shell arguments (i.e. for using interactive shellArgs: `['-i']`)
         // by default `['--login']` will be used
         shellArgs: ['--login'],
@@ -128,23 +136,16 @@ module.exports = {
         // set to true to enable screen reading apps (like NVDA) to read the contents of the terminal
         screenReaderMode: false,
         // set to true to preserve working directory when creating splits or tabs
-        preserveCWD: true,
-        // Plugin Config: hyperTranslucent 
-        // hyperTransparent: {
-        //     backgroundColor: '#4b4',
-        //     opacity: 0.8,
-        //     // vibrancy: '' // ['', 'dark', 'medium-light', 'ultra-dark']
-        // } 
+        preserveCWD: true
     },
-        // for advanced config flags please refer to https://hyper.is/#cfg
-    },
+
     // a list of plugins to fetch and install from npm
     // format: [@org/]project[#version]
     // examples:
     //   `hyperpower`
     //   `@company/project`
     //   `project#1.0.1`
-    plugins: ["hyperborder", "hyper-rename-tab", "hyper-transparent"],
+    plugins: ['hyperborder', 'hyper-rename-tab', 'hyper-save-window-state', 'hyper-opacity'],
     // in development, you can create a directory under
     // `~/.hyper_plugins/local/` and include it here
     // to load it and avoid it being `npm install`ed
@@ -152,6 +153,6 @@ module.exports = {
     keymaps: {
     // Example
     // 'window:devtools': 'cmd+alt+o',
-    };
-}
+    }
+};
 //# sourceMappingURL=config-default.js.map
