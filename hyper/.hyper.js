@@ -4,17 +4,10 @@
 // See https://hyper.is#cfg for all currently supported options.
 module.exports = {
     config: {
-        // Ny Config--------------------------
-        hyperBorder: {
-            borderColors: ['#fc1da7', '#fba506'],
-            // borderColors: ['random', 'random'],
-            borderWidth: '4px',
-        },
-        opacity: '0.4',
-        // -------------------------------------
         // choose either `'stable'` for receiving highly polished,
         // or `'canary'` for less polished but more frequent updates
         updateChannel: 'stable',
+
         // default font size in pixels for all tabs
         fontSize: 12,
         // font family with optional fallbacks
@@ -23,20 +16,28 @@ module.exports = {
         fontWeight: 'normal',
         // font weight for bold characters: 'normal' or 'bold'
         fontWeightBold: 'bold',
+
         // line height as a relative unit
         lineHeight: 1,
         // letter spacing as a relative unit
         letterSpacing: 0,
         // terminal cursor background color and opacity (hex, rgb, hsl, hsv, hwb or cmyk)
+
+        // Ny Mod--------------------------
         cursorColor: 'rgba(248,28,229,0.8)',
+        // --------------------------------
+
         // terminal text color under BLOCK cursor
         cursorAccentColor: '#000',
         // `'BEAM'` for |, `'UNDERLINE'` for _, `'BLOCK'` for █
         cursorShape: 'BLOCK',
         // set to `true` (without backticks and without quotes) for blinking cursor
         cursorBlink: 'tue',
+
         // color of the text
         foregroundColor: '#fff',
+
+        // Ny Mods--------------------------
         // terminal background color
         // opacity is only supported on macOS
         backgroundColor: '#000',
@@ -44,14 +45,18 @@ module.exports = {
         selectionColor: 'rgba(248,28,229,0.3)',
         // border color (window, tabs)
         borderColor: '#333',
+        // --------------------------------
+
         // custom CSS to embed in the main window
         css: '',
         // custom CSS to embed in the terminal window
         termCSS: '',
         // set custom startup directory (must be an absolute path)
+
         workingDirectory: '',
         // if you're using a Linux setup which show native menus, set to false
         // default: `true` on Linux, `true` on Windows, ignored on macOS
+
         showHamburgerMenu: '',
         // set to `false` (without backticks and without quotes) if you want to hide the minimize, maximize and close buttons
         // additionally, set to `'left'` if you want them on the left, like in Ubuntu
@@ -59,6 +64,7 @@ module.exports = {
         showWindowControls: '',
         // custom padding (CSS format, i.e.: `top right bottom left`)
         padding: '12px 14px',
+
         // the full list. if you're going to provide the full color palette,
         // including the 6 x 6 color cubes and the grayscale map, just provide
         // an array here instead of a color map object
@@ -82,6 +88,7 @@ module.exports = {
             limeGreen: '#32CD32',
             lightCoral: '#F08080',
         },
+
         // the shell to run when spawning a new session (i.e. /usr/local/bin/fish)
         // if left empty, your system's login shell will be used by default
         //
@@ -100,18 +107,23 @@ module.exports = {
         //
         // Cygwin
         // - Example: `C:\\cygwin64\\bin\\bash.exe`
+
+        // Ny Mods--------------------------
         shell: '/bin/bash',
         // for setting shell arguments (i.e. for using interactive shellArgs: `['-i']`)
         // by default `['--login']` will be used
         shellArgs: ['--login'],
         // for environment variables
         env: {},
+        // Ny Mods--------------------------
+
         // Supported Options:
         //  1. 'SOUND' -> Enables the bell as a sound
         //  2. false: turns off the bell
         bell: 'SOUND',
         // An absolute file path to a sound file on the machine.
         // bellSoundURL: '/path/to/sound/file',
+
         // if `true` (without backticks and without quotes), selected text will automatically be copied to the clipboard
         copyOnSelect: false,
         // if `true` (without backticks and without quotes), hyper will be set as the default protocol client for SSH
@@ -136,7 +148,26 @@ module.exports = {
         // set to true to enable screen reading apps (like NVDA) to read the contents of the terminal
         screenReaderMode: false,
         // set to true to preserve working directory when creating splits or tabs
-        preserveCWD: true
+        preserveCWD: true,
+
+        // Ny Mods--------------------------
+        hyperBorder: {
+            borderColors: ['#fc1da7', '#fba506'],
+            // borderColors: ['random', 'random'],
+            borderWidth: '4px',
+        },
+        opacity: '0.4',
+       // hyperTabs: {
+            // trafficButtons: true,
+            //border: true,
+            // tabIcons: true,
+        //}
+        hyperStatusLine: {
+            dirtyColor: 'salmon',
+            aheadColor: 'ivory',
+            footerTransparent: false,
+          }
+        // -------------------------------------
     },
 
     // a list of plugins to fetch and install from npm
@@ -145,7 +176,20 @@ module.exports = {
     //   `hyperpower`
     //   `@company/project`
     //   `project#1.0.1`
-    plugins: ['hyperborder', 'hyper-rename-tab', 'hyper-save-windowstate', 'hyper-opacity', 'hyper-search'],
+
+    // Ny Mods--------------------------
+    plugins: [
+        'hyperborder',
+        'hyper-rename-tab',
+        'hyper-save-windowstate',
+        'hyper-opacity',
+        'hyper-search',
+        'hyper-tabs-enhanced',
+        "hyper-statusline",
+        "hyper-snazzy"
+    ],
+    // Ny Mods--------------------------
+
     // in development, you can create a directory under
     // `~/.hyper_plugins/local/` and include it here
     // to load it and avoid it being `npm install`ed
