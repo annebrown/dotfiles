@@ -40,7 +40,7 @@ module.exports = {
         // Ny Mods--------------------------
         // terminal background color
         // opacity is only supported on macOS
-        backgroundColor: '#000',
+        backgroundColor: '#000000',
         // terminal selection color
         selectionColor: 'rgba(248,28,229,0.3)',
         // border color (window, tabs)
@@ -63,7 +63,7 @@ module.exports = {
         // default: `true` (without backticks and without quotes) on Windows and Linux, ignored on macOS
         showWindowControls: '',
         // custom padding (CSS format, i.e.: `top right bottom left`)
-        padding: '12px 14px',
+        padding: '6 px 7 px',
 
         // the full list. if you're going to provide the full color palette,
         // including the 6 x 6 color cubes and the grayscale map, just provide
@@ -150,13 +150,13 @@ module.exports = {
         // set to true to preserve working directory when creating splits or tabs
         preserveCWD: true,
 
-        // Ny Mods--------------------------
+        // My Mods--------------------------
         hyperBorder: {
             borderColors: ['#fc1da7', '#fba506'],
             // borderColors: ['random', 'random'],
             borderWidth: '4px',
         },
-        opacity: '0.4',
+        //opacity: '0.4',
        // hyperTabs: {
             // trafficButtons: true,
             //border: true,
@@ -182,11 +182,10 @@ module.exports = {
         'hyperborder',
         'hyper-rename-tab',
         'hyper-save-windowstate',
-        'hyper-opacity',
         'hyper-search',
         'hyper-tabs-enhanced',
         "hyper-statusline",
-        "hyper-snazzy"
+        "hyperdocs"
     ],
     // Ny Mods--------------------------
 
