@@ -18,7 +18,7 @@ New dev env config on Linux,   Android, Chromebook, Win11, RasPi, xOS, and iOS. 
 Inludes project, stack, host, OS, app and desktop-flavor overrides.  Pulls in scripts for starting required services and apps.  
 
 
-> This repo contains public config stuff.  Private config data is sourced from separate repos.
+> This repo contains public config stuff.  Private config data (```/etc/hosts```, ```.ssh/config```, NAS config, etc.) is sourced from separate repos.
 
 
 ## Usage
