@@ -184,9 +184,8 @@ module.exports = {
         'hyper-save-windowstate',
         'hyper-search',
         'hyper-tabs-enhanced',
-        "hyper-statusline",
         "hyperdocs",
-        "hyperline"
+        "hyper-statusline"
     ],
     // Ny Mods--------------------------
 
