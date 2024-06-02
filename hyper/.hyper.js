@@ -185,7 +185,8 @@ module.exports = {
         'hyper-search',
         'hyper-tabs-enhanced',
         "hyper-statusline",
-        "hyperdocs"
+        "hyperdocs",
+        "hyperline"
     ],
     // Ny Mods--------------------------
 
