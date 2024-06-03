@@ -34,8 +34,8 @@ $ git clone https://github.com/annebrown/dotfiles-priv.git ~/.dotfiles-priv
 Link configs:
 
 ```bash
-$ stow -d .dotfiles bash vim vscode hyper git
-$ stow -d dotfiles-priv pkg1-priv pkg2-oriv pkg3-priv ...
+$ stow -d .dotfiles bash vim vscode hyper 
+$ stow -d dotfiles-priv git pkg2-oriv pkg3-priv ...
 ```
 
 # Related Links
