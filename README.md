@@ -35,7 +35,7 @@ Link configs:
 
 ```bash
 $ stow -d .dotfiles bash vim vscode hyper 
-$ stow -d dotfiles-priv git pkg2-oriv pkg3-priv ...
+$ stow -d dotfiles-priv git vscode pkg3-priv ...
 ```
 
 # Related Links
