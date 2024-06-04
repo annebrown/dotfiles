@@ -154,9 +154,9 @@ module.exports = {
         hyperBorder: {
             borderColors: ['#fc1da7', '#fba506'],
             // borderColors: ['random', 'random'],
-            borderWidth: '4px',
+            borderWidth: '3px',
         },
-        //opacity: '0.4',
+    opacity: '0.4',
        // hyperTabs: {
             // trafficButtons: true,
             //border: true,
