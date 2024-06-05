@@ -155,12 +155,14 @@ module.exports = {
             // borderColors: ['random', 'random'],
             borderWidth: '3px',
         },
-    opacity: '0.3', // One can always hope
-       // hyperTabs: {
+    opacity: '0.03', // One can always hope
+       hyperTabs: {
             // trafficButtons: true,
-            //border: true,
+            border: true,
             // tabIcons: true,
-        //}
+            tabIconsColored: true,
+            activityColor: 'orange'
+        },
         hyperStatusLine: {
             dirtyColor: 'salmon',
             aheadColor: 'ivory',
@@ -184,7 +186,8 @@ module.exports = {
         'hyper-search',
         'hyper-tabs-enhanced',
         "hyperdocs",
-        "hyper-statusline"
+        "hyper-statusline",
+        "hyper-hide-title",
     ],
     // Ny Mods--------------------------
 
