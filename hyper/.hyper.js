@@ -115,7 +115,6 @@ module.exports = {
         shellArgs: ['--login'],
         // for environment variables
         env: {},
-        // Ny Mods--------------------------
 
         // Supported Options:
         //  1. 'SOUND' -> Enables the bell as a sound
@@ -156,7 +155,7 @@ module.exports = {
             // borderColors: ['random', 'random'],
             borderWidth: '3px',
         },
-    opacity: '0.4',
+    opacity: '0.3', // One can always hope
        // hyperTabs: {
             // trafficButtons: true,
             //border: true,
