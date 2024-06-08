@@ -1,14 +1,14 @@
-"---------------------------------------
+"------------------------------------------------
 "
-" Repo: https:/github.com/annebrown/dotfiles.git
-" Filename:	/vim/.vimrc
+" Filename: 	.vimrc
+" Path:		~/.dotfiles/vim/
+" Repo: 	https:/github.com/annebrown/dotfiles.git
+" Usage:	anne@devy:~/.dotfiles: $ stow vim
 "
-"---------------------------------------
+"-----------------------------------------------
 "
 " Vim Config
 "
-" Highlights:
-" esc - mapped to jj
 " ;s - backup filename_date_time_backup
 "
 set nocompatible  " use vim defaults
@@ -99,8 +99,6 @@ map ;s :up \| saveas! %:p<C-R>=strftime("_%y-%m-%d_%H\%M\%S")<CR>_backup \| 3sle
 " saves view (attn: write alone does not save view)
 " thus better than generic copy at OS level,
 " but be careful when split editing
-
-
 
 " Remap [esc] to jj
 inoremap jj <ESC>
