@@ -163,11 +163,11 @@ module.exports = {
             tabIconsColored: true,
             activityColor: 'orange'
         },
-        hyperStatusLine: {
-            dirtyColor: 'salmon',
-            aheadColor: 'ivory',
-            footerTransparent: false,
-          }
+        //hyperStatusLine: {
+        //    dirtyColor: 'salmon',
+        //    aheadColor: 'ivory',
+        //    footerTransparent: false,
+        //  }
         // -------------------------------------
     },
 
@@ -186,7 +186,7 @@ module.exports = {
         'hyper-search',
         'hyper-tabs-enhanced',
         "hyperdocs",
-        "hyper-statusline",
+        //"hyper-statusline",
         "hyper-hide-title",
     ],
     // Ny Mods--------------------------

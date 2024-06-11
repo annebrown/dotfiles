@@ -70,6 +70,9 @@ export  PATH=$PATH:~/.dotfiles/bash/sh
 	alias lal='ls -al'
 	alias la='ls -a'
 	alias envd='env|grep DISPLAY && env|grep DESKTOP'
+	# Make terminal titles more informative
+	PROMPT_COMMAND='echo -ne "\033]0;${USER}@${HOSTNAME}: ${PWD/$HOME/~}\007"'
+
 
 # #--------------------------------------------------
 # # browndomain.com 
