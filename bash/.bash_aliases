@@ -19,31 +19,39 @@
 #
 # Host config:
 #
-# 	Use with GNUStow:
-#		1. Clone repos to ~/.dotfiles and ~/.dotfiles-priv
-#		2. $ sudo apt install -y stow
-#		2. $ stow -d ~/.dotfiles bash vim sh
-#		3. $ stow -d ~/.dotfiles-priv pkg1 pkg2 ...
+# 	Use with Stow:
+#		1. Clone repos to ~/.dotfiles & ~/.dotfiles-priv
+#		2. $ stow -d ~/.dotfiles bash hyper vim sh
+#		3. $ stow -d ~/.dotfiles-priv git vscode ssh pkg2 ...
 #  
 #---------------------------------------
 
 #---------------------------------------
-#  Repos
+# Editor
 #---------------------------------------
-
-	export PROJS="~/projects"   
-
-#---------------------------------------
-# Editors
-#---------------------------------------
-
-	export EDITOR='vim' # defaut editorA
+export EDITOR='vim' # defaut editor
 
 #---------------------------------------
 #  Script Path
 #---------------------------------------
-
 export  PATH=$PATH:~/.dotfiles/bash/sh
+
+#--------------------------------------------------
+# General Aliases
+#--------------------------------------------------
+	alias myterm='export DISPLAY=:0.0 && hyper'
+	alias ping3='ping -c 3'
+	alias ping3g='ping -c 3 google.com'
+
+	# Show DISPLAY & DESKTOP vars
+	alias envd='env|grep DISPLAY && env|grep DESKTOP'
+	# Make terminal titlebars more informative
+	PROMPT_COMMAND='echo -ne "\033]0;${USER}@${HOSTNAME}: ${PWD/$HOME/~}\007"'
+	# VSCode Shortcuts
+	alias godots="code ~/.Allthedotfiles-priv.code-workspace"
+	alias godocs="code ~/prod/docs-priv/docs-priv.code-workspace"
+	alias gohome="code ~/prod/home/home.code-workspace"
+	alias goangular="code ~/projects/angular/angular.code-workspace" 
 
 # #---------------------------------------
 # # LAMP stack
@@ -56,24 +64,7 @@ export  PATH=$PATH:~/.dotfiles/bash/sh
 	#   alias mysqlstart="sudo /usr/local/mysql/support-files/mysql.server start"
 	#   alias mysql="/usr/local/mysql/bin/mysql"
 	#   alias mysqladmin="/usr/local/mysql/bin/mysqladmin"
-
-#--------------------------------------------------
-# Cross-Platform Aliases
-#--------------------------------------------------
-# 
-#	General
-	alias gterm='gnome-terminal --title="$USER@$HOSTNAME" &'
-	alias myterm='export DISPLAY=:0.0 && hyper'
-	alias vimhelp="vim note:help"
-	alias ping3='ping -c 3'
-	alias ping3g='ping -c 3 google.com'
-	alias lal='ls -al'
-	alias la='ls -a'
-	alias envd='env|grep DISPLAY && env|grep DESKTOP'
-	# Make terminal titles more informative
-	PROMPT_COMMAND='echo -ne "\033]0;${USER}@${HOSTNAME}: ${PWD/$HOME/~}\007"'
-
-
+	#
 # #--------------------------------------------------
 # # browndomain.com 
 # #--------------------------------------------------
@@ -137,9 +128,12 @@ export  PATH=$PATH:~/.dotfiles/bash/sh
 	alias ssh-achromebook01=" ssh -p 22 anne@achromebook01"
 
 #--------------------------------------------------
-# adev
+# devs
 #--------------------------------------------------
-	alias ssh-adev="ssh -p 22 anne@dev"
+	alias ssh-adev="ssh -p 2222 anne@adev"
+	alias ssh-devy="ssh -p 22 anne@devy"
+	alias ssh-bossy="ssh -p 22 anne@bossy"
+	alias ssh-desky="ssh -p 22 anne@desky"
 
 # #--------------------------------------------------
 # # anchor
@@ -152,7 +146,7 @@ export  PATH=$PATH:~/.dotfiles/bash/sh
 # 	alias sshaws="ssh -i ~/.ssh/essi bitnami@aws-essi-prod-instance-0000"
 
 #--------------------------------------------------
-# Mobile App Development
+# Mobile App Dev
 #--------------------------------------------------
 # 
 #	WSL2
@@ -189,31 +183,31 @@ export  PATH=$PATH:~/.dotfiles/bash/sh
 	if [ `hostname` = "aiPad" ] || [ `hostname` = "aiphone" ]; then
 		alias gocloud="cd ~/Documents/cloud"
 	fi
-# xOS
-	if [ `hostname` = "king" ]; then	
-		# exports - king
-			export EDITOR="~/sh/mvim"	# make MacVim the default editor
-		# aliases - bash on king
-			 alias vbash="mvim ~/.bash_profile"
-			 alias cbash="cat ~/.bash_profile | grep alias"
-			 alias vvim="mvim ~/cloud/mobile/dev/rcfiles/.vimrc"
-			 alias rebash=". ~/.bash_profile"
-		# aliases - apps on king
-			alias clipboard="godropbox && mvim Clipboard.txt"
-		# aliases - apps - owncloud
-			alias owncloudstart="/Applications/ownCloud.app/Contents/MacOS/ownCloud --logwindow"
-		# aliases - apps - log
-			alias logs="open /Applications/Utilities/Console.app"
-		# aliases - apps - vim gui
-			alias mvim="~/sh/mvim"
-			alias smvim="sudo /Users/Anne/sh/mvim" # sudo mvim
-		# aliases - paths on king	
-			alias gowebapp="cd ~/Sites/WebApp"
-			alias gowebappt="cd ~/Sites/WebAppTest"
-			alias godropbox="cd /Users/Anne/Dropbox"
-			alias clipboard="godropbox && mvim Clipboard.txt"
-			alias gocloud="cd /Users/Anne/cloud"
-	fi
+# # xOS
+# 	if [ `hostname` = "king" ]; then	
+# 		# exports - king
+# 			export EDITOR="~/sh/mvim"	# make MacVim the default editor
+# 		# aliases - bash on king
+# 			 alias vbash="mvim ~/.bash_profile"
+# 			 alias cbash="cat ~/.bash_profile | grep alias"
+# 			 alias vvim="mvim ~/cloud/mobile/dev/rcfiles/.vimrc"
+# 			 alias rebash=". ~/.bash_profile"
+# 		# aliases - apps on king
+# 			alias clipboard="godropbox && mvim Clipboard.txt"
+# 		# aliases - apps - owncloud
+# 			alias owncloudstart="/Applications/ownCloud.app/Contents/MacOS/ownCloud --logwindow"
+# 		# aliases - apps - log
+# 			alias logs="open /Applications/Utilities/Console.app"
+# 		# aliases - apps - vim gui
+# 			alias mvim="~/sh/mvim"
+# 			alias smvim="sudo /Users/Anne/sh/mvim" # sudo mvim
+# 		# aliases - paths on king	
+# 			alias gowebapp="cd ~/Sites/WebApp"
+# 			alias gowebappt="cd ~/Sites/WebAppTest"
+# 			alias godropbox="cd /Users/Anne/Dropbox"
+# 			alias clipboard="godropbox && mvim Clipboard.txt"
+# 			alias gocloud="cd /Users/Anne/cloud"
+# 	fi
 
 #--------------------------------------------------
 # Scripts
@@ -227,7 +221,7 @@ export  PATH=$PATH:~/.dotfiles/bash/sh
 
 #--------------------------------------------------
 #
-# My prompts
+# PS1
 #
 #--------------------------------------------------
 #
