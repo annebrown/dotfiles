@@ -40,18 +40,28 @@ export  PATH=$PATH:~/.dotfiles/bash/sh
 # General Aliases
 #--------------------------------------------------
 	alias myterm='export DISPLAY=:0.0 && hyper'
+	
 	alias ping3='ping -c 3'
 	alias ping3g='ping -c 3 google.com'
 
-	# Show DISPLAY & DESKTOP vars
+	# Show vars: DISPLAY & DESKTOP 
 	alias envd='env|grep DISPLAY && env|grep DESKTOP'
-	# Make terminal titlebars more informative
-	PROMPT_COMMAND='echo -ne "\033]0;${USER}@${HOSTNAME}: ${PWD/$HOME/~}\007"'
+
 	# VSCode Shortcuts
 	alias godots="code ~/.Allthedotfiles-priv.code-workspace"
 	alias godocs="code ~/prod/docs-priv/docs-priv.code-workspace"
 	alias gohome="code ~/prod/home/home.code-workspace"
 	alias goangular="code ~/projects/angular/angular.code-workspace" 
+
+#--------------------------------------------------
+# Terminal Title
+#--------------------------------------------------
+# Automatic terminal titles
+PROMPT_COMMAND='echo -ne "\033]0;${USER}@${HOSTNAME}: ${PWD/$HOME/~}\007"'
+# Manually set title
+#	Function in .bashrc -> set-title()
+# 	Usage: set-title my new title
+
 
 # #---------------------------------------
 # # LAMP stack
@@ -176,7 +186,12 @@ export  PATH=$PATH:~/.dotfiles/bash/sh
 # # Ubuntu 
 # 	if [ `hostname` = "alap" ] || [ `hostname` = "aserver-wsl" ] || [ `hostname` = "anchor-wsl " ] || [ `hostname` = "achromebook" ]; then
 # 		alias cdcronjobs='cd /f/etc/crontab'
-# 		# xhost local:anne > /dev/null # Allow crontab to access X display
+# 		# xhost local:anne============== bash 24-06-13 07:13 ==============
+/usr/bin/env: ‘node’: No such file or directory
+[07:13:47] anne@bossy: ~/
+$ godocs
+[07:18:18] anne@bossy: ~/
+$  > /dev/null # Allow crontab to access X display
 # 		alias king-wol="powerwake 04:54:53:01:AC:B1"
 # 	fi
 # iOS
@@ -186,14 +201,12 @@ export  PATH=$PATH:~/.dotfiles/bash/sh
 # # xOS
 # 	if [ `hostname` = "king" ]; then	
 # 		# exports - king
-# 			export EDITOR="~/sh/mvim"	# make MacVim the default editor
-# 		# aliases - bash on king
-# 			 alias vbash="mvim ~/.bash_profile"
-# 			 alias cbash="cat ~/.bash_profile | grep alias"
-# 			 alias vvim="mvim ~/cloud/mobile/dev/rcfiles/.vimrc"
-# 			 alias rebash=". ~/.bash_profile"
-# 		# aliases - apps on king
-# 			alias clipboard="godropbox && mvim Clipboard.txt"
+# 			export EDITOR="~/sh/mvim"	# make MacVim the default editor============== bash 24-06-13 07:13 ==============
+/usr/bin/env: ‘node’: No such file or directory
+[07:13:47] anne@bossy: ~/
+$ godocs
+[07:18:18] anne@bossy: ~/
+$ d="godropbox && mvim Clipboard.txt"
 # 		# aliases - apps - owncloud
 # 			alias owncloudstart="/Applications/ownCloud.app/Contents/MacOS/ownCloud --logwindow"
 # 		# aliases - apps - log

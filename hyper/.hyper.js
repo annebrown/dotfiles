@@ -40,7 +40,7 @@ module.exports = {
         // Ny Mods--------------------------
         // terminal background color
         // opacity is only supported on macOS
-        backgroundColor: '#000000',
+        backgroundColor: '#190f16',
         // terminal selection color
         selectionColor: 'rgba(248,28,229,0.3)',
         // border color (window, tabs)
