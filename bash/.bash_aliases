@@ -56,12 +56,12 @@ export  PATH=$PATH:~/.dotfiles/bash/sh
 #--------------------------------------------------
 # Terminal Title
 #--------------------------------------------------
-# Automatic terminal titles
+# Automatic Terminal Titles
 PROMPT_COMMAND='echo -ne "\033]0;${USER}@${HOSTNAME}: ${PWD/$HOME/~}\007"'
-# Manually set title
-#	Function in .bashrc -> set-title()
-# 	Usage: set-title my new title
 
+# Manually Set Terminal Title
+#	See: set-title() function in .bashrc
+# 	Usage: set-title my new title
 
 # #---------------------------------------
 # # LAMP stack
