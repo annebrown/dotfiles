@@ -1,7 +1,16 @@
-# ~/.bashrc: executed by bash(1) for non-login shells.
-# see /usr/share/doc/bash/examples/startup-files (in the package bash-doc)
-# for examples
+#--------------------------------------------------------------
+#
+# File:	/bash/.bashrc
+# Repo: https://github.com/annebrown/dotfiles.git
+# Author: Anne Brown
+#
+# Purpose:	Non-Login Shell Config
+#
+#--------------------------------------------------------------
 
+# ---------------------------------
+# Default Stuff
+# ---------------------------------
 # If not running interactively, don't do anything
 case $- in
     *i*) ;;
@@ -96,10 +105,7 @@ alias l='ls -CF'
 #   sleep 10; alert
 alias alert='notify-send --urgency=low -i "$([ $? = 0 ] && echo terminal || echo error)" "$(history|tail -n1|sed -e '\''s/^\s*[0-9]\+\s*//;s/[;&|]\s*alert$//'\'')"'
 
-# Alias definitions.
-# You may want to put all your additions into a separate file like
-# ~/.bash_aliases, instead of adding them here directly.
-# See /usr/share/doc/bash-doc/examples in the bash-doc package.
+# Source .bash_aliases
 
 if [ -f ~/.bash_aliases ]; then
     . ~/.bash_aliases
@@ -116,7 +122,11 @@ if ! shopt -oq posix; then
   fi
 fi
 
-# Usage: title "Title Text"
+# ---------------------------------
+# My Mods
+#---------------------------------
+
+# Usage: set-title title text
 # Ref: https://askubuntu.com/questions/22413/how-to-change-gnome-terminal-title
 function set-title() {
   if [[ -z "$ORIG" ]]; then
@@ -129,6 +139,7 @@ function set-title() {
 # Load Angular CLI autocompletion.
 source <(ng completion script)
 
+# nvm
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
