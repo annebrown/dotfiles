@@ -21,8 +21,8 @@
 #
 # 	Use with Stow:
 #		1. Clone repos to ~/.dotfiles & ~/.dotfiles-priv
-#		2. $ stow -d ~/.dotfiles bash hyper vim sh
-#		3. $ stow -d ~/.dotfiles-priv git vscode ssh pkg2 ...
+#		2. $ stow -d ~/.dotfiles bash git hyper vim code sh kde
+#		3. $ stow -d ~/.dotfiles-priv git code ssh sh
 #  
 #---------------------------------------
 
@@ -39,7 +39,7 @@ export  PATH=$PATH:~/.dotfiles/bash/sh
 #--------------------------------------------------
 # General Aliases
 #--------------------------------------------------
-	alias myterm='export DISPLAY=:0.0 && hyper'
+	# alias myterm='export DISPLAY=:0.0 && hyper'
 	
 	alias ping3='ping -c 3'
 	alias ping3g='ping -c 3 google.com'
@@ -56,7 +56,7 @@ export  PATH=$PATH:~/.dotfiles/bash/sh
 #--------------------------------------------------
 # Terminal Title
 #--------------------------------------------------
-# Automatic Terminal Titles
+# Automatic Terminal Titles - user@host: /path/to/pwd
 PROMPT_COMMAND='echo -ne "\033]0;${USER}@${HOSTNAME}: ${PWD/$HOME/~}\007"'
 
 # Manually Set Terminal Title
@@ -175,7 +175,7 @@ PROMPT_COMMAND='echo -ne "\033]0;${USER}@${HOSTNAME}: ${PWD/$HOME/~}\007"'
 #--------------------------------------------------	
 # Operating Systems
 #--------------------------------------------------
-
+# Win11/WSL2
 	# if [ `hostname`="adev" ] ||[ `hostname`="alap-wsl" ] || [ `hostname` = "alap" ] || [ `hostname`="aserver" ] || [ `hostname`="anchor-wsl" ]; then
 		
 		# alias rdpdesktop="~/repos/my-conf/win11/wsl2/desktop.sh" # Prepare xfce4 desktop for RDP Remote Access
@@ -183,17 +183,6 @@ PROMPT_COMMAND='echo -ne "\033]0;${USER}@${HOSTNAME}: ${PWD/$HOME/~}\007"'
 		# export WAYLAND_DISPLAY=':1.0'
 		# export DISPLAY=':2.0'
 	# fi
-# # Ubuntu 
-# 	if [ `hostname` = "alap" ] || [ `hostname` = "aserver-wsl" ] || [ `hostname` = "anchor-wsl " ] || [ `hostname` = "achromebook" ]; then
-# 		alias cdcronjobs='cd /f/etc/crontab'
-# 		# xhost local:anne============== bash 24-06-13 07:13 ==============
-/usr/bin/env: ‘node’: No such file or directory
-[07:13:47] anne@bossy: ~/
-$ godocs
-[07:18:18] anne@bossy: ~/
-$  > /dev/null # Allow crontab to access X display
-# 		alias king-wol="powerwake 04:54:53:01:AC:B1"
-# 	fi
 # iOS
 	if [ `hostname` = "aiPad" ] || [ `hostname` = "aiphone" ]; then
 		alias gocloud="cd ~/Documents/cloud"
@@ -201,12 +190,7 @@ $  > /dev/null # Allow crontab to access X display
 # # xOS
 # 	if [ `hostname` = "king" ]; then	
 # 		# exports - king
-# 			export EDITOR="~/sh/mvim"	# make MacVim the default editor============== bash 24-06-13 07:13 ==============
-/usr/bin/env: ‘node’: No such file or directory
-[07:13:47] anne@bossy: ~/
-$ godocs
-[07:18:18] anne@bossy: ~/
-$ d="godropbox && mvim Clipboard.txt"
+# 			export EDITOR="~/sh/mvim"	# make MacVim the default editor
 # 		# aliases - apps - owncloud
 # 			alias owncloudstart="/Applications/ownCloud.app/Contents/MacOS/ownCloud --logwindow"
 # 		# aliases - apps - log
@@ -260,7 +244,7 @@ $ d="godropbox && mvim Clipboard.txt"
 # backup PS1="\e[0;33m\\u\[\e[m\]@\[\e[0;32m\]$HOSTNAME\[\e[m\]:\[\e[1;36m\]\e[0;36m $ \[\e[0m\]"
 # Adding pwd before prompt line and putting timestamp back in
 # backkup PS1="\e[2;34m[\\t]\e[m \e[0;35m\w/\e[m\n\e[2;34m\\u\[\e[m\]\e[2;36m@\e[m\[\e[2;32m\]$HOSTNAME\[\e[m\]\e[2;36m:\e[m\[\e[1;36m\]\e[0;35m $ \[\e[0m\]"
-# [\t] \u@\H: \w\n$
+# Format: [\t] \u@\H: \w\n$
 PS1="\e[0;34m[\\t] \e[0;34m\\u\[\e[m\]\e[0;36m@\e[m\[\e[0;32m\]$HOSTNAME\[\e[m\]\e[2;34m:\e[m \e[0;35m\w/\e[m\n\e[m\[\e[1;36m\]\e[0;35m$ \[\e[0m\]"
 
 #--------------------------------------------------
@@ -268,7 +252,6 @@ PS1="\e[0;34m[\\t] \e[0;34m\\u\[\e[m\]\e[0;36m@\e[m\[\e[0;32m\]$HOSTNAME\[\e[m\]
 #--------------------------------------------------
 DATESTR=`date +"%y-%m-%d %H:%M"` 
 echo "============== bash $DATESTR" "==============" 
-# echo `pwd` 
 
 
 
