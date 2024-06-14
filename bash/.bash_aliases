@@ -1,30 +1,22 @@
-#---------------------------------------
+#--------------------------------------------------------------
 #
-# Repo: git@github.com:annebrown/dotfiles.git
-# Filename:	/bash/.bash_aliases
-# Purpose:	New host config
+# File:	/bash/.bash_aliases
+# Repo: https://github.com/annebrown/dotfiles.git
+# Author: Anne Brown
 #
-#---------------------------------------
+# Purpose:	Dev Host Config
+#
+#--------------------------------------------------------------
 
-#---------------------------------------
+#--------------------------------------------------------------
 # Usage:
-#---------------------------------------
+#--------------------------------------------------------------
 #
-# Mods: 
-#
-# 1. Vim: Create backup before mods
-#		Enter ;s  to create a new backup file in the fmt:
-#			bash_aliases_<date>_<time>_backup
-# 2. Push changes after edits
-#
-# Host config:
-#
-# 	Use with Stow:
 #		1. Clone repos to ~/.dotfiles & ~/.dotfiles-priv
 #		2. $ stow -d ~/.dotfiles bash git hyper vim code sh kde
 #		3. $ stow -d ~/.dotfiles-priv git code ssh sh
 #  
-#---------------------------------------
+#--------------------------------------------------------------
 
 #---------------------------------------
 # Editor
@@ -34,7 +26,7 @@ export EDITOR='vim' # defaut editor
 #---------------------------------------
 #  Script Path
 #---------------------------------------
-export  PATH=$PATH:~/.dotfiles/bash/sh
+export  PATH=$PATH:~/.dotfiles/bash/sh 
 
 #--------------------------------------------------
 # General Aliases
@@ -54,7 +46,7 @@ export  PATH=$PATH:~/.dotfiles/bash/sh
 	alias goangular="code ~/projects/angular/angular.code-workspace" 
 
 #--------------------------------------------------
-# Terminal Title
+# Terminal Titles
 #--------------------------------------------------
 # Automatic Terminal Titles - user@host: /path/to/pwd
 PROMPT_COMMAND='echo -ne "\033]0;${USER}@${HOSTNAME}: ${PWD/$HOME/~}\007"'
@@ -63,18 +55,38 @@ PROMPT_COMMAND='echo -ne "\033]0;${USER}@${HOSTNAME}: ${PWD/$HOME/~}\007"'
 #	See: set-title() function in .bashrc
 # 	Usage: set-title my new title
 
-# #---------------------------------------
-# # LAMP stack
-# #-------------------------------------
+# #--------------------------------------------------
+# # annebrown.net
+# #--------------------------------------------------
+# 	alias ab.net-log="ssh admin@annebrown.net tail -f /var/log/httpd/error_log.1"
 
-## MySql
-    # export VIMRUNTIME=/usr/share/vim/vim74
-    # PATH=$PATH:$MY_REPOS/dotfiles/bash/sh:$MY_REPOS-PRIV/dotfiles-priv/bash/sh # Add sys admin scripts to PATH
-    # export PATH
-	#   alias mysqlstart="sudo /usr/local/mysql/support-files/mysql.server start"
-	#   alias mysql="/usr/local/mysql/bin/mysql"
-	#   alias mysqladmin="/usr/local/mysql/bin/mysqladmin"
-	#
+#--------------------------------------------------
+# perl
+#--------------------------------------------------
+	alias p.org-bash="ssh -X -l anneq -p perl.org"  
+	alias perldocsvr="sudo ls; sudo perldoc-server --public &"
+
+	# # Catalyst Server 
+	# alias svrwebappt="gowebappt; perl script/webapptest_server.pl -r -p 1234"
+	# alias svrwebapp="gowebapp; perl script/webapp_server.pl -r -p 5678"
+
+#--------------------------------------------------
+# Devices
+#-------------------------------------------------- 
+	alias ssh-aphone-root="ssh -p 2222 root@aphone"
+	alias ssh-atab-root="ssh -p 2222 root@atab"
+	alias ssh-aserver="ssh -p 22 anne@aserver"
+	alias ssh-achromebook=" ssh -p 22 anne@achromebook"
+
+#--------------------------------------------------
+# Devs
+#--------------------------------------------------
+	alias ssh-adev="ssh -p 2222 anne@adev"
+	alias ssh-devy="ssh -p 22 anne@devy"
+	alias ssh-bossy="ssh -p 22 anne@bossy"
+	alias ssh-desky="ssh -p 22 anne@desky"
+# 	alias ssh-anchor="ssh -p 2222 anne@anchor"
+
 # #--------------------------------------------------
 # # browndomain.com 
 # #--------------------------------------------------
@@ -91,64 +103,18 @@ PROMPT_COMMAND='echo -ne "\033]0;${USER}@${HOSTNAME}: ${PWD/$HOME/~}\007"'
 # 		alias php.ini-edit="cp public_html/php.ini \"public_html/php.ini-`date +%y-%m-%d`-00\" && vim public_html/php.ini"	
 # 	fi
 
-# #--------------------------------------------------
-# # annebrown.net
-# #--------------------------------------------------
-# 	alias ab.net-log="ssh admin@annebrown.net tail -f /var/log/httpd/error_log.1"
+# #---------------------------------------
+# # LAMP stack
+# #-------------------------------------
 
-#--------------------------------------------------
-# perl.org
-#--------------------------------------------------
-	alias p.org-bash="ssh -X -l anneq -p perl.org"  
-
-#--------------------------------------------------	
-# perl 
-#--------------------------------------------------
-	alias perldocsvr="sudo ls; sudo perldoc-server --public &"
-
-# #--------------------------------------------------
-# Catalyst Server 
-# #--------------------------------------------------
-	# alias svrwebappt="gowebappt; perl script/webapptest_server.pl -r -p 1234"
-	# alias svrwebapp="gowebapp; perl script/webapp_server.pl -r -p 5678"
-
-#--------------------------------------------------
-# aphone
-#-------------------------------------------------- 
-	alias ssh-aphone-root="ssh -p 2222 root@aphone"
-
-#--------------------------------------------------
-# atab
-#--------------------------------------------------
-	alias ssh-atab-root="ssh -p 2222 root@atab"
-
-#--------------------------------------------------
-# aserver
-#--------------------------------------------------
-	alias ssh-aserver="ssh -p 22 anne@aserver"
-
-#--------------------------------------------------
-# achromebook00
-#--------------------------------------------------
-	alias ssh-achromebook00=" ssh -p 22 anne@achromebook00"
-
-#--------------------------------------------------
-# achromebook01
-#--------------------------------------------------
-	alias ssh-achromebook01=" ssh -p 22 anne@achromebook01"
-
-#--------------------------------------------------
-# devs
-#--------------------------------------------------
-	alias ssh-adev="ssh -p 2222 anne@adev"
-	alias ssh-devy="ssh -p 22 anne@devy"
-	alias ssh-bossy="ssh -p 22 anne@bossy"
-	alias ssh-desky="ssh -p 22 anne@desky"
-
-# #--------------------------------------------------
-# # anchor
-# #--------------------------------------------------
-# 	alias ssh-anchor="ssh -p 2222 anne@anchor"
+## MySql
+    # export VIMRUNTIME=/usr/share/vim/vim74
+    # PATH=$PATH:$MY_REPOS/dotfiles/bash/sh:$MY_REPOS-PRIV/dotfiles-priv/bash/sh # Add sys admin scripts to PATH
+    # export PATH
+	#   alias mysqlstart="sudo /usr/local/mysql/support-files/mysql.server start"
+	#   alias mysql="/usr/local/mysql/bin/mysql"
+	#   alias mysqladmin="/usr/local/mysql/bin/mysqladmin"
+	#
 
 # #--------------------------------------------------	
 # # ESSi host
@@ -173,20 +139,26 @@ PROMPT_COMMAND='echo -ne "\033]0;${USER}@${HOSTNAME}: ${PWD/$HOME/~}\007"'
 	# fi
 
 #--------------------------------------------------	
-# Operating Systems
+# Hosts OSes
 #--------------------------------------------------
-# Win11/WSL2
+# # Win11/WSL2
 	# if [ `hostname`="adev" ] ||[ `hostname`="alap-wsl" ] || [ `hostname` = "alap" ] || [ `hostname`="aserver" ] || [ `hostname`="anchor-wsl" ]; then
 		
 		# alias rdpdesktop="~/repos/my-conf/win11/wsl2/desktop.sh" # Prepare xfce4 desktop for RDP Remote Access
 		# alias kdedesktop="~/repos/my-conf/win11/wsl2/desktopkde.sh" # Start KDE Desktop
 		# export WAYLAND_DISPLAY=':1.0'
 		# export DISPLAY=':2.0'
+		# # Configure Intel compilers for wsl
+			# if [ `hostname` = "alap" ]; then
+				# source /opt/intel/oneapi/setvars.sh
+			# fi
 	# fi
-# iOS
-	if [ `hostname` = "aiPad" ] || [ `hostname` = "aiphone" ]; then
-		alias gocloud="cd ~/Documents/cloud"
-	fi
+
+# # iOS
+	# if [ `hostname` = "aiPad" ] || [ `hostname` = "aiphone" ]; then
+	# 	alias gocloud="cd ~/Documents/cloud"
+	# fi
+	
 # # xOS
 # 	if [ `hostname` = "king" ]; then	
 # 		# exports - king
@@ -205,16 +177,6 @@ PROMPT_COMMAND='echo -ne "\033]0;${USER}@${HOSTNAME}: ${PWD/$HOME/~}\007"'
 # 			alias clipboard="godropbox && mvim Clipboard.txt"
 # 			alias gocloud="cd /Users/Anne/cloud"
 # 	fi
-
-#--------------------------------------------------
-# Scripts
-#--------------------------------------------------
-# Configure Intel compilers for wsl
-	if [ `hostname` = "alap" ]; then
-
-		source /opt/intel/oneapi/setvars.sh
-	fi
-
 
 #--------------------------------------------------
 #
