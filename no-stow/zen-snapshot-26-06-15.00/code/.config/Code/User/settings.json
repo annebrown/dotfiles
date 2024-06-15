@@ -1,0 +1,120 @@
+{
+    "files.autoSave": "onFocusChange",
+    "editor.fontSize": 12,
+    "editor.bracketPairColorization.enabled": true,
+    "workbench.commandPalette.preserveInput": true,
+    "window.autoDetectColorScheme": true,
+    "terminal.integrated.fontSize": 12,
+    "remote.SSH.configFile": "/home/anne/.ssh/config",
+    "editor.minimap.showSlider": "always",
+    "explorer.compactFolders": false,
+    "vim.vimrc.enable": true,
+    "remote.onstartup": true,
+    "bashIde.highlightParsingErrors": true,
+    "powershell.buttons.showPanelMovementButtons": true,
+    "dashboard.projectData": null,
+    "dashboard.openOnStartup": "always",
+    "editor.fontFamily": "Consolas, monospace",
+    "git.ignoreMissingGitWarning": true,
+    "editor.minimap.enabled": false,
+    "debug.allowBreakpointsEverywhere": true,
+    "debug.toolBarLocation": "docked",
+    "code-runner.fileDirectoryAsCwd": true,
+    "code-runner.runInTerminal": true,
+    "remote.WSL.debug": true,
+    "remote.WSL.fileWatcher.polling": true,
+    "remote.WSL.server.connectThroughLocalhost": true,
+    "editor.insertSpaces": false,
+    "editor.wordWrap": "on",
+    "terminal.integrated.tabs.title": "${process}{cwd}",
+    "dev.containers.executeInWSL": true,
+    "sync.autoDownload": true,
+    "sync.autoUpload": true,
+    "sync.forceUpload": true,
+    "git.enableSmartCommit": true,
+    "editor.suggestSelection": "first",
+    "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
+    "remoteHub.commitDirectlyWarning": "off",
+    "git.confirmSync": false,
+    // "debug.javascript.resourceRequestOptions": {
+
+    // },
+    "git.autoStash": true,
+    "remoteHub.gitProtocol": "ssh",
+    "workbench.colorTheme": "Visual Studio Dark",
+    "terminal.integrated.shellIntegration.enabled": false,
+    "workbench.preferredLightColorTheme": "Default Light Modern",
+    "liveServer.settings.donotShowInfoMsg": true,
+    "liveServer.settings.multiRootWorkspaceName": "",
+    "liveServer.settings.root": "",
+    "git.openRepositoryInParentFolders": "never",
+    "liveServer.settings.AdvanceCustomBrowserCmdLine": "",
+    "liveServer.settings.useWebExt": true,
+    "scm.showChangesSummary": false,
+    "terminal.integrated.profiles.windows": {
+        "PowerShell": {
+            "source": "PowerShell",
+            "icon": "terminal-powershell"
+        },
+        "Command Prompt": {
+            "path": [
+                "${env:windir}\\Sysnative\\cmd.exe",
+                "${env:windir}\\System32\\cmd.exe"
+            ],
+            "args": [],
+            "icon": "terminal-cmd"
+        },
+        "Git Bash": {
+            "source": "Git Bash"
+        },
+        "Ubuntu-24.04 (WSL)": {
+            "path": "C:\\WINDOWS\\System32\\wsl.exe",
+            "args": [
+                "-d",
+                "Ubuntu-24.04"
+            ]
+        }
+    },
+    "terminal.integrated.defaultProfile.windows": "Ubuntu-24.04 (WSL)",
+    "vim.vimrc.path": "",
+    "git.autofetch": true,
+    "window.systemColorTheme": "dark",
+    // "workbench.colorCustomizations": {
+    //     "editor.background": rgba(1, 1, 1, 0.5), 
+    // },
+    // "vim.commandLineModeKeyBindings": [
+    //     :imap jj <Esc>
+    // ],
+    "vim.insertModeKeyBindings": [
+        {
+          "before": ["j", "j"],
+          "after": ["<Esc>"]
+        }
+    ],
+    "window.menuBarVisibility": "visible",
+    "window.titleBarStyle": "custom",
+    "workbench.tree.indent": 20,
+    "workbench.editorAssociations": {
+        "*.zip": "default"
+    },
+    "editor.linkedEditing": true,
+    "settingsSync.ignoredSettings": [
+        "editor.linkedEditing"
+    ],
+    "editor.rulers": [
+        80,
+    ],
+    "window.customMenuBarAltFocus": false,
+    "remote.SSH.defaultExtensions": [
+        "gitpod.gitpod-remote-ssh"
+    ],
+    "redhat.telemetry.enabled": false,
+    "workbench.colorCustomizations": {
+    
+        "window.activeBorder": "#00ff88",
+        "window.inactiveBorder": "#d42aeb"
+    },
+    "remote.SSH.remotePlatform": {
+        "*.gitpod.io": "linux"
+    },
+}
