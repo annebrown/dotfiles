@@ -54,7 +54,7 @@ ToolBoxButtonX=444
 ToolBoxButtonY=36
 
 [Containments][541][Wallpaper][org.kde.image][General]
-Image=/usr/share/wallpapers/Kay/
+Image=/home/anne/.dotfiles/img/wallpapers/dark.png
 SlidePaths=/home/anne/.local/share/wallpapers/,/usr/share/plasma/wallpapers/,/usr/share/wallpapers/
 
 [Containments][542]
