@@ -15,8 +15,8 @@ popupWidth=669
 PreloadWeight=60
 
 [Containments][541]
-ItemGeometries-1920x1080=Applet-601:1696,0,224,480,0;Applet-604:1648,480,272,208,0;
-ItemGeometriesHorizontal=Applet-601:1696,0,224,480,0;Applet-604:1648,480,272,208,0;
+ItemGeometries-1920x1080=Applet-601:1664,112,208,480,0;
+ItemGeometriesHorizontal=Applet-601:1664,112,208,480,0;
 activityId=a8765452-e9af-4dc5-9c08-868c6b331d38
 formfactor=0
 immutability=1
@@ -44,19 +44,6 @@ DialogWidth=720
 columnDisplay={"iconName":"hidden","ioCharactersActuallyReadRate":"hidden","ioCharactersActuallyWrittenRate":"hidden","name":"text","netInbound":"hidden","netOutbound":"hidden","pid":"text","usage":"text","userUsage":"hidden","vmPSS":"text","vmURSS":"text"}
 sortedColumns=appName,usage,vmPSS,netInbound,netOutbound,ioCharactersActuallyReadRate,ioCharactersActuallyWrittenRate,userUsage,canUserLogin,pid,ioniceLevel,menuId,vmURSS,gid,totalTime,login,tty,ioCharactersWrittenRate,command,tracerpid,startTime,ioWriteSyscalls,ioCharactersActuallyRead,totalUserUsage,vmShared,userTime,ioCharactersReadRate,ioReadSyscalls,name,ioReadSyscallsRate,numThreads,ioCharactersRead,totalUsage,sysTime,egid,uid,totalSysUsage,iconName,niceLevel,fsuid,vmSize,parentPid,status,fsgid,sgid,scheduler,username,euid,ioPriorityClass,ioCharactersWritten,sysUsage,suid,appName
 
-[Containments][541][Applets][604]
-immutability=1
-plugin=org.kde.plasma.notes
-
-[Containments][541][Applets][604][Configuration][ConfigDialog]
-DialogHeight=540
-DialogWidth=720
-
-[Containments][541][Applets][604][Configuration][General]
-color=black
-fontSize=10
-noteId=113e7691-8775-440e-8a0c-8a80c0afd2
-
 [Containments][541][ConfigDialog]
 DialogHeight=540
 DialogWidth=720
@@ -64,10 +51,10 @@ DialogWidth=720
 [Containments][541][General]
 ToolBoxButtonState=topcenter
 ToolBoxButtonX=444
-ToolBoxButtonY=54
+ToolBoxButtonY=36
 
 [Containments][541][Wallpaper][org.kde.image][General]
-Image=/home/anne/.local/share/wallpapers/dark_golden.jpg
+Image=/usr/share/wallpapers/Kay/
 SlidePaths=/home/anne/.local/share/wallpapers/,/usr/share/plasma/wallpapers/,/usr/share/wallpapers/
 
 [Containments][542]
@@ -88,6 +75,7 @@ DialogWidth=720
 [Containments][542][General]
 ToolBoxButtonState=topcenter
 ToolBoxButtonX=444
+ToolBoxButtonY=36
 
 [Containments][542][Wallpaper][org.kde.image][General]
 Image=/usr/share/wallpapers/Kay/
@@ -109,10 +97,16 @@ plugin=org.kde.plasma.kickoff
 [Containments][543][Applets][544][Configuration]
 PreloadWeight=100
 popupHeight=521
-popupWidth=669
+popupWidth=685
+
+[Containments][543][Applets][544][Configuration][ConfigDialog]
+DialogHeight=540
+DialogWidth=720
 
 [Containments][543][Applets][544][Configuration][General]
 favoritesPortedToKAstats=true
+primaryActions=1
+systemFavorites=lock-screen\\,logout\\,save-session\\,switch-user
 
 [Containments][543][Applets][544][Configuration][Shortcuts]
 global=Alt+F1
@@ -141,6 +135,11 @@ plugin=org.kde.plasma.showdesktop
 immutability=1
 plugin=org.kde.plasma.digitalclock
 
+[Containments][543][Applets][585][Configuration]
+PreloadWeight=60
+popupHeight=450
+popupWidth=396
+
 [Containments][543][Applets][585][Configuration][Appearance]
 dateFormat=isoDate
 fontFamily=Noto Sans
@@ -148,6 +147,14 @@ showLocalTimezone=true
 use24hFormat=2
 
 [Containments][543][Applets][585][Configuration][ConfigDialog]
+DialogHeight=540
+DialogWidth=720
+
+[Containments][543][Applets][594]
+immutability=1
+plugin=org.kde.plasma.appmenu
+
+[Containments][543][Applets][594][Configuration][ConfigDialog]
 DialogHeight=540
 DialogWidth=720
 
@@ -162,12 +169,50 @@ plugin=org.kde.paneltransparencybutton
 [Containments][543][Applets][607][Configuration][Appearance]
 transparencyEnabled=true
 
+[Containments][543][Applets][618]
+immutability=1
+plugin=org.kde.plasma.clipboard
+
+[Containments][543][Applets][618][Configuration]
+PreloadWeight=55
+popupHeight=432
+popupWidth=432
+
+[Containments][543][Applets][619]
+immutability=1
+plugin=org.kde.plasma.calendar
+
+[Containments][543][Applets][619][Configuration]
+PreloadWeight=55
+popupHeight=252
+popupWidth=378
+
+[Containments][543][Applets][620]
+immutability=1
+plugin=ch.fuchsnet.plasma.hoppla-sa
+
+[Containments][543][Applets][622]
+immutability=1
+plugin=org.kde.plasma.panelspacer
+
+[Containments][543][Applets][629]
+immutability=1
+plugin=org.kde.plasma.icon
+
+[Containments][543][Applets][629][Configuration]
+localPath=/home/anne/.local/share/plasma_icons/org.kde.kpat.desktop
+url=file:///usr/share/applications/org.kde.kpat.desktop
+
+[Containments][543][Applets][637]
+immutability=1
+plugin=org.kde.plasma.appmenu
+
 [Containments][543][ConfigDialog]
-DialogHeight=90
+DialogHeight=84
 DialogWidth=1920
 
 [Containments][543][General]
-AppletOrder=607;544;602;545;547;548;585;561
+AppletOrder=607;637;544;618;602;594;622;545;547;548;629;620;585;619;561
 
 [Containments][549]
 activityId=
@@ -185,10 +230,9 @@ immutability=1
 plugin=org.kde.plasma.volume
 
 [Containments][549][Applets][550][Configuration]
-PreloadWeight=70
+PreloadWeight=100
 
 [Containments][549][Applets][550][Configuration][General]
-currentTab=streams
 migrated=true
 showVirtualDevices=true
 
@@ -235,6 +279,9 @@ plugin=org.kde.plasma.vault
 immutability=1
 plugin=org.kde.plasma.networkmanagement
 
+[Containments][549][Applets][562][Configuration]
+PreloadWeight=60
+
 [Containments][549][Applets][563]
 immutability=1
 plugin=org.kde.plasma.bluetooth
@@ -250,6 +297,9 @@ plugin=org.kde.plasma.nightcolorcontrol
 immutability=1
 plugin=org.kde.plasma.battery
 
+[Containments][549][Applets][565][Configuration]
+PreloadWeight=85
+
 [Containments][549][Applets][566]
 immutability=1
 plugin=org.kde.plasma.mediacontroller
@@ -257,9 +307,13 @@ plugin=org.kde.plasma.mediacontroller
 [Containments][549][Applets][566][Configuration]
 PreloadWeight=0
 
+[Containments][549][Applets][630]
+immutability=1
+plugin=org.kde.kdeconnect
+
 [Containments][549][General]
-extraItems=org.kde.kupapplet,org.kde.plasma.volume,org.kde.plasma.nightcolorcontrol,org.kde.plasma.networkmanagement,org.kde.plasma.printmanager,org.kde.plasma.keyboardindicator,org.kde.plasma.devicenotifier,org.kde.plasma.clipboard,org.kde.plasma.mediacontroller,org.kde.plasma.keyboardlayout,org.kde.plasma.notifications,org.kde.plasma.manage-inputmethod,org.kde.kscreen,org.kde.plasma.vault,org.kde.plasma.battery,org.kde.plasma.bluetooth
-knownItems=org.kde.kupapplet,org.kde.plasma.volume,org.kde.plasma.nightcolorcontrol,org.kde.plasma.networkmanagement,org.kde.plasma.printmanager,org.kde.plasma.keyboardindicator,org.kde.plasma.devicenotifier,org.kde.plasma.clipboard,org.kde.plasma.mediacontroller,org.kde.plasma.keyboardlayout,org.kde.plasma.notifications,org.kde.plasma.manage-inputmethod,org.kde.kscreen,org.kde.plasma.vault,org.kde.plasma.battery,org.kde.plasma.bluetooth
+extraItems=org.kde.kupapplet,org.kde.plasma.volume,org.kde.plasma.nightcolorcontrol,org.kde.plasma.networkmanagement,org.kde.plasma.printmanager,org.kde.plasma.keyboardindicator,org.kde.plasma.devicenotifier,org.kde.plasma.clipboard,org.kde.plasma.mediacontroller,org.kde.plasma.keyboardlayout,org.kde.plasma.notifications,org.kde.plasma.manage-inputmethod,org.kde.kscreen,org.kde.plasma.vault,org.kde.plasma.battery,org.kde.plasma.bluetooth,org.kde.kdeconnect
+knownItems=org.kde.kupapplet,org.kde.plasma.volume,org.kde.plasma.nightcolorcontrol,org.kde.plasma.networkmanagement,org.kde.plasma.printmanager,org.kde.plasma.keyboardindicator,org.kde.plasma.devicenotifier,org.kde.plasma.clipboard,org.kde.plasma.mediacontroller,org.kde.plasma.keyboardlayout,org.kde.plasma.notifications,org.kde.plasma.manage-inputmethod,org.kde.kscreen,org.kde.plasma.vault,org.kde.plasma.battery,org.kde.plasma.bluetooth,org.kde.kdeconnect
 
 [Containments][568]
 activityId=
@@ -269,41 +323,6 @@ lastScreen=0
 location=3
 plugin=org.kde.panel
 wallpaperplugin=org.kde.image
-
-[Containments][568][Applets][570]
-immutability=1
-plugin=org.kde.plasma.pager
-
-[Containments][568][Applets][571]
-immutability=1
-plugin=org.kde.plasma.icontasks
-
-[Containments][568][Applets][571][Configuration][General]
-launchers=applications:org.kde.plasma-systemmonitor.desktop,applications:hyper.desktop
-
-[Containments][568][Applets][572]
-immutability=1
-plugin=org.kde.plasma.marginsseparator
-
-[Containments][568][Applets][591]
-immutability=1
-plugin=org.kde.plasma.panelspacer
-
-[Containments][568][Applets][592]
-immutability=1
-plugin=org.kde.plasma.panelspacer
-
-[Containments][568][Applets][594]
-immutability=1
-plugin=org.kde.plasma.appmenu
-
-[Containments][568][Applets][594][Configuration][ConfigDialog]
-DialogHeight=540
-DialogWidth=720
-
-[Containments][568][Applets][605]
-immutability=1
-plugin=org.kde.windowbuttons
 
 [Containments][568][Applets][606]
 immutability=1
@@ -317,7 +336,7 @@ DialogHeight=84
 DialogWidth=1920
 
 [Containments][568][General]
-AppletOrder=594;606;605;592;570;571;572;591
+AppletOrder=606
 
 [Containments][574]
 activityId=
@@ -434,14 +453,121 @@ immutability=1
 plugin=org.kde.plasma.mediacontroller
 
 [Containments][574][Applets][605][Configuration]
-PreloadWeight=18
+PreloadWeight=0
+
+[Containments][574][Applets][631]
+immutability=1
+plugin=org.kde.kdeconnect
 
 [Containments][574][Configuration]
 PreloadWeight=42
 
 [Containments][574][General]
-extraItems=org.kde.kupapplet,org.kde.plasma.volume,org.kde.plasma.nightcolorcontrol,org.kde.plasma.networkmanagement,org.kde.plasma.printmanager,org.kde.plasma.keyboardindicator,org.kde.plasma.devicenotifier,org.kde.plasma.clipboard,org.kde.plasma.mediacontroller,org.kde.plasma.keyboardlayout,org.kde.plasma.notifications,org.kde.plasma.manage-inputmethod,org.kde.kscreen,org.kde.plasma.vault,org.kde.plasma.battery,org.kde.plasma.bluetooth
-knownItems=org.kde.kupapplet,org.kde.plasma.volume,org.kde.plasma.nightcolorcontrol,org.kde.plasma.networkmanagement,org.kde.plasma.printmanager,org.kde.plasma.keyboardindicator,org.kde.plasma.devicenotifier,org.kde.plasma.clipboard,org.kde.plasma.mediacontroller,org.kde.plasma.keyboardlayout,org.kde.plasma.notifications,org.kde.plasma.manage-inputmethod,org.kde.kscreen,org.kde.plasma.vault,org.kde.plasma.battery,org.kde.plasma.bluetooth
+extraItems=org.kde.kupapplet,org.kde.plasma.volume,org.kde.plasma.nightcolorcontrol,org.kde.plasma.networkmanagement,org.kde.plasma.printmanager,org.kde.plasma.keyboardindicator,org.kde.plasma.devicenotifier,org.kde.plasma.clipboard,org.kde.plasma.mediacontroller,org.kde.plasma.keyboardlayout,org.kde.plasma.notifications,org.kde.plasma.manage-inputmethod,org.kde.kscreen,org.kde.plasma.vault,org.kde.plasma.battery,org.kde.plasma.bluetooth,org.kde.kdeconnect
+knownItems=org.kde.kupapplet,org.kde.plasma.volume,org.kde.plasma.nightcolorcontrol,org.kde.plasma.networkmanagement,org.kde.plasma.printmanager,org.kde.plasma.keyboardindicator,org.kde.plasma.devicenotifier,org.kde.plasma.clipboard,org.kde.plasma.mediacontroller,org.kde.plasma.keyboardlayout,org.kde.plasma.notifications,org.kde.plasma.manage-inputmethod,org.kde.kscreen,org.kde.plasma.vault,org.kde.plasma.battery,org.kde.plasma.bluetooth,org.kde.kdeconnect
+
+[Containments][608]
+activityId=
+formfactor=2
+immutability=1
+lastScreen=1
+location=3
+plugin=org.kde.panel
+wallpaperplugin=org.kde.image
+
+[Containments][608][Applets][609]
+immutability=1
+plugin=org.kde.plasma.appmenu
+
+[Containments][608][Applets][612]
+immutability=1
+plugin=org.kde.plasma.icontasks
+
+[Containments][608][Applets][612][Configuration][ConfigDialog]
+DialogHeight=540
+DialogWidth=720
+
+[Containments][608][Applets][612][Configuration][General]
+fill=false
+launchers=applications:org.kde.konsole.desktop
+showOnlyCurrentScreen=true
+
+[Containments][608][Applets][613]
+immutability=1
+plugin=org.kde.plasma.panelspacer
+
+[Containments][608][Applets][617]
+immutability=1
+plugin=org.kde.paneltransparencybutton
+
+[Containments][608][Applets][617][Configuration][Appearance]
+transparencyEnabled=true
+
+[Containments][608][Applets][617][Configuration][ConfigDialog]
+DialogHeight=540
+DialogWidth=720
+
+[Containments][608][Applets][642]
+immutability=1
+plugin=org.kde.plasma.panelspacer
+
+[Containments][608][ConfigDialog]
+DialogHeight=84
+DialogWidth=1920
+
+[Containments][608][General]
+AppletOrder=617;609;642;612;613
+
+[Containments][638]
+activityId=
+formfactor=2
+immutability=1
+lastScreen=0
+location=3
+plugin=org.kde.panel
+wallpaperplugin=org.kde.image
+
+[Containments][638][Applets][639]
+immutability=1
+plugin=org.kde.paneltransparencybutton
+
+[Containments][638][Applets][639][Configuration][Appearance]
+transparencyEnabled=true
+
+[Containments][638][Applets][639][Configuration][ConfigDialog]
+DialogHeight=540
+DialogWidth=720
+
+[Containments][638][Applets][640]
+immutability=1
+plugin=org.kde.plasma.appmenu
+
+[Containments][638][Applets][643]
+immutability=1
+plugin=org.kde.plasma.icontasks
+
+[Containments][638][Applets][643][Configuration][ConfigDialog]
+DialogHeight=540
+DialogWidth=720
+
+[Containments][638][Applets][643][Configuration][General]
+launchers=preferred://browser,applications:org.kde.konsole.desktop,applications:github-desktop.desktop
+showOnlyCurrentScreen=true
+
+[Containments][638][Applets][644]
+immutability=1
+plugin=org.kde.plasma.panelspacer
+
+[Containments][638][Applets][645]
+immutability=1
+plugin=org.kde.plasma.panelspacer
+
+[Containments][638][ConfigDialog]
+DialogHeight=84
+DialogWidth=1920
+
+[Containments][638][General]
+AppletOrder=639;640;645;643;644
 
 [Containments541Appletsts][604][Configuration][General]
 color=translucent-light

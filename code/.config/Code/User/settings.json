@@ -82,9 +82,6 @@
     // "workbench.colorCustomizations": {
     //     "editor.background": rgba(1, 1, 1, 0.5), 
     // },
-    // "vim.commandLineModeKeyBindings": [
-    //     :imap jj <Esc>
-    // ],
     "vim.insertModeKeyBindings": [
         {
           "before": ["j", "j"],
@@ -93,7 +90,7 @@
     ],
     "window.menuBarVisibility": "visible",
     "window.titleBarStyle": "custom",
-    "workbench.tree.indent": 20,
+    "workbench.tree.indent": 25,
     "workbench.editorAssociations": {
         "*.zip": "default"
     },
@@ -110,6 +107,7 @@
     ],
     "redhat.telemetry.enabled": false,
     "workbench.colorCustomizations": {
+
     
         "window.activeBorder": "#00ff88",
         "window.inactiveBorder": "#d42aeb"
@@ -117,4 +115,8 @@
     "remote.SSH.remotePlatform": {
         "*.gitpod.io": "linux"
     },
+    "workbench.editor.centeredLayoutFixedWidth": true,
+    "workbench.editor.centeredLayoutAutoResize": false,
+    "workbench.tree.renderIndentGuides": "always",
+    "window.customTitleBarVisibility": "windowed",
 }
