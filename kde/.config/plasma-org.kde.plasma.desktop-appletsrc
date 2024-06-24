@@ -169,15 +169,6 @@ plugin=org.kde.paneltransparencybutton
 [Containments][543][Applets][607][Configuration][Appearance]
 transparencyEnabled=true
 
-[Containments][543][Applets][618]
-immutability=1
-plugin=org.kde.plasma.clipboard
-
-[Containments][543][Applets][618][Configuration]
-PreloadWeight=55
-popupHeight=432
-popupWidth=432
-
 [Containments][543][Applets][619]
 immutability=1
 plugin=org.kde.plasma.calendar
@@ -203,16 +194,12 @@ plugin=org.kde.plasma.icon
 localPath=/home/anne/.local/share/plasma_icons/org.kde.kpat.desktop
 url=file:///usr/share/applications/org.kde.kpat.desktop
 
-[Containments][543][Applets][637]
-immutability=1
-plugin=org.kde.plasma.appmenu
-
 [Containments][543][ConfigDialog]
 DialogHeight=84
 DialogWidth=1920
 
 [Containments][543][General]
-AppletOrder=607;637;544;618;602;594;622;545;547;548;629;620;585;619;561
+AppletOrder=607;544;602;594;622;545;547;548;629;620;585;619;561
 
 [Containments][549]
 activityId=
@@ -247,6 +234,9 @@ plugin=org.kde.plasma.keyboardindicator
 [Containments][549][Applets][553]
 immutability=1
 plugin=org.kde.plasma.devicenotifier
+
+[Containments][549][Applets][553][Configuration]
+PreloadWeight=85
 
 [Containments][549][Applets][554]
 immutability=1
@@ -551,7 +541,7 @@ DialogHeight=540
 DialogWidth=720
 
 [Containments][638][Applets][643][Configuration][General]
-launchers=preferred://browser,applications:org.kde.konsole.desktop,applications:github-desktop.desktop
+launchers=applications:org.kde.konsole.desktop,applications:github-desktop.desktop,applications:org.kde.plasma-systemmonitor.desktop
 showOnlyCurrentScreen=true
 
 [Containments][638][Applets][644]

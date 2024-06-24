@@ -39,9 +39,11 @@ export  PATH=$PATH:~/.dotfiles/bash/sh
 	# Show vars: DISPLAY & DESKTOP 
 	alias envd='env|grep DISPLAY && env|grep DESKTOP'
 
-	# VSCode Shortcuts
-	alias godots="code ~/.Allthedotfiles-priv.code-workspace"
-	alias godocs="code ~/prod/docs-priv/docs-priv.code-workspace"
+#--------------------------------------------------
+# VSCode Shortcuts
+#--------------------------------------------------
+alias godots="code ~/.Allthedotfiles-priv.code-workspace"
+alias godocs="code ~/prod/docs-priv/docs-priv.code-workspace"
 	alias gohome="code ~/prod/home/home.code-workspace"
 	alias goangular="code ~/projects/angular/angular.code-workspace" 
 
