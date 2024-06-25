@@ -22,7 +22,7 @@ export EDITOR='vim' # defaut editor
 # Terminals
 #--------------------------------------------------
 # alias myterm='export DISPLAY=:0.0 && hyper'
-alias myterm="hyper"
+alias term="hyper&"
 
 # Auto Term Titles - user@host: /path/to/pwd
 PROMPT_COMMAND='echo -ne "\033]0;${USER}@${HOSTNAME}: ${PWD/$HOME/~}\007"'
