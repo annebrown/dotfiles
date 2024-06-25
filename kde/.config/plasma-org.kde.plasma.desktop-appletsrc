@@ -288,7 +288,7 @@ immutability=1
 plugin=org.kde.plasma.battery
 
 [Containments][549][Applets][565][Configuration]
-PreloadWeight=85
+PreloadWeight=90
 
 [Containments][549][Applets][566]
 immutability=1
@@ -479,7 +479,7 @@ DialogWidth=720
 
 [Containments][608][Applets][612][Configuration][General]
 fill=false
-launchers=applications:org.kde.konsole.desktop
+launchers=applications:org.kde.konsole.desktop,applications:hyper.desktop
 showOnlyCurrentScreen=true
 
 [Containments][608][Applets][613]
@@ -541,7 +541,7 @@ DialogHeight=540
 DialogWidth=720
 
 [Containments][638][Applets][643][Configuration][General]
-launchers=applications:org.kde.konsole.desktop,applications:github-desktop.desktop,applications:org.kde.plasma-systemmonitor.desktop
+launchers=applications:org.kde.konsole.desktop,applications:github-desktop.desktop,applications:org.kde.plasma-systemmonitor.desktop,applications:hyper.desktop
 showOnlyCurrentScreen=true
 
 [Containments][638][Applets][644]

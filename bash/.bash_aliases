@@ -1,61 +1,77 @@
 #--------------------------------------------------------------
 #
-# File:	/bash/.bash_aliases
+# File:	~/.dotfiles//bash/.bash_aliases
 # Repo: https://github.com/annebrown/dotfiles.git
 # Author: Anne Brown
 #
 # Purpose:	Dev Host Config
 #
-#--------------------------------------------------------------
-
-#--------------------------------------------------------------
 # Usage:
-#--------------------------------------------------------------
-#
-#		1. Clone repos to ~/.dotfiles & ~/.dotfiles-priv
-#		2. $ stow -d ~/.dotfiles bash git hyper vim code sh kde
-#		3. $ stow -d ~/.dotfiles-priv git code ssh sh
+#	1. Clone repos to ~/.dotfiles & ~/.dotfiles-priv
+#	2. $ stow -d ~/.dotfiles bash git hyper vim code sh kde
+#	3. $ stow -d ~/.dotfiles-priv git ssh sh
 #  
 #--------------------------------------------------------------
 
-#---------------------------------------
-# Editor
-#---------------------------------------
+#--------------------------------------------------
+# Editors
+#--------------------------------------------------
 export EDITOR='vim' # defaut editor
 
-#---------------------------------------
-#  Script Path
-#---------------------------------------
-export  PATH=$PATH:~/.dotfiles/bash/sh 
+#--------------------------------------------------
+# Terminals
+#--------------------------------------------------
+# alias myterm='export DISPLAY=:0.0 && hyper'
+alias myterm="hyper"
+
+# Auto Term Titles - user@host: /path/to/pwd
+PROMPT_COMMAND='echo -ne "\033]0;${USER}@${HOSTNAME}: ${PWD/$HOME/~}\007"'
+
+# Manually Set Title
+# Usage: set-title title text
+# Ref: https://askubuntu.com/questions/22413/how-to-change-gnome-terminal-title
+function set-title() {
+  if [[ -z "$ORIG" ]]; then
+    ORIG=$PS1
+  fi
+  TITLE="\[\e]2;$*\a\]"
+  PS1=${ORIG}${TITLE}
+}
+
+#--------------------------------------------------
+#  Script Paths
+#--------------------------------------------------
+export  PATH=$PATH:~/.dotfiles/sh:~/.dotfiles-priv/sh 
+
 
 #--------------------------------------------------
 # General Aliases
 #--------------------------------------------------
-	# alias myterm='export DISPLAY=:0.0 && hyper'
-	
-	alias ping3='ping -c 3'
-	alias ping3g='ping -c 3 google.com'
 
-	# Show vars: DISPLAY & DESKTOP 
-	alias envd='env|grep DISPLAY && env|grep DESKTOP'
+alias l='ls -CF'
+alias la='ls -A'
+alias ll='ls -l'
+alias lla='ls -Al'
+
+alias ping3='ping -c 3'
+alias ping3g='ping -c 3 google.com'
+
+# DISPLAY & DESKTOP 
+alias envd='env|grep DISPLAY && env|grep DESKTOP'
 
 #--------------------------------------------------
 # VSCode Shortcuts
 #--------------------------------------------------
-alias godots="code ~/.Allthedotfiles-priv.code-workspace"
-alias godocs="code ~/prod/docs-priv/docs-priv.code-workspace"
-	alias gohome="code ~/prod/home/home.code-workspace"
-	alias goangular="code ~/projects/angular/angular.code-workspace" 
+alias codedots="code ~/.Allthedotfiles-priv.code-workspace"
+alias codedocs="code ~/prod/docs-priv/docs-priv.code-workspace"
+alias codehome="code ~/prod/home/home.code-workspace"
+alias codeangular="code ~/projects/angular/angular.code-workspace" 
+alias codeproj="codeangular"
 
 #--------------------------------------------------
 # Terminal Titles
 #--------------------------------------------------
-# Automatic Terminal Titles - user@host: /path/to/pwd
-PROMPT_COMMAND='echo -ne "\033]0;${USER}@${HOSTNAME}: ${PWD/$HOME/~}\007"'
 
-# Manually Set Terminal Title
-#	See: set-title() function in .bashrc
-# 	Usage: set-title my new title
 
 # #--------------------------------------------------
 # # annebrown.net
