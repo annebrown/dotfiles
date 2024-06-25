@@ -236,7 +236,7 @@ immutability=1
 plugin=org.kde.plasma.devicenotifier
 
 [Containments][549][Applets][553][Configuration]
-PreloadWeight=85
+PreloadWeight=100
 
 [Containments][549][Applets][554]
 immutability=1
@@ -552,12 +552,20 @@ plugin=org.kde.plasma.panelspacer
 immutability=1
 plugin=org.kde.plasma.panelspacer
 
+[Containments][638][Applets][646]
+immutability=1
+plugin=org.kde.plasma.icon
+
+[Containments][638][Applets][646][Configuration]
+localPath=/home/anne/.local/share/plasma_icons/org.kde.plasma-systemmonitor.desktop
+url=file:///usr/share/applications/org.kde.plasma-systemmonitor.desktop
+
 [Containments][638][ConfigDialog]
 DialogHeight=84
 DialogWidth=1920
 
 [Containments][638][General]
-AppletOrder=639;640;645;643;644
+AppletOrder=639;640;645;643;646;644
 
 [Containments541Appletsts][604][Configuration][General]
 color=translucent-light
