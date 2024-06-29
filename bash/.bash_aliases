@@ -22,12 +22,11 @@ export EDITOR='vim' # defaut editor
 # Terminals
 #--------------------------------------------------
 # alias myterm='export DISPLAY=:0.0 && hyper'
-alias term="hyper&"
+alias term="hyper"
 
-# Auto Term Titles - user@host: /path/to/pwd
+# Term Title Fmt: j user@host: /path/to/pwd
 PROMPT_COMMAND='echo -ne "\033]0;${USER}@${HOSTNAME}: ${PWD/$HOME/~}\007"'
 
-# Manually Set Title
 # Usage: set-title title text
 # Ref: https://askubuntu.com/questions/22413/how-to-change-gnome-terminal-title
 function set-title() {
@@ -43,11 +42,9 @@ function set-title() {
 #--------------------------------------------------
 export  PATH=$PATH:~/.dotfiles/sh:~/.dotfiles-priv/sh 
 
-
 #--------------------------------------------------
 # General Aliases
 #--------------------------------------------------
-
 alias l='ls -CF'
 alias la='ls -A'
 alias ll='ls -l'
@@ -58,6 +55,12 @@ alias ping3g='ping -c 3 google.com'
 
 # DISPLAY & DESKTOP 
 alias envd='env|grep DISPLAY && env|grep DESKTOP'
+
+# Shortcuts
+alias godocs="cd ~/prod/docs-priv"
+alias gohome="cd ~/prod/home"
+alias goangular="cd ~/projects/angular"
+alias goproj="cd ~/projects/angular" # Current Proj
 
 #--------------------------------------------------
 # VSCode Shortcuts
