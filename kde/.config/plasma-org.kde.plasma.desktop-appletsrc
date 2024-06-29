@@ -23,7 +23,7 @@ DialogWidth=1082
 
 [Containments][673][General]
 ToolBoxButtonState=topcenter
-ToolBoxButtonX=444
+ToolBoxButtonX=432
 
 [Containments][673][Wallpaper][org.kde.image][General]
 Image=/home/anne/.local/share/wallpapers/Goldy-Nebula-Wallpaper-With-KDE-Logo.jpg
@@ -190,33 +190,6 @@ PreloadWeight=55
 [Containments][681][General]
 extraItems=org.kde.kupapplet,org.kde.plasma.volume,org.kde.plasma.nightcolorcontrol,org.kde.plasma.networkmanagement,org.kde.plasma.printmanager,org.kde.plasma.keyboardindicator,org.kde.plasma.devicenotifier,org.kde.plasma.clipboard,org.kde.plasma.mediacontroller,org.kde.plasma.keyboardlayout,org.kde.kdeconnect,org.kde.plasma.notifications,org.kde.plasma.manage-inputmethod,org.kde.kscreen,org.kde.plasma.vault,org.kde.plasma.battery,org.kde.plasma.bluetooth
 knownItems=org.kde.kupapplet,org.kde.plasma.volume,org.kde.plasma.nightcolorcontrol,org.kde.plasma.networkmanagement,org.kde.plasma.printmanager,org.kde.plasma.keyboardindicator,org.kde.plasma.devicenotifier,org.kde.plasma.clipboard,org.kde.plasma.mediacontroller,org.kde.plasma.keyboardlayout,org.kde.kdeconnect,org.kde.plasma.notifications,org.kde.plasma.manage-inputmethod,org.kde.kscreen,org.kde.plasma.vault,org.kde.plasma.battery,org.kde.plasma.bluetooth
-
-[Containments][699]
-activityId=
-formfactor=3
-immutability=1
-lastScreen=0
-location=5
-plugin=org.kde.panel
-wallpaperplugin=org.kde.image
-
-[Containments][699][Applets][700]
-immutability=1
-plugin=org.kde.plasma.kickerdash
-
-[Containments][699][Applets][700][Configuration][General]
-favoritesPortedToKAstats=true
-
-[Containments][699][Applets][701]
-immutability=1
-plugin=org.kde.plasma.icontasks
-
-[Containments][699][ConfigDialog]
-DialogHeight=1080
-DialogWidth=168
-
-[Containments][699][General]
-AppletOrder=701;700
 
 [ScreenMapping]
 itemsOnDisabledScreens=
