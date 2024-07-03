@@ -89,7 +89,6 @@
         }
     ],
     "window.menuBarVisibility": "visible",
-    "window.titleBarStyle": "custom",
     "workbench.tree.indent": 25,
     "workbench.editorAssociations": {
         "*.zip": "default"
@@ -118,5 +117,5 @@
     "workbench.editor.centeredLayoutFixedWidth": true,
     "workbench.editor.centeredLayoutAutoResize": false,
     "workbench.tree.renderIndentGuides": "always",
-    "window.customTitleBarVisibility": "windowed",
+    "window.customTitleBarVisibility": "auto",
 }
