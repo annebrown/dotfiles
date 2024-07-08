@@ -117,5 +117,5 @@
     "workbench.editor.centeredLayoutFixedWidth": true,
     "workbench.editor.centeredLayoutAutoResize": false,
     "workbench.tree.renderIndentGuides": "always",
-    "window.customTitleBarVisibility": "auto",
+    "window.customTitleBarVisibility": "auto"
 }
