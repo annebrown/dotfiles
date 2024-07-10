@@ -2,9 +2,10 @@
 #
 # File:	~/.dotfiles//bash/.bash_aliases
 # Repo: https://github.com/annebrown/dotfiles.git
+# Docs: ~/prod/docsproj/docs/oses/linux/new-host-config/README.md
 # Author: Anne Brown
 #
-# Purpose:	Dev Host Config
+# Purpose:	Dev Env Config
 #
 # Usage:
 #	1. Clone repos to ~/.dotfiles & ~/.dotfiles-priv
@@ -21,10 +22,7 @@ export EDITOR='vim' # defaut editor
 #--------------------------------------------------
 # Terminals
 #--------------------------------------------------
-# alias myterm='export DISPLAY=:0.0 && hyper'
-alias term="hyper"
-
-# Term Title Fmt: j user@host: /path/to/pwd
+# Terminal Title Fmt: user@host: /path/to/pwd
 PROMPT_COMMAND='echo -ne "\033]0;${USER}@${HOSTNAME}: ${PWD/$HOME/~}\007"'
 
 # Usage: set-title title text
@@ -57,7 +55,7 @@ alias ping3g='ping -c 3 google.com'
 alias envd='env|grep DISPLAY && env|grep DESKTOP'
 
 # Shortcuts
-alias godocs="cd ~/prod/docs-priv"
+alias godocs="cd ~/prod/docsproj"
 alias gohome="cd ~/prod/home"
 alias goangular="cd ~/projects/angular"
 alias goproj="cd ~/projects/angular" # Current Proj
@@ -66,18 +64,13 @@ alias goproj="cd ~/projects/angular" # Current Proj
 # VSCode Shortcuts
 #--------------------------------------------------
 alias codedots="code ~/.Allthedotfiles-priv.code-workspace"
-alias codedocs="code ~/prod/docs-priv/docs-priv.code-workspace"
+alias codedocs="code ~/prod/docsproj/.docsproj.code-workspace"
 alias codehome="code ~/prod/home/home.code-workspace"
 alias codeangular="code ~/projects/angular/angular.code-workspace" 
 alias codeproj="codeangular"
 
-#--------------------------------------------------
-# Terminal Titles
-#--------------------------------------------------
-
-
 # #--------------------------------------------------
-# # annebrown.net
+# # annebrown.net - currently not in use
 # #--------------------------------------------------
 # 	alias ab.net-log="ssh admin@annebrown.net tail -f /var/log/httpd/error_log.1"
 
@@ -86,10 +79,6 @@ alias codeproj="codeangular"
 #--------------------------------------------------
 	alias p.org-bash="ssh -X -l anneq -p perl.org"  
 	alias perldocsvr="sudo ls; sudo perldoc-server --public &"
-
-	# # Catalyst Server 
-	# alias svrwebappt="gowebappt; perl script/webapptest_server.pl -r -p 1234"
-	# alias svrwebapp="gowebapp; perl script/webapp_server.pl -r -p 5678"
 
 #--------------------------------------------------
 # Devices
