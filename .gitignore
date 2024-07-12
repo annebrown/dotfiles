@@ -396,3 +396,4 @@ FodyWeavers.xsd
 
 # JetBrains Rider
 *.sln.iml
+kde/.config/plasma-org.kde.plasma.desktop-appletsrc
