@@ -39,6 +39,7 @@ function set-title() {
 #  Script Paths
 #--------------------------------------------------
 export  PATH=$PATH:~/.dotfiles/sh:~/.dotfiles-priv/sh 
+export PATH=$PATH:/usr/local/go/bin
 
 #--------------------------------------------------
 # General Aliases
@@ -79,6 +80,7 @@ alias codeproj="codeangular"
 #--------------------------------------------------
 	alias p.org-bash="ssh -X -l anneq -p perl.org"  
 	alias perldocsvr="sudo ls; sudo perldoc-server --public &"
+
 
 #--------------------------------------------------
 # Devices
