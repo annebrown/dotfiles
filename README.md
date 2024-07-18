@@ -1,24 +1,15 @@
-<!-- Basic Github Header: annebrown.ca -->
-<div style="text-align: right"><a href="https://www.annebrown.ca">
-	<img src="https://github.com/annebrown/dotfiles/blob/main/img/logos/logo-ab.png"  width="25"></a> annebrown.ca </div>
-<div style="text-align: right"><sub><sub><a href="https://github.com/annebrown/?tab=repositories">
-    Repo:</a> <a href="https://github.com/annebrown/dotfiles/">/dotfiles/</a><a href="README.md">README.md</a>
-</sub></sub></div>
-
----
-<!-- End of Header -->
-
 # Dev Env Config
 
 ## Description
 
-New dev env config on Linux,   Android, Chromebook, Win11, RasPi, xOS, and iOS.  See: 
- [Create New Dev Env](https://github.com/annebrown/docs-priv/blob/master/workflows/new-dev-envs/README.md).
+Dev Env Config for bare metal server, VM, container, GitHub.dev, GitPod, etc.  
 
-Inludes project, stack, host, OS, app and desktop-flavor overrides.  Pulls in scripts for starting required services and apps.  
+In conjunction with dotfiles-priv, includes dev env config on Linux, Android, Chromebook, Win11, RasPi, xOS, and iOS hosts.  
+
+Also inludes project, stack, host, OS, and desktop-flavor overrides.  Pulls in scripts for configuring and starting required services and apps (vscode, vim, terminals, git, etc.).  Also brings other static assets, including images, local network hosts, and frequently used scripts.
 
 
-> This repo contains public config stuff.  Private config data (```/etc/hosts```, ```.ssh/config```, NAS config, etc.) is sourced from separate repos.
+> This repo contains public config stuff.  Private config data (`/etc/hosts`, `.ssh/config`, NAS config, etc.) is sourced from separate repos.
 
 
 ## Usage
