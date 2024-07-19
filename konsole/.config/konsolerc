@@ -1,0 +1,38 @@
+4 screens: Height=435
+4 screens: Width=911
+4 screens: XPosition=2050
+4 screens: YPosition=83
+DP-1-0 HDMI-1-0 HDMI-2 eDP-1=DP-1-0
+MenuBar=Disabled
+State=AAAA/wAAAAD9AAAAAQAAAAAAAAAAAAAAAPwCAAAAAvsAAAAiAFEAdQBpAGMAawBDAG8AbQBtAGEAbgBkAHMARABvAGMAawAAAAAA/////wAAAXwBAAAD+wAAABwAUwBTAEgATQBhAG4AYQBnAGUAcgBEAG8AYwBrAAAAAAD/////AAABFQEAAAMAAAOPAAABhQAAAAQAAAAEAAAACAAAAAj8AAAAAQAAAAIAAAACAAAAFgBtAGEAaQBuAFQAbwBvAGwAQgBhAHIBAAAAAP////8AAAAAAAAAAAAAABwAcwBlAHMAcwBpAG8AbgBUAG8AbwBsAGIAYQByAQAAA2f/////AAAAAAAAAAA=
+
+[General]
+ConfigVersion=1
+
+[KFileDialog Settings]
+Recent Files[$e]=hugo-icon-456x512-ghgrm1yx.png,file:$HOME/Downloads/mkdocs.png,file:$HOME/Downloads/hugo-icon-456x512-ghgrm1yx.png
+Recent URLs[$e]=file:$HOME/Downloads/,file:$HOME/
+iconViewIconSize=64
+
+[MainWindow]
+2 screens: XPosition=0
+2 screens: YPosition=590
+3 screens: Height=508
+3 screens: Width=911
+3 screens: Window-Maximized=true
+3 screens: XPosition=1831
+3 screens: YPosition=1358
+4 screens: Height=490
+4 screens: Width=1920
+4 screens: XPosition=1920
+4 screens: YPosition=979
+DP-1-0 HDMI-1-0=DP-1-0
+DP-1-0 HDMI-1-0 HDMI-2 eDP-1=DP-1-0
+DP-1-1 HDMI-1-3 HDMI-2 eDP-1=eDP-1
+DP-1-1 HDMI-1-3 eDP-1=eDP-1
+MenuBar=Disabled
+State=AAAA/wAAAAD9AAAAAQAAAAAAAAAAAAAAAPwCAAAAAvsAAAAiAFEAdQBpAGMAawBDAG8AbQBtAGEAbgBkAHMARABvAGMAawAAAAAA/////wAAAXwBAAAD+wAAABwAUwBTAEgATQBhAG4AYQBnAGUAcgBEAG8AYwBrAAAAAAD/////AAABFQEAAAMAAAOPAAADdQAAAAQAAAAEAAAACAAAAAj8AAAAAQAAAAIAAAACAAAAFgBtAGEAaQBuAFQAbwBvAGwAQgBhAHIAAAAAAP////8AAAAAAAAAAAAAABwAcwBlAHMAcwBpAG8AbgBUAG8AbwBsAGIAYQByAAAAA2f/////AAAAAAAAAAA=
+ToolBarsMovable=Disabled
+
+[UiSettings]
+ColorScheme=

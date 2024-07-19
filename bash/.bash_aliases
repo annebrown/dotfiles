@@ -9,7 +9,7 @@
 #
 # Usage:
 #	1. Clone repos to ~/.dotfiles & ~/.dotfiles-priv
-#	2. $ stow -d ~/.dotfiles bash git hyper vim code sh kde
+#	2. $ stow -d ~/.dotfiles bash git hyper konsole vim code sh 
 #	3. $ stow -d ~/.dotfiles-priv git ssh sh
 #  
 #--------------------------------------------------------------
@@ -40,6 +40,7 @@ function set-title() {
 #--------------------------------------------------
 export  PATH=$PATH:~/.dotfiles/sh:~/.dotfiles-priv/sh 
 export PATH=$PATH:/usr/local/go/bin
+export PATH=$PATH:~/.npm-global
 
 #--------------------------------------------------
 # General Aliases
