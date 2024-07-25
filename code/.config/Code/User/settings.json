@@ -10,7 +10,8 @@
     "editor.minimap.enabled": false,   
     "editor.rulers": [
         80,
-    ],     
+    ],
+    "editor.tabCompletion": "on",
     "editor.wordWrap": "on",
     "editor.minimap.showSlider": "always",     
     "editor.suggestSelection": "first",
@@ -24,6 +25,7 @@
     "scm.showChangesSummary": false,
 
     "settingsSync.ignoredSettings": [
+        
         "editor.linkedEditing"
     ],
 
@@ -81,6 +83,26 @@
         {
             "before": ["j", "j"],
             "after": ["<Esc>"]
-        }
+        }  
     ],
+
+    "yaml.schemas": {
+    "https://squidfunk.github.io/mkdocs-material/schema.json": "mkdocs.yml"
+  },
+  "yaml.customTags": [ 
+    "!ENV scalar",
+    "!ENV sequence",
+    "!relative scalar",
+    "tag:yaml.org,2002:python/name:material.extensions.emoji.to_svg",
+    "tag:yaml.org,2002:python/name:material.extensions.emoji.twemoji",
+    "tag:yaml.org,2002:python/name:pymdownx.superfences.fence_code_format"
+],
+"editor.useTabStops": false,
+"emmet.triggerExpansionOnTab": true,
+"vim.enableNeovim": true,
+"workbench.preferredDarkColorTheme": "Dracula Theme",
+"cSpell.userWords": [
+    "Cheatsheet"
+],
+"typescript.updateImportsOnFileMove.enabled": "always"
 }

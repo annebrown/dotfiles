@@ -1,0 +1,29 @@
+{
+	"windowPosition": [
+		50,
+		50
+	],
+	"windowSize": [
+		540,
+		380
+	],
+	"hyper": {
+		"plugins": "{\"plugins\":[],\"localPlugins\":[]}",
+		"plugin-versions": "[]"
+	config: {
+    ...
+
+    hyperTransparentVibrancy: {
+      alpha: 0.5, // default 50%
+      vibrancy: 'dark'
+    },
+
+    ...
+  },
+
+  plugins: [
+    'hyper-snazzy',
+    'hyper-transparent-vibrancy',
+  ],	}
+	
+}

@@ -40,7 +40,6 @@ function set-title() {
 #--------------------------------------------------
 export  PATH=$PATH:~/.dotfiles/sh:~/.dotfiles-priv/sh 
 export PATH=$PATH:/usr/local/go/bin
-export PATH=$PATH:~/.npm-global
 
 #--------------------------------------------------
 # General Aliases
@@ -70,6 +69,14 @@ alias codedocs="code ~/prod/docsproj/.docsproj.code-workspace"
 alias codehome="code ~/prod/home/home.code-workspace"
 alias codeangular="code ~/projects/angular/angular.code-workspace" 
 alias codeproj="codeangular"
+
+#--------------------------------------------------
+# Dev Svr Shortcuts
+#--------------------------------------------------
+alias docserver="konsole --profile docserver&" # MkDocs docs.annebrown.ca
+alias angularab="konsole --profile angularab&" # Angular - annebrown.ca
+alias nextbd="konsole --profile nextbd&" # Next.js - browndomain.com
+alias nextpriv="konsole --profile nextpriv&" # Next.js - priv.browndomain.com
 
 # #--------------------------------------------------
 # # annebrown.net - currently not in use
