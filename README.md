@@ -2,7 +2,7 @@
 
 ## Description
 
-Development environment config for bare metal server, VM, container, GitHub.dev, GitPod, etc.  
+Dev environment config for bare metal server, VM, container, GitHub.dev, GitPod, etc.  
 
 In conjunction with dotfiles-priv, includes dev env config on Linux, Android, Chromebook, Win11, RasPi, xOS, and iOS hosts.  
 
