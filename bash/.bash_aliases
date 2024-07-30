@@ -70,9 +70,14 @@ alias codehome="code ~/prod/home/home.code-workspace"
 alias codeangular="code ~/projects/angular/angular.code-workspace" 
 alias codeproj="codeangular"
 
-#--------------------------------------------------
+#-------------------------------------------------------------------------------
+# docs-pub
+#-------------------------------------------------------------------------------
+alias activate-venv="cd ~/prod/docs-pub; source .venv/bin/activate"
+
+#-------------------------------------------------------------------------------
 # Dev Svr Shortcuts
-#--------------------------------------------------
+#-------------------------------------------------------------------------------
 alias docserver="konsole --profile docserver&" # MkDocs docs.annebrown.ca
 alias angularab="konsole --profile angularab&" # Angular - annebrown.ca
 alias nextbd="konsole --profile nextbd&" # Next.js - browndomain.com
