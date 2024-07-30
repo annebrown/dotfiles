@@ -9,7 +9,7 @@ In conjunction with dotfiles-priv, includes dev env config on Linux, Android, Ch
 Also inludes project, stack, host, OS, and desktop-flavor overrides.  Pulls in scripts for configuring and starting required services and apps (vscode, vim, terminals, git, etc.).  Also brings other static assets, including images, local network hosts, and frequently used scripts.
 
 
-> This repo contains public config stuff.  Private config data (`/etc/hosts`, env vars, NAS config, etc.) is sourced from the private dotfiles repo.
+> This repo contains public config stuff.  Private config data (`/etc/hosts`, env vars, NAS config, etc.) is sourced from dotfiles-priv.
 
 
 ## Usage
@@ -22,11 +22,12 @@ $ git clone https://github.com/annebrown/dotfiles.git ~/.dotfiles
 $ git clone https://github.com/annebrown/dotfiles-priv.git ~/.dotfiles-priv
 
 ```
-Link configs:
+
+Link config files and dirs:
 
 ```bash
-$ stow -d .dotfiles bash vim vscode hyper 
-$ stow -d dotfiles-priv git vscode pkg3-priv ...
+$ stow -d ~/.dotfiles bash vim vscode hyper 
+$ stow -d ~/.dotfiles-priv git vscode pkg3-priv ...
 ```
 
 # Related Links
