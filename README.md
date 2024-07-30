@@ -27,7 +27,7 @@ Link config files and dirs:
 
 ```bash
 $ stow -d ~/.dotfiles bash vim vscode hyper 
-$ stow -d ~/.dotfiles-priv git vscode pkg3-priv ...
+$ stow -d ~/.dotfiles-priv git nas ...
 ```
 
 # Related Links
