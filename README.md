@@ -26,7 +26,7 @@ $ git clone https://github.com/annebrown/dotfiles-priv.git ~/.dotfiles-priv
 Link config files and dirs:
 
 ```bash
-$ stow -d ~/.dotfiles bash vim vscode hyper 
+$ stow -d ~/.dotfiles bash vim vscode konsole hyper 
 $ stow -d ~/.dotfiles-priv git nas ...
 ```
 
