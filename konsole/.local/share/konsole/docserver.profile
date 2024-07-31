@@ -1,5 +1,5 @@
 [Appearance]
-ColorScheme=SolarizedLight
+ColorScheme=GreenOnBlack
 
 [General]
 Command=mkdocs serve

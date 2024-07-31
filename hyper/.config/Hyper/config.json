@@ -1,29 +1,22 @@
 {
 	"windowPosition": [
-		50,
-		50
+		1205,
+		27
 	],
 	"windowSize": [
-		540,
-		380
+		655,
+		414
 	],
 	"hyper": {
 		"plugins": "{\"plugins\":[],\"localPlugins\":[]}",
 		"plugin-versions": "[]"
-	config: {
-    ...
-
-    hyperTransparentVibrancy: {
-      alpha: 0.5, // default 50%
-      vibrancy: 'dark'
-    },
-
-    ...
-  },
-
-  plugins: [
-    'hyper-snazzy',
-    'hyper-transparent-vibrancy',
-  ],	}
-	
+	},
+	"hyperTransparentVibrancy": {
+		"alpha": "0.5",
+		"vibrancy": "dark"
+	},
+	"plugins": [
+		"hyper-snazzy",
+		"hyper-transparent-vibrancy"
+	]
 }

@@ -1,5 +1,5 @@
 [Appearance]
-ColorScheme=BlackOnRandomLight
+ColorScheme=BlueOnBlack
 
 [General]
 Directory=/home/anne/prod/browndomain.com
