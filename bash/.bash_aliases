@@ -108,7 +108,7 @@ alias codedots="cd && code ~/.AllThedotfiles.code-workspace"
 # docs-pub Project
 #--------------------------------------------------
 alias godocs="cd ~/prod/docs-pub"
-alias codedocs="godocs && code docs-pub.code-workspace&" # VSCode w MkDocs theme
+alias codedocs="godocs && code .&" # VSCode w MkDocs theme
 alias docserver="godocs && activate-venv && mkdocs serve" # Dev Svr
 # Launch docs server in separate process w MkDocs theme
 alias docservert="godocs && activate-venv && konsole --profile docserver&" # 
@@ -117,8 +117,7 @@ alias docservert="godocs && activate-venv && konsole --profile docserver&" #
 # www.browndomain.com Project
 #--------------------------------------------------
 alias gobd="cd ~/prod/browndomain.com"
-alias codebd="gobd & code browndomain.com.code-workspace
-&" # VSCode w Next.js theme
+alias codebd="gobd && code .&" # VSCode w Next.js theme
 alias bdserver="gobd && npm run dev"
 # Launch Next.js server in separate process w Next.js theme
 alias bdservert="gobd && konsole --profile Next.js&" 
@@ -127,7 +126,7 @@ alias bdservert="gobd && konsole --profile Next.js&"
 # www.annebrown.ca Project
 #--------------------------------------------------
 alias goab="cd ~/prod/annebrown.ca"
-alias codeab="goab && code annebrown.ca.code-workspace&" # VSCode w Angular theme
+alias codeab="goab && code ." # VSCode w Angular theme
 alias abserver="goab && angularserver"
 # Launch Angular svr in sep process w Angular theme
 alias abservert="goab && konsole --profile Angular&"
