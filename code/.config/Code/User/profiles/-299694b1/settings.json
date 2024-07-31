@@ -1,4 +1,6 @@
 {
     "workbench.colorTheme": "Default High Contrast",
-    "explorer.compactFolders": false
+    "explorer.compactFolders": false,
+    "git.confirmSync": false,
+    "git.autofetch": true
 }
