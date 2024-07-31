@@ -2,5 +2,6 @@
     "workbench.colorTheme": "Default High Contrast",
     "explorer.compactFolders": false,
     "git.confirmSync": false,
-    "git.autofetch": true
+    "git.autofetch": true,
+    "git.enableSmartCommit": true
 }
