@@ -76,7 +76,7 @@ export PATH=$PATH:/usr/local/go/bin
 #--------------------------------------------------
 # Python
 #--------------------------------------------------
-alias activate-venv="source .venv/bin/activate" # Activate Python virtual env
+alias activate-venv="source .venv/bin/activate"
 
 #-------------------------------------------------------------------------------
 #
@@ -102,16 +102,18 @@ alias nextserver="npm run dev"
 # dotfiles Project
 #--------------------------------------------------
 alias godots="cd ~/.dotfiles"
-alias codedots="cd && code ~/.AllThedotfiles.code-workspace"
+# VSCode workspace - .dotfiles and .dotfiles-priv w contrast dark theme
+alias codedots="cd && code ~/.AllThedotfiles.code-workspace" 
 
 #--------------------------------------------------
 # docs-pub Project
 #--------------------------------------------------
 alias godocs="cd ~/prod/docs-pub"
+alias godocst='konsole --profile MkDocs --workdir ~/prod/docs-pub --noclose -e "sh .venv/bin/activate"'
 alias codedocs="godocs && code .&" # VSCode w MkDocs theme
-alias docserver="godocs && activate-venv && mkdocs serve" # Dev Svr
-# Launch docs server in separate process w MkDocs theme
-alias docservert="godocs && activate-venv && konsole --profile docserver&" # 
+alias docserver="godocs && activate-venv && mkdocs serve -a 192.168.2.211:8000" 
+# Launch docs server in separate venv process w MkDocs theme
+alias docservert="godocs && activate-venv && konsole --profile docserver&"
 
 #--------------------------------------------------
 # www.browndomain.com Project
@@ -121,6 +123,16 @@ alias codebd="gobd && code .&" # VSCode w Next.js theme
 alias bdserver="gobd && npm run dev"
 # Launch Next.js server in separate process w Next.js theme
 alias bdservert="gobd && konsole --profile Next.js&" 
+
+#--------------------------------------------------
+# TailNext Project - www.bd.com SSG Prototype
+#--------------------------------------------------
+alias gotn="cd ~/projects/next.js/tailnext"
+alias codetn="gotn && code .&" # VSCode w Next.js theme
+alias tnserver="gotn && npm run dev"
+# Launch Next.js server in separate process w Next.js theme
+alias tnservert="gotn && konsole --profile Next.js&" 
+alias tnstorybook="gotn && npm run storybook"
 
 #--------------------------------------------------
 # www.annebrown.ca Project

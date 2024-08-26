@@ -1,22 +1,14 @@
 {
 	"windowPosition": [
-		1205,
-		27
+		50,
+		50
 	],
 	"windowSize": [
-		655,
-		414
+		540,
+		380
 	],
 	"hyper": {
 		"plugins": "{\"plugins\":[],\"localPlugins\":[]}",
 		"plugin-versions": "[]"
-	},
-	"hyperTransparentVibrancy": {
-		"alpha": "0.5",
-		"vibrancy": "dark"
-	},
-	"plugins": [
-		"hyper-snazzy",
-		"hyper-transparent-vibrancy"
-	]
+	}
 }

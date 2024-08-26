@@ -1,5 +1,6 @@
 [Appearance]
 ColorScheme=GreenOnBlack
+Font=Hack,9,-1,7,50,0,0,0,0,0
 
 [General]
 Command=mkdocs serve

@@ -3,5 +3,11 @@
     "remote.SSH.remotePlatform": {
         "*.gitpod.io": "linux"
     },
-    "window.customTitleBarVisibility": "windowed"
+    "window.customTitleBarVisibility": "windowed",
+    "liveServer.settings.AdvanceCustomBrowserCmdLine": "",
+    "diffEditor.renderGutterMenu": false,
+    "livePreview.portNumber": 2020,
+    "react-native-tools.networkInspector.consoleLogsColorTheme": "Dark",
+    "react-native-tools.reactNativeGlobalCommandName": "serve",
+    "window.autoDetectHighContrast": false
 }

@@ -1,9 +1,9 @@
 [Appearance]
-ColorScheme=SolarizedLight
+ColorScheme=GreenOnBlack
 TabColor=0,255,255
 
 [General]
-Directory=~/prod/docs-pub
+Directory=
 Icon=/home/anne/Downloads/mkdocs.png
 LocalTabTitleFormat=MkDocs - docs-pub
 Name=MdDocs
