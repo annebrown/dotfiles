@@ -6,7 +6,7 @@ Dev environment config for bare metal server, VM, container, cloud (GitPod, GitH
 
 In conjunction with dotfiles-priv, includes dev env config on Linux, Android, Chromebook, Win11, RasPi, xOS, and iOS hosts.  
 
-Also inludes project, stack, host, OS, and desktop-flavor overrides.  Pulls in scripts for configuring and starting required services and apps (vscode, vim, terminals, git, etc.).  Also brings other static assets, including images, local network hosts, and frequently used scripts.
+Also inludes project, stack, host, OS, and desktop-flavor overrides.  Pulls in scripts for configuring and starting required services and apps (vscode, vim, terminals, git, etc.).  Brings additional static assets, including images, local network hosts, and frequently used scripts.
 
 
 > This repo contains public config stuff.  Private config data (`/etc/hosts`, env vars, NAS config, etc.) is sourced from dotfiles-priv.
