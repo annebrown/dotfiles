@@ -1,6 +1,6 @@
 #-------------------------------------------------------------------------------
 #
-# File:	~/.dotfiles//bash/.bash_aliases
+# File:	$HOME/.dotfiles//bash/.bash_aliases
 # Repo: https://github.com/annebrown/dotfiles.git
 # Docs: https://docs.annebrown.ca/dev/projects#dotfiles-project
 # Author: Anne Brown
@@ -8,9 +8,9 @@
 # Purpose:	Dev Env Config
 #
 # Usage:
-#	1. Clone repos to ~/.dotfiles & ~/.dotfiles-priv
-#	2. $ stow -d ~/.dotfiles bash git hyper konsole vim code sh 
-#	3. $ stow -d ~/.dotfiles-priv git ssh sh
+#	1. Clone repos to $HOME/.dotfiles & $HOME/.dotfiles-priv
+#	2. $ stow -d $HOME/.dotfiles bash git hyper konsole vim code sh 
+#	3. $ stow -d $HOME/.dotfiles-priv git ssh sh
 #  
 #-------------------------------------------------------------------------------
 
@@ -27,7 +27,7 @@ export EDITOR='vim' # defaut editor
 #--------------------------------------------------
 #  Script Paths
 #--------------------------------------------------
-export  PATH=$PATH:~/.dotfiles/sh:~/.dotfiles-priv/sh 
+export  PATH=$PATH:$HOME/.dotfiles/sh:$HOME/.dotfiles-priv/sh 
 
 #--------------------------------------------------
 # General Aliases
@@ -50,6 +50,7 @@ alias envd="env|grep DISPLAY && env|grep DESKTOP"
 #-------------------------------------------------------------------------------
 # Terminal Titlebar Fmt: user@host: /path/to/pwd
 PROMPT_COMMAND='echo -ne "\033]0;${USER}@${HOSTNAME}: ${PWD/$HOME/~}\007"'
+alias devterm="konsole --layout $HOME/konsole-view-layout.json &"
 
 #--------------------------------------------------
 # Hyper
@@ -101,15 +102,15 @@ alias nextserver="npm run dev"
 #--------------------------------------------------
 # dotfiles Project
 #--------------------------------------------------
-alias godots="cd ~/.dotfiles"
+alias godots="cd $HOME/.dotfiles"
 # VSCode workspace - .dotfiles and .dotfiles-priv w contrast dark theme
-alias codedots="cd && code ~/.AllThedotfiles.code-workspace" 
+alias codedots="cd && code $HOME/.AllThedotfiles.code-workspace" 
 
 #--------------------------------------------------
 # docs-pub Project
 #--------------------------------------------------
-alias godocs="cd ~/prod/docs-pub"
-alias godocst='konsole --profile MkDocs --workdir ~/prod/docs-pub --noclose -e "sh .venv/bin/activate"'
+alias godocs="cd $HOME/prod/docs-pub"
+alias godocst='konsole --profile MkDocs --workdir $HOME/prod/docs-pub --noclose -e "sh .venv/bin/activate"'
 alias codedocs="godocs && code .&" # VSCode w MkDocs theme
 alias docserver="godocs && activate-venv && mkdocs serve -a 192.168.2.211:8000" 
 # Launch docs server in separate venv process w MkDocs theme
@@ -118,7 +119,7 @@ alias docservert="godocs && activate-venv && konsole --profile docserver&"
 #--------------------------------------------------
 # www.browndomain.com Project
 #--------------------------------------------------
-alias gobd="cd ~/prod/browndomain.com"
+alias gobd="cd $HOME/prod/browndomain.com"
 alias codebd="gobd && code .&" # VSCode w Next.js theme
 alias bdserver="gobd && npm run dev"
 # Launch Next.js server in separate process w Next.js theme
@@ -127,7 +128,7 @@ alias bdservert="gobd && konsole --profile Next.js&"
 #--------------------------------------------------
 # TailNext Project - www.bd.com SSG Prototype
 #--------------------------------------------------
-alias gotn="cd ~/projects/next.js/tailnext"
+alias gotn="cd $HOME/projects/next.js/tailnext"
 alias codetn="gotn && code .&" # VSCode w Next.js theme
 alias tnserver="gotn && npm run dev"
 # Launch Next.js server in separate process w Next.js theme
@@ -137,7 +138,7 @@ alias tnstorybook="gotn && npm run storybook"
 #--------------------------------------------------
 # www.annebrown.ca Project
 #--------------------------------------------------
-alias goab="cd ~/prod/annebrown.ca"
+alias goab="cd $HOME/prod/annebrown.ca"
 alias codeab="goab && code ." # VSCode w Angular theme
 alias abserver="goab && angularserver"
 # Launch Angular svr in sep process w Angular theme
