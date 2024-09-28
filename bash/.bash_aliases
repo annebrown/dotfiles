@@ -52,9 +52,8 @@ alias envd="env|grep DISPLAY && env|grep DESKTOP"
 PROMPT_COMMAND='echo -ne "\033]0;${USER}@${HOSTNAME}: ${PWD/$HOME/~}\007"'
 alias devterm="konsole --layout $HOME/konsole-view-layout.json &"
 
-#--------------------------------------------------
+
 # Hyper
-#--------------------------------------------------
 function set-title() {
   if [[ -z "$ORIG" ]]; then
     ORIG=$PS1
@@ -92,7 +91,7 @@ alias angularserver="ng serve"
 #--------------------------------------------------
 # Next.js
 #--------------------------------------------------
-alias nextserver="npm run dev"
+alias nextserver="pnpm run dev"
 
 #-------------------------------------------------------------------------------
 # 
@@ -121,7 +120,7 @@ alias docservert="godocs && activate-venv && konsole --profile docserver&"
 #--------------------------------------------------
 alias gobd="cd $HOME/prod/browndomain.com"
 alias codebd="gobd && code .&" # VSCode w Next.js theme
-alias bdserver="gobd && npm run dev"
+alias bdserver="gobd && pnpm run dev"
 # Launch Next.js server in separate process w Next.js theme
 alias bdservert="gobd && konsole --profile Next.js&" 
 
@@ -130,10 +129,10 @@ alias bdservert="gobd && konsole --profile Next.js&"
 #--------------------------------------------------
 alias gotn="cd $HOME/projects/next.js/tailnext"
 alias codetn="gotn && code .&" # VSCode w Next.js theme
-alias tnserver="gotn && npm run dev"
+alias tnserver="gotn && pnpm run dev"
 # Launch Next.js server in separate process w Next.js theme
 alias tnservert="gotn && konsole --profile Next.js&" 
-alias tnstorybook="gotn && npm run storybook"
+alias tnstorybook="gotn && pnpm run storybook"
 
 #--------------------------------------------------
 # www.annebrown.ca Project
