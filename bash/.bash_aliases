@@ -51,6 +51,7 @@ alias envd="env|grep DISPLAY && env|grep DESKTOP"
 # Terminal Titlebar Fmt: user@host: /path/to/pwd
 PROMPT_COMMAND='echo -ne "\033]0;${USER}@${HOSTNAME}: ${PWD/$HOME/~}\007"'
 alias devterm="konsole --layout $HOME/konsole-view-layout.json &"
+histfilesize=5000
 
 
 # Hyper

@@ -7,3 +7,6 @@ Icon=/home/anne/Downloads/next-js_1.svg
 LocalTabTitleFormat=Next.js
 Name=Next.js
 Parent=FALLBACK/
+
+[Scrolling]
+HistorySize=10000
