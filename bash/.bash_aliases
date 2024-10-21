@@ -138,11 +138,11 @@ alias tnstorybook="gotn && pnpm run storybook"
 #--------------------------------------------------
 # www.annebrown.ca Project
 #--------------------------------------------------
-alias goab="cd $HOME/prod/annebrown.ca"
-alias codeab="goab && code ." # VSCode w Angular theme
-alias abserver="goab && angularserver"
-# Launch Angular svr in sep process w Angular theme
-alias abservert="goab && konsole --profile Angular&"
+alias goab="cd $HOME/prod/ab.ca"
+alias codeab="goab && code ." # VSCode w Nuxt theme
+alias abserver="goab && pnpm dev"
+# Launch Nuxt svr in sep process w NUxt theme
+alias abservert="goab && konsole --profile Nuxt&"
 
 # #--------------------------------------------------
 # # annebrown.net - Not currently deployed
