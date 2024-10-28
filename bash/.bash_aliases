@@ -119,30 +119,16 @@ alias docservert="godocs && activate-venv && konsole --profile docserver&"
 #--------------------------------------------------
 # www.browndomain.com Project
 #--------------------------------------------------
-alias gobd="cd $HOME/prod/browndomain.com"
-alias codebd="gobd && code .&" # VSCode w Next.js theme
-alias bdserver="gobd && pnpm run dev"
-# Launch Next.js server in separate process w Next.js theme
-alias bdservert="gobd && konsole --profile Next.js&" 
-
-#--------------------------------------------------
-# TailNext Project - www.bd.com SSG Prototype
-#--------------------------------------------------
-alias gotn="cd $HOME/projects/next.js/tailnext"
-alias codetn="gotn && code .&" # VSCode w Next.js theme
-alias tnserver="gotn && pnpm run dev"
-# Launch Next.js server in separate process w Next.js theme
-alias tnservert="gotn && konsole --profile Next.js&" 
-alias tnstorybook="gotn && pnpm run storybook"
+alias gobd="cd $HOME/prod/bd.com"
+alias codebd="gobd && code .&" 
+alias bdserver="gobd && pnpm dev"
 
 #--------------------------------------------------
 # www.annebrown.ca Project
 #--------------------------------------------------
 alias goab="cd $HOME/prod/ab.ca"
-alias codeab="goab && code ." # VSCode w Nuxt theme
+alias codeab="goab && code ."
 alias abserver="goab && pnpm dev"
-# Launch Nuxt svr in sep process w NUxt theme
-alias abservert="goab && konsole --profile Nuxt&"
 
 # #--------------------------------------------------
 # # annebrown.net - Not currently deployed

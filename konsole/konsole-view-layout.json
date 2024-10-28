@@ -8,15 +8,15 @@
                     "SessionRestoreId": 1
                 },
                 {
-                    "SessionRestoreId": 0
-                },
-                {
-                    "SessionRestoreId": 0
+                    "SessionRestoreId": 3
                 }
             ]
         },
         {
             "SessionRestoreId": 0
+        },
+        {
+            "SessionRestoreId": 4
         }
     ]
 }
