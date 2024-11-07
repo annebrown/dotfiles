@@ -107,28 +107,38 @@ alias godots="cd $HOME/.dotfiles"
 alias codedots="cd && code $HOME/.AllThedotfiles.code-workspace" 
 
 #--------------------------------------------------
-# docs-pub Project
+# Markdown Content Project
 #--------------------------------------------------
-alias godocs="cd $HOME/prod/docs-pub"
-alias godocst='konsole --profile MkDocs --workdir $HOME/prod/docs-pub --noclose -e "sh .venv/bin/activate"'
-alias codedocs="godocs && code .&" # VSCode w MkDocs theme
-alias docserver="godocs && activate-venv && mkdocs serve -a 192.168.2.211:8000" 
-# Launch docs server in separate venv process w MkDocs theme
-alias docservert="godocs && activate-venv && konsole --profile docserver&"
+alias gocontent="cd $HOME/prod/data/markdown/content"
+alias codecontent="gocontent && code .&" 
+
+#--------------------------------------------------
+# Markdown Content - Template App Project
+#--------------------------------------------------
+alias gocontentapp="cd $HOME/prod/data/markdown/app-template/app"
+alias codecontentapp="gocontentapp && code .&" 
+alias contentappserver="gocontentapp && pnpm dev"
 
 #--------------------------------------------------
 # www.browndomain.com Project
 #--------------------------------------------------
-alias gobd="cd $HOME/prod/bd.com"
+alias gobd="cd $HOME/prod/bd/bd.com"
 alias codebd="gobd && code .&" 
 alias bdserver="gobd && pnpm dev"
 
 #--------------------------------------------------
 # www.annebrown.ca Project
 #--------------------------------------------------
-alias goab="cd $HOME/prod/ab.ca"
+alias goab="cd $HOME/prod/ab/ab.ca"
 alias codeab="goab && code ."
 alias abserver="goab && pnpm dev"
+
+#--------------------------------------------------
+# www.misscommunication.ca Project
+#--------------------------------------------------
+alias gomc="cd $HOME/prod/mc/mc.ca"
+alias codemc="gomc && code ."
+alias mcserver="gomc && pnpm dev"
 
 # #--------------------------------------------------
 # # annebrown.net - Not currently deployed
