@@ -8,8 +8,8 @@ Headless Public Media Cache
 
 ## Usage
 
-No links required, so not for GnuStow
+No links required, so not for use w GnuStow
 
-URL: `https://github.com/annebrown/.dotfiles/some/path/some-asset.some-extension`
+URL: `https://github.com/annebrown/dotfiles/some/path/some-asset.some-extension`
 
-Example: `https://github.com/annebrown/.dotfiles/no-stow/README.md`
+Example: [This File](https://github.com/annebrown/dotfiles/blob/main/no-stow/README.md)
