@@ -100,22 +100,22 @@ alias nextserver="pnpm run dev"
 #
 #-------------------------------------------------------------------------------
 #--------------------------------------------------
-# dotfiles Project
+# dotfiles/dotfiles-priv Project
 #--------------------------------------------------
 alias godots="cd $HOME/.dotfiles"
 # VSCode workspace - .dotfiles and .dotfiles-priv w contrast dark theme
 alias codedots="cd && code $HOME/.AllThedotfiles.code-workspace" 
 
 #--------------------------------------------------
-# Markdown Content Project
+# Headless Content Project
 #--------------------------------------------------
-alias gocontent="cd $HOME/prod/data/markdown/content"
+alias gocontent="cd $HOME/prod/content-data/content-data.ab.ca"
 alias codecontent="gocontent && code .&" 
 
 #--------------------------------------------------
 # Markdown Content - Template App Project
 #--------------------------------------------------
-alias gocontentapp="cd $HOME/prod/data/markdown/app-template/app"
+alias gocontentapp="cd $HOME/prod/content-app/content-app.ab.ca"
 alias codecontentapp="gocontentapp && code .&" 
 alias contentappserver="gocontentapp && pnpm dev"
 
