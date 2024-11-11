@@ -1,9 +1,0 @@
-#!/usr/bin/env xdg-open
-[Desktop Entry]
-Version=1.0
-Type=Application
-Name=The National
-Exec=/opt/google/chrome/google-chrome --profile-directory=Default --ignore-profile-directory-if-not-exists https://gem.cbc.ca/the-national
-Icon=/home/anne/.config/google-chrome/Default/Web Shortcut Icons/shortcut-99b14d96ad8663e715997f9f5adc51c7.png
-URL=https://gem.cbc.ca/the-national
-Comment=Open https://gem.cbc.ca/the-national in a new tab in Google Chrome.
