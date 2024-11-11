@@ -140,6 +140,13 @@ alias gomc="cd $HOME/prod/mc/mc.ca"
 alias codemc="gomc && code ."
 alias mcserver="gomc && pnpm dev"
 
+#--------------------------------------------------
+# Proto Project
+#--------------------------------------------------
+alias goproto="cd $HOME/prod/proto/proto.ab.ca"
+alias codeproto="goproto && code ."
+alias protoserver="goproto && pnpm dev"
+
 # #--------------------------------------------------
 # # annebrown.net - Not currently deployed
 # #--------------------------------------------------
