@@ -10,9 +10,6 @@
 #	1. Clone repos to $HOME/.dotfiles & $HOME/.dotfiles-priv
 #	2. $ stow -d $HOME/.dotfiles bash git hyper konsole vim code sh ...
 #	3. $ stow -d $HOME/.dotfiles-priv git ssh sh ...
-#
-# To Do:
-# Remove barnacles
 #  
 #-------------------------------------------------------------------------------
 
@@ -87,42 +84,64 @@ alias activate-venv="source .venv/bin/activate"
 # dotfiles & dotfiles-priv
 #--------------------------------------------------
 alias godots="cd $HOME/.dotfiles"
-# VSCode workspace - .dotfiles and .dotfiles-priv w contrast dark theme
+# VSCode workspace - .dotfiles & .dotfiles-priv
 alias codedots="cd && code $HOME/.AllThedotfiles.code-workspace" 
 
 #--------------------------------------------------
-# Headless CMS
-#--------------------------------------------------
-alias gocontent="cd $HOME/prod/content-data/content-data.mc.ca"
-alias codecontent="gocontent && code .&" 
-
-#--------------------------------------------------
-# CMS Client - Demo on mc.ca 
-#--------------------------------------------------
-alias goc="cd $HOME/prod/nuxt-cms-client/nuxt-cms-client"
-alias codec="goclient && code ."
-alias cserver="goclient && pnpm dev"
-
-#--------------------------------------------------
-# www.browndomain.com
-#--------------------------------------------------
-alias gobd="cd $HOME/prod/bd/bd.com"
-alias codebd="gobd && code .&" 
-alias bdserver="gobd && pnpm dev"
-
-#--------------------------------------------------
-# www.annebrown.ca
+# ab.ca
 #--------------------------------------------------
 alias goab="cd $HOME/prod/ab/ab.ca"
 alias codeab="goab && code ."
 alias abserver="goab && pnpm dev"
 
 #--------------------------------------------------
-# www.misscommunication.ca - Old -> See CMS Client
+# ab.net
 #--------------------------------------------------
-alias gomc="cd $HOME/prod/mc/mc.ca"
-alias codemc="gomc && code ."
-alias mcserver="gomc && pnpm dev"
+# Not deployed
+#alias ab.net-log="ssh admin@annebrown.net tail -f /var/log/httpd/error_log.1"
+
+#--------------------------------------------------
+# bd.com
+#--------------------------------------------------
+alias gobd="cd $HOME/prod/bd/bd.com"
+alias codebd="gobd && code .&" 
+alias bdserver="gobd && pnpm dev"
+
+#--------------------------------------------------
+# content-data (Headless CMS)
+#--------------------------------------------------
+alias goc="cd $HOME/prod/content-data/content-data.mc.ca"
+alias codec="goc && code .&" 
+
+#--------------------------------------------------
+# Devy
+#--------------------------------------------------
+alias god="cd $HOME/prod/devy/devy"
+alias coded="god && code ."
+alias dserver="god && pnpm dev"
+
+#--------------------------------------------------
+# Gamma
+#--------------------------------------------------
+alias gog="cd $HOME/prod/gamma/gamma.ab.ca"
+alias codeg="gog && code ."
+alias gserver="gog && pnpm dev"
+
+#--------------------------------------------------
+# mc.ca -> See nuxt-cms-client
+#--------------------------------------------------
+# Repo - Not Currently Deployed 
+# Apex Domain Site CI Repo:nuxt-cms-client
+#alias gomc="cd $HOME/prod/mc/mc.ca"
+#alias codemc="gomc && code ."
+#alias mcserver="gomc && pnpm dev"
+
+#--------------------------------------------------
+# nuxt-cms-client
+#-------------------------------------------------- 
+alias gonc="cd $HOME/prod/nuxt-cms-client/nuxt-cms-client"
+alias codenc="gonc && code ."
+alias ncserver="gonc && pnpm dev"
 
 #--------------------------------------------------
 # Proto
@@ -132,16 +151,11 @@ alias codep="gop && code ."
 alias pserver="gop && pnpm dev"
 
 #--------------------------------------------------
-# Gamma
+# stga
 #--------------------------------------------------
-alias gog="cd $HOME/prod/gamma/gamma.ab.ca"
-alias codeg="gog && code ."
-alias gserver="gog && pnpm dev"
-
-# #--------------------------------------------------
-# # annebrown.net - Not deployed
-# #--------------------------------------------------
-# 	alias ab.net-log="ssh admin@annebrown.net tail -f /var/log/httpd/error_log.1"
+alias gos="cd $HOME/prod/stga/stga"
+alias codes="gop && code ."
+alias sserver="gop && pnpm dev"
 
 #-------------------------------------------------------------------------------
 #
