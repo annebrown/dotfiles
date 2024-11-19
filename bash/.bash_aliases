@@ -93,15 +93,15 @@ alias codedots="cd && code $HOME/.AllThedotfiles.code-workspace"
 #--------------------------------------------------
 # Headless CMS
 #--------------------------------------------------
-alias gocontent="cd $HOME/prod/content-data/content-data.ab.ca"
+alias gocontent="cd $HOME/prod/content-data/content-data.mc.ca"
 alias codecontent="gocontent && code .&" 
 
 #--------------------------------------------------
-# CMS Client - Demo on mc.ca
+# CMS Client - Demo on mc.ca 
 #--------------------------------------------------
-alias goclient="cd $HOME/prod/nuxt-cms-client/nuxt-cms-client"
-alias codeclient="goclient && code ."
-alias clientserver="goclient && pnpm dev" # LOL
+alias goc="cd $HOME/prod/nuxt-cms-client/nuxt-cms-client"
+alias codec="goclient && code ."
+alias cserver="goclient && pnpm dev"
 
 #--------------------------------------------------
 # www.browndomain.com
@@ -118,7 +118,7 @@ alias codeab="goab && code ."
 alias abserver="goab && pnpm dev"
 
 #--------------------------------------------------
-# www.misscommunication.ca
+# www.misscommunication.ca - Old -> See CMS Client
 #--------------------------------------------------
 alias gomc="cd $HOME/prod/mc/mc.ca"
 alias codemc="gomc && code ."
