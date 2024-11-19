@@ -85,7 +85,8 @@ alias activate-venv="source .venv/bin/activate"
 #--------------------------------------------------
 alias godots="cd $HOME/.dotfiles"
 # VSCode workspace - .dotfiles & .dotfiles-priv
-alias codedots="cd && code $HOME/.AllThedotfiles.code-workspace" 
+alias codedots="cd && code $HOME/.AllThedotfiles.code-workspace"
+alias catbash="cat ~/.bash_aliases"
 
 #--------------------------------------------------
 # ab.ca
