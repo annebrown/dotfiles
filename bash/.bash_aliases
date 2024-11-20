@@ -111,7 +111,7 @@ alias bdserver="gobd && pnpm dev"
 #--------------------------------------------------
 # content-data (Headless CMS)
 #--------------------------------------------------
-alias goc="cd $HOME/prod/content-data/content-data.mc.ca"
+alias goc="cd $HOME/prod/content-data/content-data"
 alias codec="goc && code .&" 
 
 #--------------------------------------------------
