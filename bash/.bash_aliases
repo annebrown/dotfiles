@@ -1,6 +1,8 @@
+# ~/.dotfiles/bash/.bash_aliases
+
 #-------------------------------------------------------------------------------
 #
-# File:	$HOME/.dotfiles//bash/.bash_aliases
+# File:	$HOME/.dotfiles/bash/.bash_aliases
 # Repo: https://github.com/annebrown/dotfiles.git
 # Author: Anne Brown
 #
@@ -113,12 +115,14 @@ alias bdserver="gobd && pnpm dev"
 #--------------------------------------------------
 alias goc="cd $HOME/prod/content-data/content-data"
 alias codec="goc && code .&" 
+alias editc="goc && typora .&" 
 
 #--------------------------------------------------
 # Devy
 #--------------------------------------------------
 alias god="cd $HOME/prod/devy/devy"
 alias coded="god && code ."
+alias editd="god && typora .&" 
 alias dserver="god && pnpm dev"
 
 #--------------------------------------------------
@@ -154,9 +158,9 @@ alias pserver="gop && pnpm dev"
 #--------------------------------------------------
 # stga
 #--------------------------------------------------
-alias gos="cd $HOME/prod/stga/stga"
-alias codes="gop && code ."
-alias sserver="gop && pnpm dev"
+alias gos="cd $HOME/prod/stga/stga.com"
+alias codes="gos && code ."
+alias sserver="gos && pnpm dev"
 
 #-------------------------------------------------------------------------------
 #
@@ -189,3 +193,6 @@ PS1="\e[0;34m[\\t] \e[0;34m\\u\[\e[m\]\e[0;36m@\e[m\[\e[0;32m\]$HOSTNAME\[\e[m\]
 #--------------------------------------------------
 DATESTR=`date +"%y-%m-%d %H:%M"` 
 echo "============== bash $DATESTR" "==============" 
+
+#-------------------------------------------------------------------------------
+# ~/.dotfiles/bash/.bash_aliases
