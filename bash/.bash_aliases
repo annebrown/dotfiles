@@ -62,6 +62,11 @@ function set-title() {
 }
 alias hterm="hyper&"
 
+#--------------------------------------------------
+# Displays
+#--------------------------------------------------
+alias devdisplays='~/.screenlayouts/dev-displays.sh'
+alias mirrordisplays="~/.screenlayouts/mirror-displays.sh"
 #-------------------------------------------------------------------------------
 #
 # Languages
@@ -133,13 +138,11 @@ alias codeg="gog && code ."
 alias gserver="gog && pnpm dev"
 
 #--------------------------------------------------
-# mc.ca -> See nuxt-cms-client
+# mc.ca
 #--------------------------------------------------
-# Repo - Not Currently Deployed 
-# Apex Domain Site CI Repo:nuxt-cms-client
-#alias gomc="cd $HOME/prod/mc/mc.ca"
-#alias codemc="gomc && code ."
-#alias mcserver="gomc && pnpm dev"
+alias gom="cd $HOME/prod/mc/mc.ca"
+alias codem="gom && code ."
+alias mserver="gom && pnpm dev"
 
 #--------------------------------------------------
 # nuxt-cms-client
