@@ -65,8 +65,8 @@ alias hterm="hyper&"
 #--------------------------------------------------
 # Displays
 #--------------------------------------------------
-alias devdisplays='~/.screenlayouts/dev-displays.sh'
-alias mirrordisplays="~/.screenlayouts/mirror-displays.sh"
+alias devdisplays='~/.screen-layouts/dev-displays.sh'
+alias mirrordisplays="~/.screen-layouts/mirror-displays.sh"
 #-------------------------------------------------------------------------------
 #
 # Languages
