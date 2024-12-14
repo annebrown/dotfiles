@@ -98,9 +98,9 @@ alias catbash="cat ~/.bash_aliases"
 #--------------------------------------------------
 # ab.ca
 #--------------------------------------------------
-alias goab="cd $HOME/prod/ab/ab.ca"
-alias codeab="goab && code ."
-alias abserver="goab && pnpm dev"
+alias goa="cd $HOME/prod/ab/ab.ca"
+alias codea="goa && code ."
+alias aserver="goa && pnpm dev"
 
 #--------------------------------------------------
 # ab.net
@@ -111,9 +111,9 @@ alias abserver="goab && pnpm dev"
 #--------------------------------------------------
 # bd.com
 #--------------------------------------------------
-alias gobd="cd $HOME/prod/bd/bd.com"
-alias codebd="gobd && code .&" 
-alias bdserver="gobd && pnpm dev"
+alias gob="cd $HOME/prod/bd/bd.com"
+alias codeb="gob && code .&" 
+alias bserver="gob && pnpm dev"
 
 #--------------------------------------------------
 # content-data (Headless CMS)
