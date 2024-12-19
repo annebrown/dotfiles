@@ -159,7 +159,13 @@ alias codep="gop && code ."
 alias pserver="gop && pnpm dev"
 
 #--------------------------------------------------
-# stga
+# Refactor - STGA 
+#--------------------------------------------------
+alias gor="cd $HOME/prod/refactor/refactor.stga.com"
+alias coder="gor && code ."
+alias rserver="gor && pnpm dev"
+#--------------------------------------------------
+# STGA
 #--------------------------------------------------
 alias gos="cd $HOME/prod/stga/stga.com"
 alias codes="gos && code ."
