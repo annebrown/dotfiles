@@ -161,7 +161,7 @@ alias pserver="gop && pnpm dev"
 #--------------------------------------------------
 # Refactor - STGA 
 #--------------------------------------------------
-alias gor="cd $HOME/prod/refactor/refactor.stga.com"
+alias gor="cd $HOME/prod/refactor/refactor"
 alias coder="gor && code ."
 alias rserver="gor && pnpm dev"
 #--------------------------------------------------
@@ -171,6 +171,21 @@ alias gos="cd $HOME/prod/stga/stga.com"
 alias codes="gos && code ."
 alias sserver="gos && pnpm dev"
 
+#--------------------------------------------------
+# Web App Framework Comparison Project
+#--------------------------------------------------
+# Angular
+alias goan="cd $HOME/testing/an"
+alias codean="goan && code ."
+alias anserver="goan && ng serve"
+# Next.js
+alias gone="cd $HOME/testing/ne"
+alias codene="gone && code ."
+alias neserver="gone && pnpm dev"
+# Nuxt
+alias gonu="cd $HOME/testing/nu"
+alias codenu="gonu && code ."
+alias nuserver="gonu && pnpm dev"
 #-------------------------------------------------------------------------------
 #
 # PS1
