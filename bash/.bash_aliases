@@ -172,18 +172,18 @@ alias codes="gos && code ."
 alias sserver="gos && pnpm dev"
 
 #--------------------------------------------------
-# Web App Framework Comparison Project
+# ang2n - Web App Framework Comparison Project
 #--------------------------------------------------
 # Angular
-alias goan="cd $HOME/testing/an"
+alias goan="cd $HOME/protos/ang2n/an/an"
 alias codean="goan && code ."
-alias anserver="goan && ng serve"
+alias anserver="goan && pnpm start"
 # Next.js
-alias gone="cd $HOME/testing/ne"
+alias gone="cd $HOME/protos/ang2n/ne/ne"
 alias codene="gone && code ."
 alias neserver="gone && pnpm dev"
 # Nuxt
-alias gonu="cd $HOME/testing/nu"
+alias gonu="cd $HOME/protos/ang2n/nu/nu"
 alias codenu="gonu && code ."
 alias nuserver="gonu && pnpm dev"
 #-------------------------------------------------------------------------------
