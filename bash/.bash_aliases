@@ -114,6 +114,7 @@ alias aserver="goa && pnpm dev"
 alias gob="cd $HOME/prod/bd/bd.com"
 alias codeb="gob && code .&" 
 alias bserver="gob && pnpm dev"
+alias bservernocache="DISABLE_CONTENT_WATCH=true bserver"
 
 #--------------------------------------------------
 # content-data (Headless CMS)
