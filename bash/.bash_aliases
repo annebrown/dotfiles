@@ -1,5 +1,4 @@
-# ~/.dotfiles/bash/.bash_aliases
-
+#<-------@/bash/.bash_aliases-------------------------------------------------->
 #-------------------------------------------------------------------------------
 #
 # File:	$HOME/.dotfiles/bash/.bash_aliases
@@ -9,9 +8,12 @@
 # Purpose:	Dev Env Config
 #
 # Usage:
-#	1. Clone repos to $HOME/.dotfiles & $HOME/.dotfiles-priv
-#	2. $ stow -d $HOME/.dotfiles bash git hyper konsole vim code sh ...
-#	3. $ stow -d $HOME/.dotfiles-priv git ssh sh ...
+#	1. Clone repos to: 
+#         ~/.dotfiles
+#         ~/.dotfiles-priv
+#   2. Stow:
+#         stow -d ~/.dotfiles bash displays hyper konsole vim code sh ...
+#	        stow -d ~/.dotfiles-priv git pkg-priv ...
 #  
 #-------------------------------------------------------------------------------
 
@@ -26,9 +28,11 @@
 export EDITOR='vim' # defaut editor
 
 #--------------------------------------------------
-#  Script Paths
+#  Paths
 #--------------------------------------------------
 export  PATH=$PATH:$HOME/.dotfiles/sh:$HOME/.dotfiles-priv/sh 
+PROD_PATH="$HOME/devy/prod"
+PRIV_PATH="$HOME/devy/projs"
 
 #--------------------------------------------------
 # General Aliases
@@ -45,13 +49,14 @@ alias ping3g='ping -c 3 google.com'
 alias envd="env|grep DISPLAY && env|grep DESKTOP"
 
 #-------------------------------------------------------------------------------
-#
 # Terminals
-#
 #-------------------------------------------------------------------------------
-# Terminal Titlebar Fmt: user@host: /path/to/pwd
+
+# Titlebar: user@host: /path/to/pwd
 PROMPT_COMMAND='echo -ne "\033]0;${USER}@${HOSTNAME}: ${PWD/$HOME/~}\007"'
-alias devterm="konsole --layout $HOME/konsole-view-layout.json &"
+
+alias kterm="konsole --layout $HOME/konsole-view-layout.json &"
+
 # Hyper
 function set-title() {
   if [[ -z "$ORIG" ]]; then
@@ -65,8 +70,9 @@ alias hterm="hyper&"
 #--------------------------------------------------
 # Displays
 #--------------------------------------------------
-alias devdisplays='~/.screen-layouts/dev-displays.sh'
-alias mirrordisplays="~/.screen-layouts/mirror-displays.sh"
+alias devdisplays='~/.screen-layout/dev-displays.sh'
+alias mirrordisplays="~/.screen-layout/mirror-displays.sh"
+
 #-------------------------------------------------------------------------------
 #
 # Languages
@@ -88,90 +94,93 @@ alias activate-venv="source .venv/bin/activate"
 #
 #-------------------------------------------------------------------------------
 #--------------------------------------------------
-# dotfiles & dotfiles-priv
+# dotfiles & dotfiles-priv - Dev Env Config
 #--------------------------------------------------
 alias godots="cd $HOME/.dotfiles"
 # VSCode workspace - .dotfiles & .dotfiles-priv
 alias codedots="cd && code $HOME/.AllThedotfiles.code-workspace"
-alias catbash="cat ~/.bash_aliases"
+alias cataliases="cat ~/.bash_aliases" # See aliases
 
 #--------------------------------------------------
-# ab.ca
+# ab.ca - Dev Platform
 #--------------------------------------------------
-alias goa="cd $HOME/prod/ab/ab.ca"
+alias goa="cd $PROD_PATH/ab/ab.ca"
 alias codea="goa && code ."
 alias aserver="goa && pnpm dev"
+alias aservernocache="DISABLE_CONTENT_WATCH=true aserver"
 
 #--------------------------------------------------
-# ab.net
+# ab.net - Not Deployed
 #--------------------------------------------------
-# Not deployed
+# Tail Apache Logs
 #alias ab.net-log="ssh admin@annebrown.net tail -f /var/log/httpd/error_log.1"
 
 #--------------------------------------------------
-# bd.com
+# bd.com - Dev Platform
 #--------------------------------------------------
-alias gob="cd $HOME/prod/bd/bd.com"
+alias gob="cd $PROD_PATH/bd/bd.com"
 alias codeb="gob && code .&" 
 alias bserver="gob && pnpm dev"
 alias bservernocache="DISABLE_CONTENT_WATCH=true bserver"
 
 #--------------------------------------------------
-# content-data (Headless CMS)
+# content-data - Headless CMS
 #--------------------------------------------------
-alias goc="cd $HOME/prod/content-data/content-data"
+alias goc="cd $PROD_PATH/content-data/content-data"
 alias codec="goc && code .&" 
 alias editc="goc && typora .&" 
 
 #--------------------------------------------------
-# Devy
+# electron-app-template - Template
 #--------------------------------------------------
-alias god="cd $HOME/prod/devy/devy"
-alias coded="god && code ."
-alias editd="god && typora .&" 
-alias dserver="god && pnpm dev"
+alias goet="cd $PROD_PATH/electron/electron-app-template/electron-app-template"
+alias codeet="goet && code ."
+alias etserver="goet && pnpm run build && pnpm run start"
 
 #--------------------------------------------------
-# Gamma
+# gamma - Dev Platform
 #--------------------------------------------------
-alias gog="cd $HOME/prod/gamma/gamma.ab.ca"
+alias gog="cd $PROD_PATH/gamma/gamma.ab.ca"
 alias codeg="gog && code ."
 alias gserver="gog && pnpm dev"
+alias gservernocache="DISABLE_CONTENT_WATCH=true gserver"
 
 #--------------------------------------------------
-# mc.ca
+# mc.ca - Dev Platform
 #--------------------------------------------------
-alias gom="cd $HOME/prod/mc/mc.ca"
+alias gom="cd $PROD_PATH/mc/mc.ca"
 alias codem="gom && code ."
 alias mserver="gom && pnpm dev"
+alias gservernocache="DISABLE_CONTENT_WATCH=true gserver"
 
 #--------------------------------------------------
-# nuxt-cms-client
+# nc- CMS Client Template
 #-------------------------------------------------- 
-alias gonc="cd $HOME/prod/nuxt-cms-client/nuxt-cms-client"
+alias gonc="cd $PROD_PATH/nuxt-cms-client/nuxt-cms-client"
 alias codenc="gonc && code ."
 alias ncserver="gonc && pnpm dev"
+alias ncservernocache="DISABLE_CONTENT_WATCH=true ncserver"
 
 #--------------------------------------------------
-# Proto
+# proto - Dev Platform
 #--------------------------------------------------
-alias gop="cd $HOME/prod/proto/proto.ab.ca"
+alias gop="cd $PROD_PATH/proto/proto.ab.ca"
 alias codep="gop && code ."
 alias pserver="gop && pnpm dev"
+alias pservernocache="DISABLE_CONTENT_WATCH=true pserver"
 
 #--------------------------------------------------
-# Refactor - STGA 
+# stga - Local Community Greenspace Initiative
 #--------------------------------------------------
-alias gor="cd $HOME/prod/refactor/refactor"
-alias coder="gor && code ."
-alias rserver="gor && pnpm dev"
-#--------------------------------------------------
-# STGA
-#--------------------------------------------------
-alias gos="cd $HOME/prod/stga/stga.com"
+alias gos="cd $PROD_PATH/stga/stga.com"
 alias codes="gos && code ."
 alias sserver="gos && pnpm dev"
 
+#-------------------------------------------------------------------------------
+# 
+# Private Projects
+#
+#-------------------------------------------------------------------------------
 #--------------------------------------------------
 # ang2n - Web App Framework Comparison Project
 #--------------------------------------------------
@@ -187,6 +196,30 @@ alias neserver="gone && pnpm dev"
 alias gonu="cd $HOME/protos/ang2n/nu/nu"
 alias codenu="gonu && code ."
 alias nuserver="gonu && pnpm dev"
+
+#--------------------------------------------------
+# electron-app - Dev Platform
+#--------------------------------------------------
+alias goe="cd $PROD_PATH/electron/e000/e000"
+alias codee="goe && code ."
+alias eserver="goe && pnpm run build && pnpm run start"
+
+#--------------------------------------------------
+# Priv Docs
+#--------------------------------------------------
+alias god="cd $PRIV_PATH/docs-priv/docs-priv"
+alias coded="god && code ."
+alias editd="god && typora .&" 
+alias dserver="god && pnpm dev"
+alias dservernocache="DISABLE_CONTENT_WATCH=true dserver"
+
+#--------------------------------------------------
+# Refactor STGA 
+#--------------------------------------------------
+alias gor="cd $PRIV_PATH/refactor/refactor"
+alias coder="gor && code ."
+alias rserver="gor && pnpm dev"
+
 #-------------------------------------------------------------------------------
 #
 # PS1
@@ -214,10 +247,8 @@ alias nuserver="gonu && pnpm dev"
 PS1="\e[0;34m[\\t] \e[0;34m\\u\[\e[m\]\e[0;36m@\e[m\[\e[0;32m\]$HOSTNAME\[\e[m\]\e[2;34m:\e[m \e[0;35m\w/\e[m\n\e[m\[\e[1;36m\]\e[0;35m$ \[\e[0m\]"
 
 #--------------------------------------------------
-# Bash visual Verif 
+# Bash Visual Verif 
 #--------------------------------------------------
 DATESTR=`date +"%y-%m-%d %H:%M"` 
 echo "============== bash $DATESTR" "==============" 
-
-#-------------------------------------------------------------------------------
-# ~/.dotfiles/bash/.bash_aliases
+#<-------@/bash/.bash_aliases-------------------------------------------------->

@@ -1,20 +1,18 @@
-"---------------------------------------
+"<--------@/vim/.vrapperrc----------------------------------------------------->
+"-------------------------------------------------------------------------------
 "
 " Repo: 	git@github.com:annebrown/dotfiles.git
 " Filename:  /vim/.vrapperrc
-" Doc: /README.md
-
 " Author:	Anne Brown
 "
-"---------------------------------------
+"  Eclipse IDE Vim shortcuts
 "
-" My fav vim shortcuts for Eclipse IDE
-"
-" Instructions: 
+" Usage: 
 " 1. Clone git@github.com:annebrown/dotfiles.git to ~/.dotfiles
-"	2. Link this file to ~/.vrapperrc
-"     [~] $ ln -s ~/.dotfiles/vim/vrapperrc ~/.vrapperrc
+" 2. ~/.dotfiles: $ stow vim
 "
+"-------------------------------------------------------------------------------
 
 " Remap [esc] to jj
 inoremap jj <ESC>
+"<--------@/vim/.vrapperrc----------------------------------------------------->

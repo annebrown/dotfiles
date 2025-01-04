@@ -1,11 +1,12 @@
-"------------------------------------------------
+"<-------@/vim/.vimrc---------------------------------------------------------->
+"-------------------------------------------------------------------------------
 "
 " Filename: 	.vimrc
 " Path:		~/.dotfiles/vim/
 " Repo: 	https:/github.com/annebrown/dotfiles.git
-" Usage:	anne@devy:~/.dotfiles: $ stow vim
+" Usage:	~/.dotfiles: $ stow vim
 "
-"-----------------------------------------------
+"-------------------------------------------------------------------------------
 "
 " Vim Config
 "
@@ -85,7 +86,7 @@ set encoding=utf8
 set ffs=unix,dos,mac
 
 
-"A mapping to make a backup of the current file.
+"Backup current file
 function! WriteBackup()
   let l:fname = expand('%:p') . '__' . strftime('%Y_%m_%d_%H.%M.%S')
   silent execute 'write' l:fname
@@ -102,3 +103,4 @@ map ;s :up \| saveas! %:p<C-R>=strftime("_%y-%m-%d_%H\%M\%S")<CR>_backup \| 3sle
 
 " Remap [esc] to jj
 inoremap jj <ESC>
+"<-------@/vim/.vimrc---------------------------------------------------------->
