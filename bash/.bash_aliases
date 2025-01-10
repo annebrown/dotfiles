@@ -9,9 +9,9 @@
 #
 # Usage:
 #
-#	1. Clone dotfile repos to ~/.dotfiles & ~/.dotfiles-privi
+#	1. Clone dotfile repos to ~/.dotfiles & ~/.dotfiles-priv
 # 2. Stow:
-#      stow -d ~/.dotfiles bash vim sh ...
+#      stow -d ~/.dotfiles bash vim displays sh ...
 #	     stow -d ~/.dotfiles-priv git code bin ...
 #  
 #-------------------------------------------------------------------------------
@@ -29,7 +29,7 @@ export EDITOR='vim' # defaut editor
 #--------------------------------------------------
 #  Paths
 #--------------------------------------------------
-export PATH=$PATH:$HOME/.dotfiles/sh:$HOME/.dotfiles-priv/sh 
+export PATH=$PATH:$HOME/.dotfiles/sh:$HOME/.dotfiles-priv/sh:$HOME/.dotfiles-priv/bin 
 PROD_PATH="$HOME/devy/prod"
 PRIV_PATH="$HOME/devy/proj"
 
@@ -72,10 +72,10 @@ function set-title() {
 alias hterm="hyper&"
 
 #--------------------------------------------------
-# Displays
+# Multi-Monitor Layouts
 #--------------------------------------------------
-alias devdisplays='~/.screen-layout/dev-displays.sh'
-alias mirrordisplays="~/.screen-layout/mirror-displays.sh"
+alias devdisplays='~/.screenlayout/dev-displays.sh'
+alias mirrordisplays="~/.screenlayout/mirror-displays.sh"
 
 #-------------------------------------------------------------------------------
 #
@@ -98,14 +98,14 @@ alias activate-venv="source .venv/bin/activate"
 #
 #-------------------------------------------------------------------------------
 #--------------------------------------------------
-# dotfiles & dotfiles-priv - Dev Env Config
+# dotfiles & dotfiles-priv - Dev Env Config - DOTS
 #--------------------------------------------------
 alias godots="cd $HOME/.dotfiles"
-# VSCode workspace - .dotfiles & .dotfiles-priv
+# .dotfiles & .dotfiles-priv
 alias codedots="cd && code $HOME/.AllThedotfiles.code-workspace"
 
 #--------------------------------------------------
-# ab.ca - Devy
+# ab.ca - Apex Src - A
 #--------------------------------------------------
 alias goa="cd $PROD_PATH/ab/ab.ca"
 alias codea="goa && code ."
@@ -119,7 +119,7 @@ alias aservernocache="DISABLE_CONTENT_WATCH=true aserver"
 #alias ab.net-log="ssh admin@annebrown.net tail -f /var/log/httpd/error_log.1"
 
 #--------------------------------------------------
-# bd.com - Devy
+# bd.com - Apex Src - B
 #--------------------------------------------------
 alias gob="cd $PROD_PATH/bd/bd.com"
 alias codeb="gob && code .&" 
@@ -127,21 +127,21 @@ alias bserver="gob && pnpm dev"
 alias bservernocache="DISABLE_CONTENT_WATCH=true bserver"
 
 #--------------------------------------------------
-# content-data - Headless CMS
+# content-data - Headless CMS - C
 #--------------------------------------------------
 alias goc="cd $PROD_PATH/content-data/content-data"
 alias codec="goc && code .&" 
 alias editc="goc && typora .&" 
 
 #--------------------------------------------------
-# electron-app-template - Template
+# electron-app-template - Desktop App Template - ET
 #--------------------------------------------------
-alias goet="cd $PROD_PATH/electron/electron-app-template/electron-app-template"
+alias goet="cd $PROD_PATH/electron-app-template/electron-app-template/electron-app-template"
 alias codeet="goet && code ."
 alias etserver="goet && pnpm run build && pnpm run start"
 
 #--------------------------------------------------
-# gamma - Devy
+# gamma - Devy Platform - G
 #--------------------------------------------------
 alias gog="cd $PROD_PATH/gamma/gamma.ab.ca"
 alias codeg="gog && code ."
@@ -149,7 +149,7 @@ alias gserver="gog && pnpm dev"
 alias gservernocache="DISABLE_CONTENT_WATCH=true gserver"
 
 #--------------------------------------------------
-# mc.ca - Devy
+# mc.ca - Apex Src - M
 #--------------------------------------------------
 alias gom="cd $PROD_PATH/mc/mc.ca"
 alias codem="gom && code ."
@@ -157,7 +157,7 @@ alias mserver="gom && pnpm dev"
 alias gservernocache="DISABLE_CONTENT_WATCH=true gserver"
 
 #--------------------------------------------------
-# nc- CMS Client Template
+# Nuxt - CMS Client - Template - NC
 #-------------------------------------------------- 
 alias gonc="cd $PROD_PATH/nuxt-cms-client/nuxt-cms-client"
 alias codenc="gonc && code ."
@@ -165,15 +165,15 @@ alias ncserver="gonc && pnpm dev"
 alias ncservernocache="DISABLE_CONTENT_WATCH=true ncserver"
 
 #--------------------------------------------------
-# proto - Devy
+# proto - Devy Platform - PROTO
 #--------------------------------------------------
-alias gop="cd $PROD_PATH/proto/proto.ab.ca"
-alias codep="gop && code ."
-alias pserver="gop && pnpm dev"
-alias pservernocache="DISABLE_CONTENT_WATCH=true pserver"
+alias goproto="cd $PROD_PATH/proto/proto.ab.ca"
+alias codeproto="goproto && code ."
+alias protoserver="goproto && pnpm dev"
+alias protoservernocache="DISABLE_CONTENT_WATCH=true protoserver"
 
 #--------------------------------------------------
-# stga - Local Community Greenspace Initiative
+# stga - Local Community Greenspace Initiative - S
 #--------------------------------------------------
 alias gos="cd $PROD_PATH/stga/stga.com"
 alias codes="gos && code ."
@@ -187,39 +187,38 @@ alias sserver="gos && pnpm dev"
 #--------------------------------------------------
 # ang2n - SPA Framework Comparison Apps
 #--------------------------------------------------
-# Angular
+# Angular - AN
 alias goan="cd $PRIV_PATH/ang2n/an/an"
 alias codean="goan && code ."
 alias anserver="goan && pnpm start"
-# Next.js
+# Next.js - NE
 alias gone="cd $PRIV_PATH/ang2n/ne/ne"
 alias codene="gone && code ."
 alias neserver="gone && pnpm dev"
-# Nuxt
+# Nuxt - NU
 alias gonu="cd $PRIV_PATH/ang2n/nu/nu"
 alias codenu="gonu && code ."
 alias nuserver="gonu && pnpm dev"
 
 #--------------------------------------------------
-# electron-app - Devy
+# electron-app - Devy Platform - E
 #--------------------------------------------------
 alias goe="cd $PRIV_PATH/electron/e000/e000"
 alias codee="goe && code ."
 alias eserver="goe && pnpm run build && pnpm run start"
 
 #--------------------------------------------------
-# docs-priv
+# docs-priv - Priv Headless CMS - PRIV
 #--------------------------------------------------
-alias god="cd $PRIV_PATH/docs-priv/docs-priv"
-alias coded="god && code ."
-alias editd="god && typora .&" 
-alias dserver="god && pnpm dev"
-alias dservernocache="DISABLE_CONTENT_WATCH=true dserver"
+alias gopriv="cd $PROD_PATH/docs-priv/docs-priv"
+alias codepriv="gopriv && code ."
+alias privserver="gopriv && pnpm dev"
+alias privservernocache="DISABLE_CONTENT_WATCH=true privserver"
 
 #--------------------------------------------------
-# refactor - Refactor STGA 
+# refactor - Refactor STGA - R
 #--------------------------------------------------
-alias gor="cd $PRIV_PATH/projs/refactor/refactor"
+alias gor="cd $PRIV_PATH/refactor/refactor"
 alias coder="gor && code ."
 alias rserver="gor && pnpm dev"
 
