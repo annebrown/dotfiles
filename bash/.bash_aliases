@@ -149,6 +149,12 @@ alias gserver="gog && pnpm dev"
 alias gservernocache="DISABLE_CONTENT_WATCH=true gserver"
 
 #--------------------------------------------------
+# kevin - Monorepo - K
+#--------------------------------------------------
+alias gok="cd $PROD_PATH/kevin/kevin"
+alias codek="gok && code ."
+
+#--------------------------------------------------
 # mc.ca - Apex Src - M
 #--------------------------------------------------
 alias gom="cd $PROD_PATH/mc/mc.ca"
@@ -210,7 +216,7 @@ alias eserver="goe && pnpm run build && pnpm run start"
 #--------------------------------------------------
 # docs-priv - Priv Headless CMS - PRIV
 #--------------------------------------------------
-alias gopriv="cd $PROD_PATH/docs-priv/docs-priv"
+alias gopriv="cd $PRIV_PATH/docs-priv/docs-priv"
 alias codepriv="gopriv && code ."
 alias privserver="gopriv && pnpm dev"
 alias privservernocache="DISABLE_CONTENT_WATCH=true privserver"
