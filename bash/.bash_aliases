@@ -74,8 +74,10 @@ alias hterm="hyper&"
 #--------------------------------------------------
 # Multi-Monitor Layouts
 #--------------------------------------------------
-alias devdisplays='~/.screenlayout/dev-displays.sh'
-alias mirrordisplays="~/.screenlayout/mirror-displays.sh"
+alias ddisp='~/.screenlayout/dev-displays.sh'
+alias mdisp="~/.screenlayout/mirror-displays.sh"
+alias hdisp="~/.screenlayout/horiz-displays.sh"
+
 
 #-------------------------------------------------------------------------------
 #
@@ -177,6 +179,13 @@ alias goproto="cd $PROD_PATH/proto/proto.ab.ca"
 alias codeproto="goproto && code ."
 alias protoserver="goproto && pnpm dev"
 alias protoservernocache="DISABLE_CONTENT_WATCH=true protoserver"
+
+#--------------------------------------------------
+# docs-pub - Monorepo (kevin) App Template - PUB
+#--------------------------------------------------
+alias gopub="cd $PROD_PATH/kevin/kevin/apps/docs-pub"
+alias pubserver="gopub && pnpm dev"
+alias pubservernocache="DISABLE_CONTENT_WATCH=true pubserver"
 
 #--------------------------------------------------
 # stga - Local Community Greenspace Initiative - S
