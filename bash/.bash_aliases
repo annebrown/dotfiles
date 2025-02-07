@@ -63,8 +63,7 @@ alias envd="env|grep DISPLAY && env|grep DESKTOP"
 #-------------------------------------------------------------------------------
 # Terminals
 #-------------------------------------------------------------------------------
-
-# Titlebar: user@host: /path/to/pwd
+# Titlebar Format: user@host: /path/to/pwd
 PROMPT_COMMAND='echo -ne "\033]0;${USER}@${HOSTNAME}: ${PWD/$HOME/~}\007"'
 
 # Konsole
@@ -102,20 +101,37 @@ alias godots="cd $HOME/.dotfiles"
 alias codedots="cd && code $HOME/.AllThedotfiles.code-workspace"
 
 #-------------------------------------------------------------------------------
-# ab - Apex Src (Ezra Monorepo) - A
+# ab - annebrown.ca Apex Src (Ezra Monorepo) - A
 #-------------------------------------------------------------------------------
 alias goa="cd $PROD_PATH/ezra/ezra/apps/ab-apex"
+alias codea="codee"
 alias aserver="goa && pnpm dev"
 alias aservernocache="DISABLE_CONTENT_WATCH=true aserver"
 
 #-------------------------------------------------------------------------------
-# ab.net - Not Deployed
+# ab.net - annebrown.net (Not Deployed)
 #-------------------------------------------------------------------------------
 #Tail Apache Logs
 #alias ab.net-log="ssh admin@annebrown.net tail -f /var/log/httpd/error_log.1"
 
 #-------------------------------------------------------------------------------
-# bd.com - Apex Src - B
+# ang2n - SPA Framework Comparison
+#-------------------------------------------------------------------------------
+# Angular - AN
+alias goan="cd $PROD_PATH/ang2n/an/an"
+alias codean="goan && code ."
+alias anserver="goan && pnpm start"
+# Next.js - NE
+alias gone="cd $PROD_PATH/ang2n/ne/ne"
+alias codene="gone && code ."
+alias neserver="gone && pnpm dev"
+# Nuxt - NU
+alias gonu="cd $PROD_PATH/ang2n/nu/nu"
+alias codenu="gonu && code ."
+alias nuserver="gonu && pnpm dev"
+
+#-------------------------------------------------------------------------------
+# bd.com - Browndomain.com Apex Src - B
 #-------------------------------------------------------------------------------
 alias gob="cd $PROD_PATH/bd/bd.com"
 alias codeb="gob && code .&" 
@@ -128,6 +144,19 @@ alias bservernocache="DISABLE_CONTENT_WATCH=true bserver"
 alias goc="cd $PROD_PATH/content-data/content-data"
 alias codec="goc && code .&" 
 alias editc="goc && typora .&" 
+
+#-------------------------------------------------------------------------------
+# ezra - Monorepo - E
+#-------------------------------------------------------------------------------
+alias goe="cd $PROD_PATH/ezra/ezra"
+alias codee="goe && code ."
+
+#-------------------------------------------------------------------------------
+# electron-app - Devy Platform - EA
+#-------------------------------------------------------------------------------
+alias goea="cd $PROD_PATH/electron/e000/e000"
+alias codeea="goea && code ."
+alias easerver="goe && pnpm run build && pnpm run start"
 
 #-------------------------------------------------------------------------------
 # electron-app-template - Desktop App Template - ET
@@ -151,7 +180,7 @@ alias gok="cd $PROD_PATH/kevin/kevin"
 alias codek="gok && code ."
 
 #-------------------------------------------------------------------------------
-# mc.ca - Apex Src - M
+# mc.ca - misscommunication.ca Apex Src - M
 #-------------------------------------------------------------------------------
 alias gom="cd $PROD_PATH/mc/mc.ca"
 alias codem="gom && code ."
@@ -167,6 +196,18 @@ alias ncserver="gonc && pnpm dev"
 alias ncservernocache="DISABLE_CONTENT_WATCH=true ncserver"
 
 #-------------------------------------------------------------------------------
+# docs-priv - Headless CMS - PRIV
+#-------------------------------------------------------------------------------
+alias gopriv="cd $PROD_PATH/docs-priv/docs-priv"
+alias codepriv="gopriv && code ."
+
+#-------------------------------------------------------------------------------
+# issues - Monorepo - Bug Reproductions - I
+#-------------------------------------------------------------------------------
+alias goi="cd $PROD_PATH/issues/issues"
+alias codei="goi && code ."
+
+#-------------------------------------------------------------------------------
 # proto - Devy Platform - PROTO
 #-------------------------------------------------------------------------------
 alias goproto="cd $PROD_PATH/proto/proto.ab.ca"
@@ -178,62 +219,23 @@ alias protoservernocache="DISABLE_CONTENT_WATCH=true protoserver"
 # docs-pub - Monorepo (kevin) App Template - PUB
 #-------------------------------------------------------------------------------
 alias gopub="cd $PROD_PATH/kevin/kevin/apps/docs-pub"
+alias codepub="codek"
 alias pubserver="gopub && pnpm dev"
 alias pubservernocache="DISABLE_CONTENT_WATCH=true pubserver"
 
 #-------------------------------------------------------------------------------
-# stga - Local Community Greenspace Initiative - S
+# refactor - Refactor STGA - R
+#-------------------------------------------------------------------------------
+alias gor="cd $PROD_PATH/refactor/refactor"
+alias coder="gor && code ."
+alias rserver="gor && pnpm dev"
+
+#-------------------------------------------------------------------------------
+# stga - Save the Grove Again (local community initiative) - S
 #-------------------------------------------------------------------------------
 alias gos="cd $PROD_PATH/stga/stga.com"
 alias codes="gos && code ."
 alias sserver="gos && pnpm dev"
-
-#-------------------------------------------------------------------------------
-# 
-# Private Projects
-#
-#-------------------------------------------------------------------------------
-#-------------------------------------------------------------------------------
-# ang2n - SPA Framework Comparison Apps
-#-------------------------------------------------------------------------------
-# Angular - AN
-alias goan="cd $PRIV_PATH/ang2n/an/an"
-alias codean="goan && code ."
-alias anserver="goan && pnpm start"
-# Next.js - NE
-alias gone="cd $PRIV_PATH/ang2n/ne/ne"
-alias codene="gone && code ."
-alias neserver="gone && pnpm dev"
-# Nuxt - NU
-alias gonu="cd $PRIV_PATH/ang2n/nu/nu"
-alias codenu="gonu && code ."
-alias nuserver="gonu && pnpm dev"
-
-#-------------------------------------------------------------------------------
-# ezra - Monorepo - E
-#-------------------------------------------------------------------------------
-alias goe="cd $PROD_PATH/ezra/ezra"
-alias codee="goe && code ."
-
-#-------------------------------------------------------------------------------
-# electron-app - Devy Platform - EA
-#-------------------------------------------------------------------------------
-alias goea="cd $PRIV_PATH/electron/e000/e000"
-alias codeea="goea && code ."
-alias easerver="goe && pnpm run build && pnpm run start"
-
-#-------------------------------------------------------------------------------
-# docs-priv - Headless CMS - PRIV
-#-------------------------------------------------------------------------------
-alias gopriv="cd $PRIV_PATH/docs-priv/docs-priv"
-alias codepriv="gopriv && code ."
-
-#-------------------------------------------------------------------------------
-# refactor - Refactor STGA - R
-#-------------------------------------------------------------------------------
-alias gor="cd $PRIV_PATH/refactor/refactor"
-alias coder="gor && code ."
-alias rserver="gor && pnpm dev"
 
 #-------------------------------------------------------------------------------
 #
