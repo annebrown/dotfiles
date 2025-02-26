@@ -224,11 +224,11 @@ alias pubserver="gopub && pnpm dev"
 alias pubservernocache="DISABLE_CONTENT_WATCH=true pubserver"
 
 #-------------------------------------------------------------------------------
-# refactor - Refactor STGA - R
+# refactor - Refactor STGA - RS
 #-------------------------------------------------------------------------------
-alias gor="cd $PROD_PATH/refactor/refactor"
-alias coder="gor && code ."
-alias rserver="gor && pnpm dev"
+alias gors="cd $PROD_PATH/refactor-stga/refactor-stga"
+alias coders="gors && code ."
+alias rsserver="gors && pnpm dev"
 
 #-------------------------------------------------------------------------------
 # stga - Save the Grove Again (local community initiative) - S
