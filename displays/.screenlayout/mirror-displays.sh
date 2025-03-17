@@ -1,2 +1,2 @@
-RESOLUTION=1920x1080
-xrandr --listmonitors | sed -n '1!p' | sed -e 's/\s[0-9].*\s\([a-zA-Z0-9\-]*\)$/\1/g' | xargs -n 1 -- bash -xc 'xrandr --output $0 --mode '$RESOLUTION' --pos 0x0 --rotate normal'
+#!/bin/sh
+xrandr --output eDP-1 --mode 1920x1080 --pos 0x0 --rotate normal --output HDMI-1 --off --output HDMI-2 --mode 1080x2160 --pos 0x1080 --rotate right --output DP-1-0 --off --output DP-1-1 --off --output HDMI-1-0 --mode 1920x1080 --pos 0x0 --rotate right --output DP-1-0.5 --mode 1920x1080 --pos 0x0 --rotate normal --output DP-1-0.6 --primary --mode 1920x1080 --pos 0x0 --rotate normal

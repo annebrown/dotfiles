@@ -88,6 +88,9 @@ export PATH=$PATH:/usr/local/go/bin
 # Python
 alias activate-venv="source .venv/bin/activate"
 
+## Ruby
+export PATH="$HOME/.gem/ruby/$(ruby -e "puts RUBY_VERSION.gsub(/\.\d$/, )")/bin:$PATH"
+
 #------------------------------------------------------------------------------- 
 #
 # Production
@@ -149,7 +152,7 @@ alias editc="goc && typora .&"
 # ezra - Monorepo - E
 #-------------------------------------------------------------------------------
 alias goe="cd $PROD_PATH/ezra/ezra"
-alias codee="goe && code ."
+alias codee="goe && code ezra.code-workspace"
 
 #-------------------------------------------------------------------------------
 # electron-app - Devy Platform - EA
