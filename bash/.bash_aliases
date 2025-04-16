@@ -40,8 +40,7 @@ export EDITOR='vim' # defaut editor
 #  Paths
 #-------------------------------------------------------------------------------
 export PATH=$PATH:$HOME/.dotfiles/sh:$HOME/.dotfiles-priv/sh:$HOME/.dotfiles-priv/bin 
-PROD_PATH="$HOME/devy/prod"
-PRIV_PATH="$HOME/devy/proj"
+PROD_PATH="/devy/prod"
 
 #-------------------------------------------------------------------------------
 # Network
