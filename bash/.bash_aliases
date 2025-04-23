@@ -168,12 +168,25 @@ alias codeet="goet && code ."
 alias etserver="goet && pnpm run build && pnpm run start"
 
 #-------------------------------------------------------------------------------
+# fitz - Devy Platform - F
+#-------------------------------------------------------------------------------
+alias gof="cd $PROD_PATH/fitz/fitz/"
+alias codef="gof && code ."
+alias fserver="gof && pnpm dev"
+
+#-------------------------------------------------------------------------------
 # gamma - Devy Platform - G
 #-------------------------------------------------------------------------------
 alias gog="cd $PROD_PATH/gamma/gamma.ab.ca"
 alias codeg="gog && code ."
 alias gserver="gog && pnpm dev"
 alias gservernocache="DISABLE_CONTENT_WATCH=true gserver"
+
+#-------------------------------------------------------------------------------
+# issues - Monorepo - Bug Reproductions - I
+#-------------------------------------------------------------------------------
+alias goi="cd $PROD_PATH/issues/issues"
+alias codei="goi && code ."
 
 #-------------------------------------------------------------------------------
 # kevin - Monorepo - K
@@ -202,12 +215,6 @@ alias ncservernocache="DISABLE_CONTENT_WATCH=true ncserver"
 #-------------------------------------------------------------------------------
 alias gopriv="cd $PROD_PATH/docs-priv/docs-priv"
 alias codepriv="gopriv && code ."
-
-#-------------------------------------------------------------------------------
-# issues - Monorepo - Bug Reproductions - I
-#-------------------------------------------------------------------------------
-alias goi="cd $PROD_PATH/issues/issues"
-alias codei="goi && code ."
 
 #-------------------------------------------------------------------------------
 # proto - Devy Platform - PROTO
