@@ -177,7 +177,7 @@ alias fserver="gof && pnpm dev"
 #-------------------------------------------------------------------------------
 # gamma - Devy Platform - G
 #-------------------------------------------------------------------------------
-alias gog="cd $PROD_PATH/gamma/gamma.ab.ca"
+alias gog="cd $PROD_PATH/gamma/gamma"
 alias codeg="gog && code ."
 alias gserver="gog && pnpm dev"
 alias gservernocache="DISABLE_CONTENT_WATCH=true gserver"
