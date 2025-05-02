@@ -11,8 +11,8 @@
 #
 #	1. Clone dotfile repos to ~/.dotfiles & ~/.dotfiles-priv
 # 2. Stow:
-#      stow -d ~/.dotfiles bash vim displays sh ...
-#	     stow -d ~/.dotfiles-priv git code bin ...
+#      stow -d ~/.dotfiles bash vim devy ...
+#	     stow -d ~/.dotfiles-priv git code sh ...
 #  
 #-------------------------------------------------------------------------------
 
@@ -26,21 +26,22 @@
 alias aliases="less $HOME/.dotfiles/bash/.bash_aliases"
 
 # ls
-alias l='ls -CF'
-alias la='ls -A'
-alias ll='ls -l'
-alias lla='ls -Al'
+alias l='ls --group-directories-first -CF'
+alias la='ls --group-directories-first -A'
+alias ll='ls --group-directories-first -l'
+alias lla='ls --group-directories-first -Al'
+alias lltree='ls --group-directories-first -AlR'
 
 #-------------------------------------------------------------------------------
 # Editors
 #-------------------------------------------------------------------------------
-export EDITOR='vim' # defaut editor
+export EDITOR='vim' # default
 
 #-------------------------------------------------------------------------------
 #  Paths
 #-------------------------------------------------------------------------------
-export PATH=$PATH:$HOME/.dotfiles/sh:$HOME/.dotfiles-priv/sh:$HOME/.dotfiles-priv/bin 
-PROD_PATH="/devy/prod"
+export PATH=$PATH:$HOME/sh:$HOME/sh-pub:$HOME/sh-priv
+PROD_PATH="$HOME/devy/prod"
 
 #-------------------------------------------------------------------------------
 # Network
@@ -51,12 +52,10 @@ alias ping3g='ping -c 3 google.com'
 #-------------------------------------------------------------------------------
 # Displays
 #-------------------------------------------------------------------------------
-# Multi-Monitor Layouts
-alias ddisp='~/.screenlayout/dev-displays.sh'
-alias mdisp="~/.screenlayout/mirror-displays.sh"
-alias hdisp="~/.screenlayout/horiz-displays.sh"
-alias wdisp="~/.screenlayout/winter-displays.sh"
-# DISPLAY && DESKTOP 
+# Multi-Monitor
+alias devdisplays='~/.screenlayout/dev-displays.sh'
+alias samedisplays="~/.screenlayout/mirror-displays.sh"
+# DISPLAY && DESKTOP env vars
 alias envd="env|grep DISPLAY && env|grep DESKTOP"
 
 #-------------------------------------------------------------------------------
@@ -66,7 +65,10 @@ alias envd="env|grep DISPLAY && env|grep DESKTOP"
 PROMPT_COMMAND='echo -ne "\033]0;${USER}@${HOSTNAME}: ${PWD/$HOME/~}\007"'
 
 # Konsole
-alias kterm="konsole --layout $HOME/konsole-view-layout.json &"
+alias kterm="konsole &"
+alias kterm0="kterm-zero.sh &" # Ground Zero
+alias kterms="kterm-servers.sh&" # Servers
+alias ktermb="kterm-backups.sh&" # Backps
 
 # Hyper
 function set-title() {
@@ -77,6 +79,11 @@ function set-title() {
   PS1=${ORIG}${TITLE}
 }
 alias hterm="hyper&"
+
+#-------------------------------------------------------------------------------
+# Devy
+#-------------------------------------------------------------------------------
+alias godevy="new-devy-sess.sh&"
 
 #-------------------------------------------------------------------------------
 # Languages
@@ -271,7 +278,7 @@ alias sserver="gos && pnpm dev"
 # Format: [\t] \u@\H: \w\n$
 #
 #-------------------------------------------------------------------------------
-PS1="\e[0;34m[\\t] \e[0;34m\\u\[\e[m\]\e[0;36m@\e[m\[\e[0;32m\]$HOSTNAME\[\e[m\]\e[2;34m:\e[m \e[0;35m\w/\e[m\n\e[m\[\e[1;36m\]\e[0;35m$ \[\e[0m\]"
+#PS1="\e[0;34m[\\t] \e[0;34m\\u\[\e[m\]\e[0;36m@\e[m\[\e[0;32m\]$HOSTNAME\[\e[m\]\e[2;34m:\e[m \e[0;35m\w/\e[m\n\e[m\[\e[1;36m\]\e[0;35m$ \[\e[0m\]"
 
 #-------------------------------------------------------------------------------
 # Bash Visual Verif 
