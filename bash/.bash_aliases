@@ -110,10 +110,10 @@ alias godots="cd $HOME/.dotfiles"
 alias codedots="cd && code $HOME/.AllThedotfiles.code-workspace"
 
 #-------------------------------------------------------------------------------
-# ab - annebrown.ca Apex Src (Ezra Monorepo) - A
+# ab - Apex Src - A
 #-------------------------------------------------------------------------------
 alias goa="cd $PROD_PATH/ezra/ezra/apps/ab-apex"
-alias codea="codee"
+alias codea="codee"  # ezra - Monorepo -E 
 alias aserver="goa && pnpm dev"
 alias aservernocache="DISABLE_CONTENT_WATCH=true aserver"
 
@@ -157,7 +157,7 @@ alias editc="goc && typora .&"
 #-------------------------------------------------------------------------------
 # ezra - Monorepo - E
 #-------------------------------------------------------------------------------
-alias goe="cd $PROD_PATH/ezra/ezra"
+alias goe="cd $PROD_PATH/ezra"
 alias codee="goe && code ezra.code-workspace"
 
 #-------------------------------------------------------------------------------
@@ -249,7 +249,7 @@ alias rsserver="gors && pnpm dev"
 #-------------------------------------------------------------------------------
 # stga - Save the Grove Again (local community initiative) - S
 #-------------------------------------------------------------------------------
-alias gos="cd $PROD_PATH/stga/stga.com"
+alias gos="cd $PROD_PATH/stga/stga"
 alias codes="gos && code ."
 alias sserver="gos && pnpm dev"
 
