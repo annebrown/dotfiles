@@ -1,0 +1,19 @@
+{
+    "KPlugin": {
+        "Authors": [
+            {
+                "Email": "zayronxio.gm@gmail.com",
+                "Name": "zayronxio"
+            }
+        ],
+        "Id": "Alba-bubbles",
+        "License": "CC-BY-SA-4.0",
+        "Name": "Alba bubbles",
+        "Name[x-test]": "xxAlba-bubblesxx"
+        },
+        "X-KDE-PlasmaImageWallpaper-AccentColor": {
+        "Dark": "#ce7b6e",
+        "Light": "#ce7b6e"
+        }
+    }
+

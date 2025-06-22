@@ -1,0 +1,14 @@
+{
+    "KPlugin": {
+        "Authors": [
+            {
+                "Email": "phobian@tutanota.com",
+                "Name": "Phobian347"
+            }
+        ],
+        "Id": "GreenOlive",
+        "License": "CC-BY-SA-4.0",
+        "Name": "GreenOlive"
+    },
+    "X-KDE-PlasmaImageWallpaper-AccentColor": "#b1c391"
+}

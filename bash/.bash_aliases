@@ -9,39 +9,43 @@
 #
 # Usage:
 #
-#	1. Clone dotfile repos to ~/.dotfiles & ~/.dotfiles-priv
-# 2. Stow:
-#      stow -d ~/.dotfiles bash vim devy ...
-#	     stow -d ~/.dotfiles-priv git code sh ...
+#   gh repo clone annebrown/dotfiles .dotfiles
+#   gh repo clone annebrown/dotfiles-priv .dotfiles-priv:
+#
+#   stow -d ~/.dotfiles bash git devy sh ...
+#   stow -d ~/.dotfiles-priv vim git code sh-priv ...
 #  
 #-------------------------------------------------------------------------------
-
-#-------------------------------------------------------------------------------
-#
-# General
-#
-#-------------------------------------------------------------------------------
-
-# Remind Me
-alias aliases="less $HOME/.dotfiles/bash/.bash_aliases"
-
-# ls
-alias l='ls --group-directories-first -CF'
-alias la='ls --group-directories-first -A'
-alias ll='ls --group-directories-first -l'
-alias lla='ls --group-directories-first -Al'
-alias lltree='ls --group-directories-first -AlR'
-
 #-------------------------------------------------------------------------------
 # Editors
 #-------------------------------------------------------------------------------
-export EDITOR='vim' # default
+export EDITOR='vim'
 
 #-------------------------------------------------------------------------------
 #  Paths
 #-------------------------------------------------------------------------------
-export PATH=$PATH:$HOME/sh:$HOME/sh-pub:$HOME/sh-priv
+export PATH=$PATH:$HOME/sh:$HOME/sh-priv
 PROD_PATH="$HOME/devy/prod"
+PROJ_PATH="$HOME/devy/allez"
+MODS_PATH="$HOME/devy/modules"
+TEST_PATH="$HOME/devy/prod/testing"
+
+#-------------------------------------------------------------------------------
+# General
+#-------------------------------------------------------------------------------
+alias remindme="less $HOME/.dotfiles/bash/.bash_aliases | grep "
+alias goprod="cd $PROD_PATH"
+alias gomods="cd $MODS_PATH"
+alias allez="cd $PROJ_PATH"
+alias gotest="cd $TEST_PATH"
+
+# ls
+alias l='ls --group-directories-first -hF'
+alias la='l -a'
+alias ll='l -lh'
+alias lla='l -alh'
+alias ltree='l -ahR'
+alias lltree='l -ahR'
 
 #-------------------------------------------------------------------------------
 # Network
@@ -53,8 +57,8 @@ alias ping3g='ping -c 3 google.com'
 # Displays
 #-------------------------------------------------------------------------------
 # Multi-Monitor
-alias devdisplays='~/.screenlayout/dev-displays.sh'
-alias samedisplays="~/.screenlayout/mirror-displays.sh"
+alias ddisp='~/sh/dev-displays.sh'
+alias mdisp="~/sh/mirror-displays.sh"
 # DISPLAY && DESKTOP env vars
 alias envd="env|grep DISPLAY && env|grep DESKTOP"
 
@@ -66,9 +70,7 @@ PROMPT_COMMAND='echo -ne "\033]0;${USER}@${HOSTNAME}: ${PWD/$HOME/~}\007"'
 
 # Konsole
 alias kterm="konsole &"
-alias kterm0="kterm-zero.sh &" # Ground Zero
-alias kterms="kterm-servers.sh&" # Servers
-alias ktermb="kterm-backups.sh&" # Backps
+alias kterms="konsole  --separate --geometry 650x650+20-20 --profile aserver --display :0.0 &" # Server
 
 # Hyper
 function set-title() {
@@ -81,11 +83,6 @@ function set-title() {
 alias hterm="hyper&"
 
 #-------------------------------------------------------------------------------
-# Devy
-#-------------------------------------------------------------------------------
-alias godevy="new-devy-sess.sh&"
-
-#-------------------------------------------------------------------------------
 # Languages
 #-------------------------------------------------------------------------------
 # Go
@@ -95,7 +92,24 @@ export PATH=$PATH:/usr/local/go/bin
 alias activate-venv="source .venv/bin/activate"
 
 ## Ruby
-export PATH="$HOME/.gem/ruby/$(ruby -e "puts RUBY_VERSION.gsub(/\.\d$/, )")/bin:$PATH"
+# export PATH="$HOME/.gem/ruby/$(ruby -e "puts RUBY_VERSION.gsub(/\.\d$/, )")/bin:$PATH"
+
+#-------------------------------------------------------------------------------
+# Development
+#-------------------------------------------------------------------------------
+# Nuxt App Big Reset
+alias nuxtbfr="rm -rf node_modules .nuxt .output pnpm-lock.yaml && pnpm store prune"
+# Nuxt Monorepo App Big Reset
+alias nuxtbfr-mono="rm -rf node_modules .nuxt .output ../../pnpm-lock.yaml && pnpm store prune"
+# Vite Module Big Reset
+alias vitebfr="rm -rf node_modules pnpm-lock.yaml dist .output .eslintcache .vite && pnpm store prune"
+## Approve Builds
+alias pab="pnpm approve-builds"
+
+#-------------------------------------------------------------------------------
+# npm Modules
+#-------------------------------------------------------------------------------
+alias pubpub=" npm publish --access public" # Public public
 
 #------------------------------------------------------------------------------- 
 #
@@ -175,11 +189,10 @@ alias codeet="goet && code ."
 alias etserver="goet && pnpm run build && pnpm run start"
 
 #-------------------------------------------------------------------------------
-# fitz - Devy Platform - F
+# nuxt3-fleet-pub - npm Module - Open-source, fleet-wide components - F
 #-------------------------------------------------------------------------------
-alias gof="cd $PROD_PATH/fitz/fitz/"
+alias gof="cd $MODS_PATH/nuxt3-fleet-pub/"
 alias codef="gof && code ."
-alias fserver="gof && pnpm dev"
 
 #-------------------------------------------------------------------------------
 # gamma - Devy Platform - G
@@ -204,7 +217,7 @@ alias codek="gok && code ."
 #-------------------------------------------------------------------------------
 # mc.ca - misscommunication.ca Apex Src - M
 #-------------------------------------------------------------------------------
-alias gom="cd $PROD_PATH/mc/mc.ca"
+alias gom="cd $PROD_PATH/mc.ca/mc.ca"
 alias codem="gom && code ."
 alias mserver="gom && pnpm dev"
 alias gservernocache="DISABLE_CONTENT_WATCH=true gserver"
