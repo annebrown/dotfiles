@@ -1,16 +1,15 @@
-#<-------@/bash/.bash_aliases-------------------------------------------------->
+# -- @/bash/.bash_aliases --
 #-------------------------------------------------------------------------------
 #
-# File:	$HOME/.dotfiles/bash/.bash_aliases
+# File:	~/.dotfiles/bash/.bash_aliases
 # GH Repo: annebrown/dotfiles
-# Author: Anne Brown
 #
 # Purpose:	Dev Env Config
 #
 # Usage:
 #
 #   gh repo clone annebrown/dotfiles .dotfiles
-#   gh repo clone annebrown/dotfiles-priv .dotfiles-priv:
+#   gh repo clone annebrown/dotfiles-priv .dotfiles-priv
 #
 #   stow -d ~/.dotfiles bash git devy sh ...
 #   stow -d ~/.dotfiles-priv vim git code sh-priv ...
@@ -99,17 +98,14 @@ alias activate-venv="source .venv/bin/activate"
 #-------------------------------------------------------------------------------
 # Nuxt App Big Reset
 alias nuxtbfr="rm -rf node_modules .nuxt .output pnpm-lock.yaml && pnpm store prune"
-# Nuxt Monorepo App Big Reset
+# Nuxt App Big Reset - Monorepo App
 alias nuxtbfr-mono="rm -rf node_modules .nuxt .output ../../pnpm-lock.yaml && pnpm store prune"
 # Vite Module Big Reset
 alias vitebfr="rm -rf node_modules pnpm-lock.yaml dist .output .eslintcache .vite && pnpm store prune"
-## Approve Builds
+# Approve Builds
 alias pab="pnpm approve-builds"
-
-#-------------------------------------------------------------------------------
-# npm Modules
-#-------------------------------------------------------------------------------
-alias pubpub=" npm publish --access public" # Public public
+# Publish Public npm Module
+alias pubpub="npm publish --access public"
 
 #------------------------------------------------------------------------------- 
 #
@@ -122,23 +118,20 @@ alias pubpub=" npm publish --access public" # Public public
 #-------------------------------------------------------------------------------
 alias godots="cd $HOME/.dotfiles"
 alias codedots="cd && code $HOME/.AllThedotfiles.code-workspace"
-
 #-------------------------------------------------------------------------------
-# ab - Apex Src - A
+# ab - annebrown.ca Apex Src - A
 #-------------------------------------------------------------------------------
 alias goa="cd $PROD_PATH/ezra/ezra/apps/ab-apex"
-alias codea="codee"  # ezra - Monorepo -E 
+alias codea="codee"  # ezra Monorepo
 alias aserver="goa && pnpm dev"
 alias aservernocache="DISABLE_CONTENT_WATCH=true aserver"
-
 #-------------------------------------------------------------------------------
 # ab.net - annebrown.net (Not Deployed)
 #-------------------------------------------------------------------------------
 #Tail Apache Logs
 #alias ab.net-log="ssh admin@annebrown.net tail -f /var/log/httpd/error_log.1"
-
 #-------------------------------------------------------------------------------
-# ang2n - SPA Framework Comparison
+# ang2n - Framework Comparison Project
 #-------------------------------------------------------------------------------
 # Angular - AN
 alias goan="cd $PROD_PATH/ang2n/an/an"
@@ -152,7 +145,6 @@ alias neserver="gone && pnpm dev"
 alias gonu="cd $PROD_PATH/ang2n/nu/nu"
 alias codenu="gonu && code ."
 alias nuserver="gonu && pnpm dev"
-
 #-------------------------------------------------------------------------------
 # bd.com - Browndomain.com Apex Src - B
 #-------------------------------------------------------------------------------
@@ -160,40 +152,34 @@ alias gob="cd $PROD_PATH/bd/bd.com"
 alias codeb="gob && code .&" 
 alias bserver="gob && pnpm dev"
 alias bservernocache="DISABLE_CONTENT_WATCH=true bserver"
-
 #-------------------------------------------------------------------------------
 # content-data - Headless CMS - C
 #-------------------------------------------------------------------------------
 alias goc="cd $PROD_PATH/content-data/content-data"
 alias codec="goc && code .&" 
 alias editc="goc && typora .&" 
-
 #-------------------------------------------------------------------------------
 # ezra - Monorepo - E
 #-------------------------------------------------------------------------------
 alias goe="cd $PROD_PATH/ezra"
 alias codee="goe && code ezra.code-workspace"
-
 #-------------------------------------------------------------------------------
 # electron-app - Devy Platform - EA
 #-------------------------------------------------------------------------------
 alias goea="cd $PROD_PATH/electron/e000/e000"
 alias codeea="goea && code ."
 alias easerver="goe && pnpm run build && pnpm run start"
-
 #-------------------------------------------------------------------------------
 # electron-app-template - Desktop App Template - ET
 #-------------------------------------------------------------------------------
 alias goet="cd $PROD_PATH/electron-app-template/electron-app-template/electron-app-template"
 alias codeet="goet && code ."
 alias etserver="goet && pnpm run build && pnpm run start"
-
 #-------------------------------------------------------------------------------
 # nuxt3-fleet-pub - npm Module - Open-source, fleet-wide components - F
 #-------------------------------------------------------------------------------
 alias gof="cd $MODS_PATH/nuxt3-fleet-pub/"
 alias codef="gof && code ."
-
 #-------------------------------------------------------------------------------
 # gamma - Devy Platform - G
 #-------------------------------------------------------------------------------
@@ -201,19 +187,16 @@ alias gog="cd $PROD_PATH/gamma/gamma"
 alias codeg="gog && code ."
 alias gserver="gog && pnpm dev"
 alias gservernocache="DISABLE_CONTENT_WATCH=true gserver"
-
 #-------------------------------------------------------------------------------
 # issues - Monorepo - Bug Reproductions - I
 #-------------------------------------------------------------------------------
 alias goi="cd $PROD_PATH/issues/issues"
 alias codei="goi && code ."
-
 #-------------------------------------------------------------------------------
 # kevin - Monorepo - K
 #-------------------------------------------------------------------------------
 alias gok="cd $PROD_PATH/kevin/kevin"
 alias codek="gok && code ."
-
 #-------------------------------------------------------------------------------
 # mc.ca - misscommunication.ca Apex Src - M
 #-------------------------------------------------------------------------------
@@ -221,21 +204,18 @@ alias gom="cd $PROD_PATH/mc.ca/mc.ca"
 alias codem="gom && code ."
 alias mserver="gom && pnpm dev"
 alias gservernocache="DISABLE_CONTENT_WATCH=true gserver"
-
 #-------------------------------------------------------------------------------
-# Nuxt - CMS Client - Template - NC
+# Nuxt CMS Client - Template - NC
 #-------------------------------------------------------------------------------
 alias gonc="cd $PROD_PATH/nuxt-cms-client/nuxt-cms-client"
 alias codenc="gonc && code ."
 alias ncserver="gonc && pnpm dev"
 alias ncservernocache="DISABLE_CONTENT_WATCH=true ncserver"
-
 #-------------------------------------------------------------------------------
 # docs-priv - Headless CMS - PRIV
 #-------------------------------------------------------------------------------
 alias gopriv="cd $PROD_PATH/docs-priv/docs-priv"
 alias codepriv="gopriv && code ."
-
 #-------------------------------------------------------------------------------
 # proto - Devy Platform - PROTO
 #-------------------------------------------------------------------------------
@@ -243,29 +223,31 @@ alias goproto="cd $PROD_PATH/proto/proto.ab.ca"
 alias codeproto="goproto && code ."
 alias protoserver="goproto && pnpm dev"
 alias protoservernocache="DISABLE_CONTENT_WATCH=true protoserver"
-
 #-------------------------------------------------------------------------------
-# docs-pub - Monorepo (kevin) App Template - PUB
+# docs-pub - CMS Client - PUB
 #-------------------------------------------------------------------------------
 alias gopub="cd $PROD_PATH/kevin/kevin/apps/docs-pub"
-alias codepub="codek"
+alias codepub="codek" # Kevin Monorepo
 alias pubserver="gopub && pnpm dev"
 alias pubservernocache="DISABLE_CONTENT_WATCH=true pubserver"
-
 #-------------------------------------------------------------------------------
 # refactor - Refactor STGA - RS
 #-------------------------------------------------------------------------------
 alias gors="cd $PROD_PATH/refactor-stga/refactor-stga"
 alias coders="gors && code ."
 alias rsserver="gors && pnpm dev"
-
 #-------------------------------------------------------------------------------
 # stga - Save the Grove Again (local community initiative) - S
 #-------------------------------------------------------------------------------
 alias gos="cd $PROD_PATH/stga/stga"
 alias codes="gos && code ."
 alias sserver="gos && pnpm dev"
-
+#-------------------------------------------------------------------------------
+# nuxt3-component-testing - Test App - T
+#-------------------------------------------------------------------------------
+alias gos="cd $TEST_PATH/nuxt3-component-testing"
+alias codes="got && code ."
+alias sserver="got && pnpm dev"
 #-------------------------------------------------------------------------------
 #
 # PS1
@@ -292,9 +274,8 @@ alias sserver="gos && pnpm dev"
 #
 #-------------------------------------------------------------------------------
 #PS1="\e[0;34m[\\t] \e[0;34m\\u\[\e[m\]\e[0;36m@\e[m\[\e[0;32m\]$HOSTNAME\[\e[m\]\e[2;34m:\e[m \e[0;35m\w/\e[m\n\e[m\[\e[1;36m\]\e[0;35m$ \[\e[0m\]"
-
 #-------------------------------------------------------------------------------
-# Bash Visual Verif 
+# Bash Msg
 #-------------------------------------------------------------------------------
 DATESTR=`date +"%y-%m-%d %H:%M"` 
 echo "============== bash $DATESTR" "==============" 
