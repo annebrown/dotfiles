@@ -180,6 +180,7 @@ alias etserver="goet && pnpm run build && pnpm run start"
 #-------------------------------------------------------------------------------
 alias gof="cd $MODS_PATH/nuxt3-fleet-pub/"
 alias codef="gof && code ."
+alias rmf="rm -rf node_modules/'@annebrown.ca' node_modules/nuxt3-fleet-pub"
 #-------------------------------------------------------------------------------
 # gamma - Devy Platform - G
 #-------------------------------------------------------------------------------
@@ -204,6 +205,12 @@ alias gom="cd $PROD_PATH/mc.ca/mc.ca"
 alias codem="gom && code ."
 alias mserver="gom && pnpm dev"
 alias gservernocache="DISABLE_CONTENT_WATCH=true gserver"
+#-------------------------------------------------------------------------------
+# navi-tools - N
+#-------------------------------------------------------------------------------
+alias gon="cd $TEST_PATH/navi-tools/navi-tools"
+alias coden="gon && code ."
+alias nserver="gon && pnpm dev"
 #-------------------------------------------------------------------------------
 # Nuxt CMS Client - Template - NC
 #-------------------------------------------------------------------------------
@@ -245,9 +252,9 @@ alias sserver="gos && pnpm dev"
 #-------------------------------------------------------------------------------
 # nuxt3-component-testing - Test App - T
 #-------------------------------------------------------------------------------
-alias gos="cd $TEST_PATH/nuxt3-component-testing"
-alias codes="got && code ."
-alias sserver="got && pnpm dev"
+alias got="cd $TEST_PATH/nuxt3-component-testing"
+alias codet="got && code ."
+alias tserver="got && pnpm dev"
 #-------------------------------------------------------------------------------
 #
 # PS1
