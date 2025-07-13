@@ -56,8 +56,8 @@ alias ping3g='ping -c 3 google.com'
 # Displays
 #-------------------------------------------------------------------------------
 # Multi-Monitor
-alias ddisp='~/sh/dev-displays.sh'
-alias mdisp="~/sh/mirror-displays.sh"
+alias ddisp='~/.screenlayout/ddisp.sh'
+alias mdisp='~/.screenlayout/mdisp.sh'
 # DISPLAY && DESKTOP env vars
 alias envd="env|grep DISPLAY && env|grep DESKTOP"
 
