@@ -35,7 +35,7 @@ TEST_PATH="$HOME/devy/prod/testing"
 alias remindme="less $HOME/.dotfiles/bash/.bash_aliases | grep "
 alias goprod="cd $PROD_PATH"
 alias gomods="cd $MODS_PATH"
-alias allez="cd $PROJ_PATH"
+alias goproj="cd $PROJ_PATH"
 alias gotest="cd $TEST_PATH"
 
 # ls
@@ -56,8 +56,8 @@ alias ping3g='ping -c 3 google.com'
 # Displays
 #-------------------------------------------------------------------------------
 # Multi-Monitor
-alias ddisp='~/.screenlayout/ddisp.sh'
-alias mdisp='~/.screenlayout/mdisp.sh'
+alias ddisp='~/.screenlayout/ddisp.sh' # Dev Displays
+alias mdisp='~/.screenlayout/mdisp.sh' # Mirror Monitors
 # DISPLAY && DESKTOP env vars
 alias envd="env|grep DISPLAY && env|grep DESKTOP"
 
@@ -96,12 +96,12 @@ alias activate-venv="source .venv/bin/activate"
 #-------------------------------------------------------------------------------
 # Development
 #-------------------------------------------------------------------------------
-# Nuxt App Big Reset
-alias nuxtbfr="rm -rf node_modules .nuxt .output pnpm-lock.yaml && pnpm store prune"
-# Nuxt App Big Reset - Monorepo App
-alias nuxtbfr-mono="rm -rf node_modules .nuxt .output ../../pnpm-lock.yaml && pnpm store prune"
+# Nuxt Big Reset
+alias nuxtbfr="rm -rf node_modules .nuxt .output pnpm-lock.yaml && pnpm store prune && pnpm i && pnpm dev"
+# Nuxt Big Reset - Monorepo App
+alias nuxtbfr-mono="rm -rf node_modules .nuxt .output ../../pnpm-lock.yaml && pnpm store prune && pnpm i && pnpm dev"
 # Vite Module Big Reset
-alias vitebfr="rm -rf node_modules pnpm-lock.yaml dist .output .eslintcache .vite && pnpm store prune"
+alias vitebfr="rm -rf node_modules pnpm-lock.yaml dist .output .eslintcache .vite && pnpm store prune && pnpm i && pnpm dev"
 # Approve Builds
 alias pab="pnpm approve-builds"
 # Publish Public npm Module
@@ -119,7 +119,7 @@ alias pubpub="npm publish --access public"
 alias godots="cd $HOME/.dotfiles"
 alias codedots="cd && code $HOME/.AllThedotfiles.code-workspace"
 #-------------------------------------------------------------------------------
-# ab - annebrown.ca Apex Src - A
+# ab - annebrown.ca Apex Src - A (monorepo)
 #-------------------------------------------------------------------------------
 alias goa="cd $PROD_PATH/ezra/ezra/apps/ab-apex"
 alias codea="codee"  # ezra Monorepo
@@ -199,6 +199,12 @@ alias codei="goi && code ."
 alias gok="cd $PROD_PATH/kevin/kevin"
 alias codek="gok && code ."
 #-------------------------------------------------------------------------------
+# docs-pub - CMS Client - KPUB (monorepo)
+#-------------------------------------------------------------------------------
+alias gokpub="cd $PROD_PATH/kevin/kevin/apps/docs-pub"
+alias codekpub="codek" # Kevin Monorepo
+alias kpubserver="gokpub && pnpm dev"
+#-------------------------------------------------------------------------------
 # mc.ca - misscommunication.ca Apex Src - M
 #-------------------------------------------------------------------------------
 alias gom="cd $PROD_PATH/mc.ca/mc.ca"
@@ -224,19 +230,23 @@ alias ncservernocache="DISABLE_CONTENT_WATCH=true ncserver"
 alias gopriv="cd $PROD_PATH/docs-priv/docs-priv"
 alias codepriv="gopriv && code ."
 #-------------------------------------------------------------------------------
+# pub - Public CMS - PUB
+#-------------------------------------------------------------------------------
+alias gopub="cd $PROD_PATH/pub/pub"
+alias codepub="gopub && code ."
+alias pubserver="gopub && pnpm dev"
+#-------------------------------------------------------------------------------
 # proto - Devy Platform - PROTO
 #-------------------------------------------------------------------------------
 alias goproto="cd $PROD_PATH/proto/proto.ab.ca"
 alias codeproto="goproto && code ."
 alias protoserver="goproto && pnpm dev"
-alias protoservernocache="DISABLE_CONTENT_WATCH=true protoserver"
 #-------------------------------------------------------------------------------
-# docs-pub - CMS Client - PUB
+# docs-pub - CMS Client - KPUB (monorepo)
 #-------------------------------------------------------------------------------
-alias gopub="cd $PROD_PATH/kevin/kevin/apps/docs-pub"
-alias codepub="codek" # Kevin Monorepo
-alias pubserver="gopub && pnpm dev"
-alias pubservernocache="DISABLE_CONTENT_WATCH=true pubserver"
+alias gokpub="cd $PROD_PATH/kevin/kevin/apps/docs-pub"
+alias codekpub="codek" # Kevin Monorepo
+alias kpubserver="gokpub && pnpm dev"
 #-------------------------------------------------------------------------------
 # refactor - Refactor STGA - RS
 #-------------------------------------------------------------------------------
@@ -282,7 +292,7 @@ alias tserver="got && pnpm dev"
 #-------------------------------------------------------------------------------
 #PS1="\e[0;34m[\\t] \e[0;34m\\u\[\e[m\]\e[0;36m@\e[m\[\e[0;32m\]$HOSTNAME\[\e[m\]\e[2;34m:\e[m \e[0;35m\w/\e[m\n\e[m\[\e[1;36m\]\e[0;35m$ \[\e[0m\]"
 #-------------------------------------------------------------------------------
-# Bash Msg
+# Bash Verif
 #-------------------------------------------------------------------------------
 DATESTR=`date +"%y-%m-%d %H:%M"` 
 echo "============== bash $DATESTR" "==============" 
