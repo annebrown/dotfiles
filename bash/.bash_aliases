@@ -266,6 +266,12 @@ alias got="cd $TEST_PATH/nuxt3-component-testing"
 alias codet="got && code ."
 alias tserver="got && pnpm dev"
 #-------------------------------------------------------------------------------
+# docs-tech - Public Tech Notes - TECH
+#-------------------------------------------------------------------------------
+alias gotech="cd $PROD_PATH/docs-tech/docs-tech"
+alias codetech="gotech && code ."
+alias tserver="got && pnpm dev"
+#-------------------------------------------------------------------------------
 #
 # PS1
 #
