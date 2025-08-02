@@ -270,7 +270,7 @@ alias tserver="got && pnpm dev"
 #-------------------------------------------------------------------------------
 alias gotech="cd $PROD_PATH/docs-tech/docs-tech"
 alias codetech="gotech && code ."
-alias tserver="got && pnpm dev"
+alias techserver="gotech && pnpm dev"
 #-------------------------------------------------------------------------------
 #
 # PS1
