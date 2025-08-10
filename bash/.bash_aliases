@@ -97,8 +97,10 @@ alias activate-venv="source .venv/bin/activate"
 # Development
 #-------------------------------------------------------------------------------
 # Nuxt Big Reset
+alias nuxtbr="rm -rf node_modules .nuxt .output pnpm-lock.yaml && pnpm store prune"
 alias nuxtbfr="rm -rf node_modules .nuxt .output pnpm-lock.yaml && pnpm store prune && pnpm i && pnpm dev"
 # Nuxt Big Reset - Monorepo App
+alias nuxtbr-mono="rm -rf node_modules .nuxt .output ../../pnpm-lock.yaml"
 alias nuxtbfr-mono="rm -rf node_modules .nuxt .output ../../pnpm-lock.yaml && pnpm store prune && pnpm i && pnpm dev"
 # Vite Module Big Reset
 alias vitebfr="rm -rf node_modules pnpm-lock.yaml dist .output .eslintcache .vite && pnpm store prune && pnpm i && pnpm dev"
@@ -148,8 +150,8 @@ alias nuserver="gonu && pnpm dev"
 #-------------------------------------------------------------------------------
 # bd.com - Browndomain.com Apex Src - B
 #-------------------------------------------------------------------------------
-alias gob="cd $PROD_PATH/bd/bd.com"
-alias codeb="gob && code .&" 
+alias gob="cd $PROD_PATH/bd.com/bd.com"
+alias codeb="gob && code ." 
 alias bserver="gob && pnpm dev"
 alias bservernocache="DISABLE_CONTENT_WATCH=true bserver"
 #-------------------------------------------------------------------------------
