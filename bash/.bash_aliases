@@ -1,4 +1,3 @@
-# -- @/bash/.bash_aliases --
 #-------------------------------------------------------------------------------
 #
 # File:	~/.dotfiles/bash/.bash_aliases
@@ -25,8 +24,9 @@ export EDITOR='vim'
 #-------------------------------------------------------------------------------
 export PATH=$PATH:$HOME/sh:$HOME/sh-priv
 PROD_PATH="$HOME/devy/prod"
-PROJ_PATH="$HOME/devy/allez"
+PROJ_PATH="$HOME/devy/templates/nuxt4-auth/nuxt4-auth"
 MODS_PATH="$HOME/devy/modules"
+TEMP_PATH="$HOME/devy/templates"
 TEST_PATH="$HOME/devy/prod/testing"
 
 #-------------------------------------------------------------------------------
@@ -102,16 +102,25 @@ alias nuxtbfr="rm -rf node_modules .nuxt .output pnpm-lock.yaml && pnpm store pr
 # Nuxt Big Reset - Monorepo App
 alias nuxtbr-mono="rm -rf node_modules .nuxt .output ../../pnpm-lock.yaml"
 alias nuxtbfr-mono="rm -rf node_modules .nuxt .output ../../pnpm-lock.yaml && pnpm store prune && pnpm i && pnpm dev"
+
 # Vite Module Big Reset
 alias vitebfr="rm -rf node_modules pnpm-lock.yaml dist .output .eslintcache .vite && pnpm store prune && pnpm i && pnpm dev"
+
 # Approve Builds
 alias pab="pnpm approve-builds"
+
 # Publish Public npm Module
 alias pubpub="npm publish --access public"
 
+#-------------------------------------------------------------------------------
+# Default Server (localhost:3000) -PROJ
+#-------------------------------------------------------------------------------
+alias codeproj="goproj && code ." 
+alias projserver="goproj && pnpm dev"
+
 #------------------------------------------------------------------------------- 
 #
-# Production
+# Project Shortcuts
 #
 #-------------------------------------------------------------------------------
 
@@ -304,4 +313,4 @@ alias techserver="gotech && pnpm dev"
 #-------------------------------------------------------------------------------
 DATESTR=`date +"%y-%m-%d %H:%M"` 
 echo "============== bash $DATESTR" "==============" 
-#<-------@/bash/.bash_aliases-------------------------------------------------->
+#-------------------------------------------------------------------------------
