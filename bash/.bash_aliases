@@ -200,6 +200,12 @@ alias codeg="gog && code ."
 alias gserver="gog && pnpm dev"
 alias gservernocache="DISABLE_CONTENT_WATCH=true gserver"
 #-------------------------------------------------------------------------------
+# green-arnprior.ca - Local Community Initiative - GA
+#-------------------------------------------------------------------------------
+alias goga="cd $PROD_PATH/green-arnprior/green-arnprior"
+alias codega="goga && code ."
+alias gaserver="goga && pnpm dev"
+#-------------------------------------------------------------------------------
 # issues - Monorepo - Bug Reproductions - I
 #-------------------------------------------------------------------------------
 alias goi="cd $PROD_PATH/issues/issues"
